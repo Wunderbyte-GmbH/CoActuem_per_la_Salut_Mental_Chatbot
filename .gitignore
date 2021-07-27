@@ -1,0 +1,16 @@
+# keyring
+#security/*
+
+# log files
+#*.out
+#*.log
+#src/__pycache__/*
+#.pyc
+
+# send files/ binary files
+#*.pdf
+#.png
+#*.jpg
+
+
+

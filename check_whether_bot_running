@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Check if bot is running
+# -x flag only match processes whose name (or command line if -f is
+# specified) exactly match the pattern. 
+# -f flag will search the entire command line argument, not just the executable, so permits program names
+
+full_path=$(realpath $0) 
+dir_path=$(dirname $full_path)
+cd $dir_path
+
+time=$(TZ=Europe/Madrid date +%d.%m.%Y-%H:%M:%S)
+echo $time
+echo $time >> log/errorOutput.log
+echo $time >> log/output.log
+if pgrep -f main.py > /dev/null
+then
+   echo "Running"
+else
+   echo "Stopped"
+   nohup python3 -u monitoring/warning_mail_when_bot_doessnt_run.py &
+   nohup python3 -u main.py 2>> log/errorOutput.log >> log/output.log &
+fi

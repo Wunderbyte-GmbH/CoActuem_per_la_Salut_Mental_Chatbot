@@ -1,0 +1,843 @@
+{
+    "_id": "Obrir_camí",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "1"
+    ],
+    "title": "compartir_vivencias",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Hola!",
+                "es": "¡Hola!",
+                "en": "Hello!",
+                "de": "Hallo!"
+            },
+            "wait": null,
+            "next": "1b"
+        },
+        "1b": {
+            "type": "NA",
+            "text": {
+                "ca": "&#x1F91D; Ara et preguntem <b>si has viscut una experiencia similar</b> a la relatada. D’aquesta manera, podrem conèixer millor les xarxes de suport social en salut mental.",
+                "es": "&#x1F91D; Ahora te preguntamos <b>si has vivido una experiencia similar</b> a la relatada. De este modo podremos conocer mejor las redes de apoyo social en salud mental.",
+                "en": "&#x1F91D; Now we’re asking you <b>whether you’ve had an experience similar</b> to the one described. This will help us to find out more about social support networks in mental health.",
+                "de": "&#x1F91D; Wir fragen dich jetzt, <b>ob du etwas Ähnliches erlebt hast</b>, wie das, was nun erzählt wird. So können wir die sozialen Unterstützungsnetzwerke für psychische Gesundheit besser kennenlernen."
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "SA",
+            "text": {
+                "ca": "&#128161; Et demanem que responguis de manera sincera i basant-te en la <b>teva experiència personal</b>. Pren-te el temps que calgui per llegir el relat. Reflexiona i madura la teva decisió, <b>sense pressa</b>. Només d’aquesta manera les dades recollides seran valuoses per fer ciència i millorar les xarxes de suport social en salut mental.",
+                "es": "&#128161; Te pedimos que respondas de forma sincera y basándote en <b>tu experiencia personal</b>. Tómate el tiempo que sea necesario para leer el relato. Reflexiona y madura tu decisión, <b>sin prisa</b>. Solo así los datos recogidos serán valiosos para hacer ciencia y mejorar las redes de apoyo social en salud mental.",
+                "en": "&#128161; We ask you to give honest answers based on <b>your personal experience</b>. Take as long as you need to read the story. Take time to think about your decision, <b>there is no hurry</b>. This is the only way we can gather information that will be scientifically useful and improve social support networks in mental health.",
+                "de": "&#128161; Wir bitten dich, ehrlich zu antworten und dich dabei auf <b>deine persönliche Erfahrung</b> zu berufen. Nimm dir Zeit, um die Erzählung zu lesen. Reflektiere und triff deine Entscheidung <b>in aller Ruhe</b> und wohlüberlegt. Nur so sind die erfassten Daten wissenschaftlich verwertbar und können zur Verbesserung der "
+            },
+            "vars": [
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "SA",
+            "text": {
+                "ca": "La Maria Josep vol compartir una vivència en primera persona en què tothom s’hi pot veure reflectit.",
+                "es": "Maria Josep quiere compartir una vivencia en primera persona en la que cualquiera puede verse reflejado.",
+                "en": "Maria Josep wants to share a first-hand experience that everyone can identify with.",
+                "de": "Maria Josep möchte eine Erfahrung aus erster Hand vermitteln, in der sich alle wiedererkennen können."
+            },
+            "vars": [
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": "4"
+        },
+        "4": {
+            "type": "SA",
+            "text": {
+                "ca": "Quan la mirada i l’escolta estan en el mateix nivell, es pot despertar la confiança i l’entrega amorosa. Llavors s’obre un camí.",
+                "es": "Cuando la mirada y la escucha están al mismo nivel, pueden despertar la confianza y la entrega amorosa. Entonces se abre un camino.",
+                "en": "When seeing and hearing are on the same level, this can arouse trust and loving commitment. Then a path opens up.",
+                "de": "Wenn das Sehen und das Hören auf dem gleichen Niveau sind, kann Vertrauen entstehen und liebevolle Hingabe. So kann sich ein Weg öffnen."
+            },
+            "vars": [
+                {
+                    "name": "dilema",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ],
+                    "type2": "img",
+                    "file_name": "Obrir_camí.jpg"
+                }
+            ],
+            "wait": null,
+            "next": "5"
+        },
+        "5": {
+            "type": "SA",
+            "text": {
+                "ca": "<b>I tu?</b> Has tingut la mateixa vivència?\n\n<b>A) Sí</b>, també l’has tinguda.\n<b>B) No exactament</b>... però has viscut quelcom similar.\n<b>C) Mai</b> has viscut res semblant.",
+                "es": "<b>¿Y tú?</b> ¿Has tenido la misma vivencia?\n\n<b>A) Sí</b>, también la has tenido.\n<b>B) No exactamente</b>... pero has vivido algo similar.\n<b>C) Nunca</b> has vivido nada parecido.",
+                "en": "<b>What about you?</b> Have you had the same experience?\n\n<b>A) Yes</b>, it’s happened to you too.\n<b>B) Not exactly</b>... but you’ve experienced something similar.\n<b>C) Nothing like this</b> has ever happened to you.",
+                "de": "<b>Und du?</b> Hast du das Gleiche erlebt?\n\n<b>A) Ja</b>, du hast das auch erlebt.\n<b>B) Du hast nicht genau das erlebt</b>... aber etwas Ähnliches.\n<b>C)</b> Du hast so etwas <b>noch nie</b> erlebt."
+            },
+            "vars": [
+                {
+                    "name": "yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Sí, també l’has tinguda.",
+                            "es": "A) Sí, también la has tenido.",
+                            "en": "A) Yes, it’s happened to you too.",
+                            "de": "A) Ja, du hast das auch erlebt."
+                        },
+                        {
+                            "ca": "B) No exactament...",
+                            "es": "B) No exactamente...",
+                            "en": "B) Not exactly...",
+                            "de": "B) Nicht genau das..."
+                        },
+                        {
+                            "ca": "C) Mai has viscut res semblant.",
+                            "es": "C) Nunca has vivido nada parecido.",
+                            "en": "C) Nothing like this has ever happened to you.",
+                            "de": "C) Du hast so etwas noch nie erlebt."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "yo_1": {
+                    "A": "6A_yo",
+                    "B": "6B_yo",
+                    "C": "6C_yo"
+                }
+            }
+        },
+        "6A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>A) Sí, també l’has tinguda.</b>",
+                "es": "Dices que: <b>A) Sí, también la has tenido.</b>",
+                "en": "You say: <b>A) Yes, it’s happened to you too.</b>",
+                "de": "Du sagst: <b>A) Ja, du hast das auch erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "6B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>B) No exactament... però has viscut quelcom similar.</b>",
+                "es": "Dices que: <b>B) No exactamente... pero has vivido algo similar.</b>",
+                "en": "You say: <b>B) Not exactly... but you’ve experienced something similar.</b>",
+                "de": "Du sagst: <b>B) Nicht genau das... aber du hast etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "6C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>C) Mai has viscut res semblant.</b>",
+                "es": "Dices que: <b>C) Nunca has vivido nada parecido.</b>",
+                "en": "You say: <b>C) Nothing like this has ever happened to you.</b>",
+                "de": "Du sagst: <b>C) Du hast so etwas noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "7_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_yo_1": {
+                    "Sí": "13_yo_1",
+                    "No": "8_yo"
+                }
+            }
+        },
+        "8_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. Per realitzar una recerca amb dades fiables, necessitem confirmar la teva tria. Quina és la resposta que volies donar?",
+                "es": "Parece ser que no has confirmado tu elección. Para realizar una investigación con datos fiables, necesitamos confirmar tu elección. ¿Cuál es la respuesta que querías dar?",
+                "en": "It looks like you haven’t confirmed your choice. To make sure our research is based on reliable information, we need you to confirm your choice. Which response did you want to give?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Für eine Forschung mit zuverlässigen Daten musst du deine Wahl bestätigen. Welche Antwort wolltest du geben?"
+            },
+            "vars": [
+                {
+                    "name": "yo_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        },
+                        {
+                            "ca": "C)",
+                            "es": "C)",
+                            "en": "C)",
+                            "de": "C)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "yo_2": {
+                    "A": "9A_yo",
+                    "B": "9B_yo",
+                    "C": "9C_yo"
+                }
+            }
+        },
+        "9A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>A) Sí, també l’has tinguda.</b>",
+                "es": "Dices que: <b>A) Sí, también la has tenido.</b>",
+                "en": "You say: <b>A) Yes, it’s happened to you too.</b>",
+                "de": "Du sagst: <b>A) Ja, du hast das auch erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "9B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>B) No exactament... però has viscut quelcom similar.</b>",
+                "es": "Dices que: <b>B) No exactamente... pero has vivido algo similar.</b>",
+                "en": "You say: <b>B) Not exactly... but you’ve experienced something similar.</b>",
+                "de": "Du sagst: <b>B) Nicht genau das... aber du hast etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "9C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>C) Mai has viscut res semblant.</b>",
+                "es": "Dices que: <b>C) Nunca has vivido nada parecido.</b>",
+                "en": "You say: <b>C) Nothing like this has ever happened to you.</b>",
+                "de": "Du sagst: <b>C) Du hast so etwas noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "10_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_yo_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_yo_2": {
+                    "Sí": "13_yo_2",
+                    "No": "11_yo"
+                }
+            }
+        },
+        "11_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. No et preocupis. \nQuina resposta volies triar?",
+                "es": "Parece ser que no has confirmado tu elección. No te preocupes. \n¿Qué respuesta querías elegir?",
+                "en": "It looks like you haven’t confirmed your choice. Don’t worry. \nWhich response did you want to choose?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?"
+            },
+            "vars": [
+                {
+                    "name": "yo_3",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        },
+                        {
+                            "ca": "C)",
+                            "es": "C)",
+                            "en": "C)",
+                            "de": "C)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "yo_3": {
+                    "A": "12A_yo",
+                    "B": "12B_yo",
+                    "C": "12C_yo"
+                }
+            }
+        },
+        "12A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>A) Sí, també l’has tinguda.</b>",
+                "es": "Dices que: <b>A) Sí, también la has tenido.</b>",
+                "en": "You say: <b>A) Yes, it’s happened to you too.</b>",
+                "de": "Du sagst: <b>A) Ja, du hast das auch erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "12B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>B) No exactament... però has viscut quelcom similar.</b>",
+                "es": "Dices que: <b>B) No exactamente... pero has vivido algo similar.</b>",
+                "en": "You say: <b>B) Not exactly... but you’ve experienced something similar.</b>",
+                "de": "Du sagst: <b>B) Nicht genau das... aber du hast etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "12C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Dius que: <b>C) Mai has viscut res semblant.</b>",
+                "es": "Dices que: <b>C) Nunca has vivido nada parecido.</b>",
+                "en": "You say: <b>C) Nothing like this has ever happened to you.</b>",
+                "de": "Du sagst: <b>C) Du hast so etwas noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "13_yo_1": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "5_otro"
+        },
+        "13_yo_2": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "5_otro"
+        },
+        "13_yo_3": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "5_otro"
+        },
+        "5_otro": {
+            "type": "SA",
+            "text": {
+                "ca": "<b>I del teu entorn...</b> Algú ha tingut la mateixa vivència?\n\n<b>A) Sí</b>, l’ha tinguda algú del teu entorn.\n<b>B) No exactament</b>, però algú del teu entorn ha viscut quelcom similar.\n<b>C) Que tu sàpigues, ningú</b> del teu entorn l’ha tinguda.",
+                "es": "<b>Y de tu entorno...</b> ¿Alguien ha tenido la misma vivencia?\n\n<b>A) Sí</b>, la ha tenido alguien de tu entorno.\n<b>B) No exactamente</b>, pero alguien de tu entorno ha vivido algo similar.\n<b>C) Que tú sepas, nadie</b> de tu entorno la ha tenido.",
+                "en": "<b>And those around you...</b> Has anybody had the same experience?\n\n<b>A) Yes</b>, it’s happened to someone around you.\n<b>B) Not exactly...</b> but someone around you has experienced something similar.\n<b>C) As far as you know, it hasn’t</b> happened to anyone around you.",
+                "de": "<b>Und aus deinem Umfeld...</b> Hat jemand das Gleiche erlebt?\n\n<b>A) Ja</b>, jemand aus deinem Umfeld hat das erlebt.\n<b>B) Nicht genau das</b>, aber jemand aus deinem Umfeld hat etwas Ähnliches erlebt.\n<b>C) Soweit du weißt</b>, hat <b>niemand</b> aus deinem Umfeld das Gleiche erlebt."
+            },
+            "vars": [
+                {
+                    "name": "otro_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Sí, l’ha tinguda.",
+                            "es": "A) Sí, la ha tenido.",
+                            "en": "A) Yes, it’s happened to someone.",
+                            "de": "A) Ja, jemand hat das erlebt."
+                        },
+                        {
+                            "ca": "B) No exactament.",
+                            "es": "B) No exactamente.",
+                            "en": "B) Not exactly.",
+                            "de": "B) Nicht genau das."
+                        },
+                        {
+                            "ca": "C) Que tu sàpigues, ningú.",
+                            "es": "C) Que tú sepas, nadie.",
+                            "en": "C) As far as you know, nobody.",
+                            "de": "C) Soweit du weißt, niemand."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "otro_1": {
+                    "A": "6A_otro",
+                    "B": "6B_otro",
+                    "C": "6C_otro"
+                }
+            }
+        },
+        "6A_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>A) Sí, l’ha tinguda algú del teu entorn.</b>",
+                "es": "Has dicho que: <b>A) Sí, la ha tenido alguien de tu entorno.</b>",
+                "en": "You said: <b>A) Yes, it’s happened to someone around you.</b>",
+                "de": "Du hast gesagt: <b>A) Ja, jemand aus deinem Umfeld hat das erlebt.</b> "
+            },
+            "wait": null,
+            "next": "7_otro"
+        },
+        "6B_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>B) No exactament, però algú del teu entorn ha viscut quelcom similar.</b> ",
+                "es": "Has dicho que: <b>B) No exactamente, pero alguien de tu entorno ha vivido algo similar.</b> ",
+                "en": "You said: <b>B) Not exactly... but someone around you has experienced something similar.</b>",
+                "de": "Du hast gesagt: <b>B) Nicht genau das, aber jemand aus deinem Umfeld hat etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_otro"
+        },
+        "6C_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>C) Que tu sàpigues, ningú del teu entorn l’ha tinguda.</b>",
+                "es": "Has dicho que: <b>C) Que tú sepas, nadie de tu entorno la ha tenido.</b>",
+                "en": "You said: <b>C) As far as you know, it hasn’t happened to anyone around you.</b>",
+                "de": "Du hast gesagt: <b>C) Soweit du weißt, hat das niemand aus deinem Umfeld erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_otro"
+        },
+        "7_otro": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_otro_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_otro_1": {
+                    "Sí": "13_otro_1",
+                    "No": "8_otro"
+                }
+            }
+        },
+        "8_otro": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. Per realitzar una recerca amb dades fiables, necessitem confirmar la teva tria. Quina és la resposta que volies donar?",
+                "es": "Parece ser que no has confirmado tu elección. Para realizar una investigación con datos fiables, necesitamos confirmar tu elección. ¿Cuál es la respuesta que querías dar?",
+                "en": "It looks like you haven’t confirmed your choice. To make sure our research is based on reliable information, we need you to confirm your choice. Which response did you want to give?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Für eine Forschung mit zuverlässigen Daten musst du deine Wahl bestätigen. Welche Antwort wolltest du geben?"
+            },
+            "vars": [
+                {
+                    "name": "otro_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        },
+                        {
+                            "ca": "C)",
+                            "es": "C)",
+                            "en": "C)",
+                            "de": "C)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "otro_2": {
+                    "A": "9A_otro",
+                    "B": "9B_otro",
+                    "C": "9C_otro"
+                }
+            }
+        },
+        "9A_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>A) Sí, l’ha tinguda algú del teu entorn.</b>",
+                "es": "Has dicho que: <b>A) Sí, la ha tenido alguien de tu entorno.</b>",
+                "en": "You said: <b>A) Yes, it’s happened to someone around you.</b>",
+                "de": "Du hast gesagt: <b>A) Ja, jemand aus deinem Umfeld hat das erlebt.</b> "
+            },
+            "wait": null,
+            "next": "10_otro"
+        },
+        "9B_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>B) No exactament, però algú del teu entorn ha viscut quelcom similar.</b> ",
+                "es": "Has dicho que: <b>B) No exactamente, pero alguien de tu entorno ha vivido algo similar.</b> ",
+                "en": "You said: <b>B) Not exactly... but someone around you has experienced something similar.</b>",
+                "de": "Du hast gesagt: <b>B) Nicht genau das, aber jemand aus deinem Umfeld hat etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_otro"
+        },
+        "9C_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>C) Que tu sàpigues, ningú del teu entorn l’ha tinguda.</b>",
+                "es": "Has dicho que: <b>C) Que tú sepas, nadie de tu entorno la ha tenido.</b>",
+                "en": "You said: <b>C) As far as you know, it hasn’t happened to anyone around you.</b>",
+                "de": "Du hast gesagt: <b>C) Soweit du weißt, hat das niemand aus deinem Umfeld erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_otro"
+        },
+        "10_otro": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_otro_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_otro_2": {
+                    "Sí": "13_otro_2",
+                    "No": "11_otro"
+                }
+            }
+        },
+        "11_otro": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. No et preocupis. \nQuina resposta volies triar?",
+                "es": "Parece ser que no has confirmado tu elección. No te preocupes. \n¿Qué respuesta querías elegir?",
+                "en": "It looks like you haven’t confirmed your choice. Don’t worry. \nWhich response did you want to choose?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?"
+            },
+            "vars": [
+                {
+                    "name": "otro_3",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        },
+                        {
+                            "ca": "C)",
+                            "es": "C)",
+                            "en": "C)",
+                            "de": "C)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "otro_3": {
+                    "A": "12A_otro",
+                    "B": "12B_otro",
+                    "C": "12C_otro"
+                }
+            }
+        },
+        "12A_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>A) Sí, l’ha tinguda algú del teu entorn.</b>",
+                "es": "Has dicho que: <b>A) Sí, la ha tenido alguien de tu entorno.</b>",
+                "en": "You said: <b>A) Yes, it’s happened to someone around you.</b>",
+                "de": "Du hast gesagt: <b>A) Ja, jemand aus deinem Umfeld hat das erlebt.</b> "
+            },
+            "wait": null,
+            "next": "13_otro_3"
+        },
+        "12B_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>B) No exactament, però algú del teu entorn ha viscut quelcom similar.</b> ",
+                "es": "Has dicho que: <b>B) No exactamente, pero alguien de tu entorno ha vivido algo similar.</b> ",
+                "en": "You said: <b>B) Not exactly... but someone around you has experienced something similar.</b>",
+                "de": "Du hast gesagt: <b>B) Nicht genau das, aber jemand aus deinem Umfeld hat etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_otro_3"
+        },
+        "12C_otro": {
+            "type": "NA",
+            "text": {
+                "ca": "Has dit que: <b>C) Que tu sàpigues, ningú del teu entorn l’ha tinguda.</b>",
+                "es": "Has dicho que: <b>C) Que tú sepas, nadie de tu entorno la ha tenido.</b>",
+                "en": "You said: <b>C) As far as you know, it hasn’t happened to anyone around you.</b>",
+                "de": "Du hast gesagt: <b>C) Soweit du weißt, hat das niemand aus deinem Umfeld erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_otro_3"
+        },
+        "13_otro_1": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "13_otro_2": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "13_otro_3": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "14": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies per ajudar-nos en la recerca! Seguim en contacte!",
+                "es": "¡Gracias por ayudarnos en la investigación! ¡Seguimos en contacto!",
+                "en": "Thank you for helping with our research! Let’s stay in touch!",
+                "de": "Danke für deine Hilfe bei unserer Forschungsarbeit! Wir werden weiter in Kontakt bleiben!"
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}
