@@ -1,0 +1,428 @@
+{
+    "_id": "Incomprensió_22",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "1"
+    ],
+    "title": "encontrar_soluciones_juntos",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Hola!",
+                "es": "¡Hola!",
+                "en": "Hello!",
+                "de": "Hallo!"
+            },
+            "wait": null,
+            "next": "1b"
+        },
+        "1b": {
+            "type": "NA",
+            "text": {
+                "ca": "&#x1F91D; Et volem preguntar <b>què hauries fet</b> davant la situació que s’està compartint. D’aquesta manera, podrem conèixer millor les xarxes de suport social en salut mental.",
+                "es": "&#x1F91D; Queremos preguntarte <b>qué habrías hecho</b> ante la situación que se está compartiendo. De este modo podremos conocer mejor las redes de apoyo social en salud mental.",
+                "en": "&#x1F91D; We want to ask you <b>what you would have done</b> in the situation we’re sharing. This will help us to find out more about social support networks in mental health.",
+                "de": "&#x1F91D; Wir möchten dich fragen, <b>was du</b> in der hier mitgeteilten Situation <b>getan hättest</b>. So können wir die sozialen Unterstützungsnetzwerke für psychische Gesundheit besser kennenlernen."
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "SA",
+            "text": {
+                "ca": "&#128161; Et demanem que responguis de manera sincera i basant-te en el <b>teu punt de vista singular i únic</b>. Pren-te el temps que calgui per llegir el relat. Reflexiona i madura la teva decisió, <b>sense pressa</b>. D’aquesta manera les dades recollides seran valuoses per fer ciència i millorar les xarxes de suport social en salut mental.",
+                "es": "&#128161; Te pedimos que respondas de forma sincera y basándote en <b>tu punto de vista singular y único</b>. Tómate el tiempo que sea necesario para leer el relato. Reflexiona y madura tu decisión, <b>sin prisa</b>. De este modo los datos recogidos serán valiosos para hacer ciencia y mejorar las redes de apoyo social en salud mental.",
+                "en": "&#128161; We ask you to give honest answers from <b>your own unique point of view</b>. Take as long as you need to read the story. Take time to think about your decision, <b>there is no hurry</b>. This way, the information we gather will be scientifically useful and improve social support networks in mental health.",
+                "de": "&#128161; Wir bitten dich, ehrlich zu antworten und dich dabei ganz auf <b>deine eigene Meinung</b> zu berufen. Nimm dir Zeit, um die Beschreibungen zu lesen. Reflektiere und triff deine Entscheidung <b>in aller Ruhe</b> und wohlüberlegt. So sind die erfassten Daten wissenschaftlich verwertbar und können zur Verbesserung der sozialen Unterstützungsnetzwerke für psychische Gesundheit beitragen."
+            },
+            "vars": [
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "SA",
+            "text": {
+                "ca": "L'Albert et vol preguntar què hauries fet en una situació que ha viscut en primera persona. L'Albert demana que et posis al seu lloc per uns instants.",
+                "es": "Albert quiere preguntarte qué habrías hecho en una situación que ha vivido en primera persona. Albert pide que te pongas en su lugar por unos instantes.",
+                "en": "Albert wants to ask you what you would have done in a situation he’s experienced himself. Albert wants you to put yourself in his place for a moment.",
+                "de": "Albert möchte dich fragen, was du in einer Situation getan hättest, die er selbst erlebt hat. Albert möchte, dass du dich einen Moment in seine Lage versetzt."
+            },
+            "vars": [
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": "4"
+        },
+        "4": {
+            "type": "SA",
+            "text": {
+                "ca": "Tens un amic, en Pau. Va patir un trastorn mental, va passar un temps fotut i quan el tornes a veure els teus prejudicis et traeixen. Pensaves que seria un altre... Al cap i a la fi, quan no té un brot, veus el mateix Pau de sempre. Dubtes...",
+                "es": "Tienes un amigo, Pau. Sufrió un trastorno mental, estuvo fastidiado durante un tiempo, y cuando volvéis a veros tus prejuicios te traicionan. Creías que iba a ser otro... Al fin y al cabo, cuando no tiene un brote, ves al mismo Pau de siempre. Tienes dudas...",
+                "en": "You have a friend called Pau. He suffered a mental disorder, he wasn’t well for some time and when you see him again your prejudices let you down. You thought he'd be different... After all, when he’s not having an outbreak, you see the same Pau as ever. You're not sure...",
+                "de": "Du hast einen Freund namens Pau. Er hatte eine psychische Störung, es ging ihm eine Zeit lang sehr schlecht und als du ihn wieder siehst, holen dich deine Vorurteile ein. Du hattest gedacht, er sei jetzt anders... Schließlich siehst du doch den gleichen Pau, so wie er früher war, wenn er nicht gerade einen seiner Schübe hat. Du bist unsicher..."
+            },
+            "vars": [
+                {
+                    "name": "dilema",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": "5"
+        },
+        "5": {
+            "type": "SA",
+            "text": {
+                "ca": "Què creus que podries sentir després de retrobar-lo?\n<b>A) </b>Sentir-te culpable per haver tingut prejudicis.\n<b>B) </b>Alegrar-te de veure el Pau de sempre.",
+                "es": "¿Qué crees que podrías sentir después de encontraros de nuevo?\n<b>A) </b>Sentirte culpable por haber tenido prejuicios.\n<b>B) </b>Alegrarte de ver al Pau de siempre.",
+                "en": "How do you think you might feel after meeting him again?\n<b>A) </b>Feel guilty about your prejudices.\n<b>B) </b>Be pleased to see the same old Pau.",
+                "de": "Was glaubst, wie du dich nach eurem Wiedersehen fühlst?\n<b>A) </b>Du fühlst dich schuldig wegen deiner Vorurteile.\n<b>B) </b>Du freust dich Pau, so wie er früher war, wiederzusehen."
+            },
+            "vars": [
+                {
+                    "name": "x_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Sentir-te culpable per haver tingut prejudicis.",
+                            "es": "A) Sentirte culpable por haber tenido prejuicios.",
+                            "en": "A) Feel guilty about your prejudices.",
+                            "de": "A) Du fühlst dich schuldig wegen deiner Vorurteile."
+                        },
+                        {
+                            "ca": "B) Alegrar-te de veure el Pau de sempre.",
+                            "es": "B) Alegrarte de ver al Pau de siempre.",
+                            "en": "B) Be pleased to see the same old Pau.",
+                            "de": "B) Du freust dich Pau, so wie er früher war, wiederzusehen."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "x_1": {
+                    "A": "6A",
+                    "B": "6B"
+                }
+            }
+        },
+        "6A": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>A) Sentir-te culpable per haver tingut prejudicis.</b>",
+                "es": "Has elegido: <b>A) Sentirte culpable por haber tenido prejuicios.</b>",
+                "en": "You chose: <b>A) Feel guilty about your prejudices.</b>",
+                "de": "Deine Wahl: <b>A) Du fühlst dich schuldig wegen deiner Vorurteile.</b>"
+            },
+            "wait": null,
+            "next": "7"
+        },
+        "6B": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>B) Alegrar-te de veure el Pau de sempre.</b>",
+                "es": "Has elegido: <b>B) Alegrarte de ver al Pau de siempre.</b>",
+                "en": "You chose: <b>B) Be pleased to see the same old Pau.</b>",
+                "de": "Deine Wahl: <b>B) Du freust dich Pau, so wie er früher war, wiederzusehen.</b>"
+            },
+            "wait": null,
+            "next": "7"
+        },
+        "7": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_x_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_x_1": {
+                    "Sí": "13_1",
+                    "No": "8"
+                }
+            }
+        },
+        "8": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. Per realitzar una recerca amb dades fiables, necessitem confirmar la teva tria. Quina és la resposta que volies donar?",
+                "es": "Parece ser que no has confirmado tu elección. Para realizar una investigación con datos fiables, necesitamos confirmar tu elección. ¿Cuál es la respuesta que querías dar?",
+                "en": "It looks like you haven’t confirmed your choice. To make sure our research is based on reliable information, we need you to confirm your choice. Which response did you want to give?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Für eine Forschung mit zuverlässigen Daten musst du deine Wahl bestätigen. Welche Antwort wolltest du geben?"
+            },
+            "vars": [
+                {
+                    "name": "x_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "x_2": {
+                    "A": "9A",
+                    "B": "9B"
+                }
+            }
+        },
+        "9A": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>A) Sentir-te culpable per haver tingut prejudicis.</b>",
+                "es": "Has elegido: <b>A) Sentirte culpable por haber tenido prejuicios.</b>",
+                "en": "You chose: <b>A) Feel guilty about your prejudices.</b>",
+                "de": "Deine Wahl: <b>A) Du fühlst dich schuldig wegen deiner Vorurteile.</b>"
+            },
+            "wait": null,
+            "next": "10"
+        },
+        "9B": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>B) Alegrar-te de veure el Pau de sempre.</b>",
+                "es": "Has elegido: <b>B) Alegrarte de ver al Pau de siempre.</b>",
+                "en": "You chose: <b>B) Be pleased to see the same old Pau.</b>",
+                "de": "Deine Wahl: <b>B) Du freust dich Pau, so wie er früher war, wiederzusehen.</b>"
+            },
+            "wait": null,
+            "next": "10"
+        },
+        "10": {
+            "type": "SA",
+            "text": {
+                "ca": "És la resposta que volies triar?",
+                "es": "¿Es la respuesta que querías elegir?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_x_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_x_2": {
+                    "Sí": "13_2",
+                    "No": "11"
+                }
+            }
+        },
+        "11": {
+            "type": "SA",
+            "text": {
+                "ca": "Sembla que no has confirmat la teva tria. No et preocupis. \nQuina resposta volies triar?",
+                "es": "Parece ser que no has confirmado tu elección. No te preocupes. \n¿Qué respuesta querías elegir?",
+                "en": "It looks like you haven’t confirmed your choice. Don’t worry. \nWhich response did you want to choose?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?"
+            },
+            "vars": [
+                {
+                    "name": "x_3",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A)",
+                            "es": "A)",
+                            "en": "A)",
+                            "de": "A)"
+                        },
+                        {
+                            "ca": "B)",
+                            "es": "B)",
+                            "en": "B)",
+                            "de": "B)"
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "x_3": {
+                    "A": "12A",
+                    "B": "12B"
+                }
+            }
+        },
+        "12A": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>A) Sentir-te culpable per haver tingut prejudicis.</b>",
+                "es": "Has elegido: <b>A) Sentirte culpable por haber tenido prejuicios.</b>",
+                "en": "You chose: <b>A) Feel guilty about your prejudices.</b>",
+                "de": "Deine Wahl: <b>A) Du fühlst dich schuldig wegen deiner Vorurteile.</b>"
+            },
+            "wait": null,
+            "next": "13_3"
+        },
+        "12B": {
+            "type": "NA",
+            "text": {
+                "ca": "Has triat: <b>B) Alegrar-te de veure el Pau de sempre.</b>",
+                "es": "Has elegido: <b>B) Alegrarte de ver al Pau de siempre.</b>",
+                "en": "You chose: <b>B) Be pleased to see the same old Pau.</b>",
+                "de": "Deine Wahl: <b>B) Du freust dich Pau, so wie er früher war, wiederzusehen.</b>"
+            },
+            "wait": null,
+            "next": "13_3"
+        },
+        "13_1": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "15"
+        },
+        "13_2": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "15"
+        },
+        "13_3": {
+            "type": "NA",
+            "text": {
+                "ca": "La teva resposta s’ha guardat.",
+                "es": "Tu respuesta se ha guardado.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "15"
+        },
+        "15": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies per ajudar-nos en la recerca! Seguim en contacte!",
+                "es": "¡Gracias por ayudarnos en la investigación! ¡Seguimos en contacto!",
+                "en": "Thank you for helping with our research! Let’s stay in touch!",
+                "de": "Danke für deine Hilfe bei unserer Forschungsarbeit! Wir werden weiter in Kontakt bleiben!"
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}
