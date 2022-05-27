@@ -1,16 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+title: CoActuem per la Salut Mental Chatbot
+message: 'If you use this software, please cite it as below.'
+type: software
 authors:
-  - family-names: Peter
-    given-names: Franziska
-    orcid:  https://orcid.org/0000-0003-0916-8056 
-  - family-names: Seguí
-    given-names: Santi 
-  - family-names: Pascual Guinovart
-    given-names: Guillem 
-    - family-names: Perelló
-    given-names: Josep
-title: "CoActuem per la Salut Mental Chatbot"
-version: 1.0
-url: "https://github.com/Chaotique/CoActuem_per_la_Salut_Mental_Chatbot"
-date-released: 2021-07-30
+  - given-names: Franziska
+    family-names: Peter
+    email: fpeter@ub.edu
+    affiliation: 'Universitat de Barcelona, Spain'
+    orcid: 'https://orcid.org/0000-0003-0916-8056'
+  - given-names: Santi
+    family-names: Segui
+  - given-names: Guillem
+    family-names: Pascual Guinovart
