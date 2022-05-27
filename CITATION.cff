@@ -12,3 +12,6 @@ authors:
     family-names: Segui
   - given-names: Guillem
     family-names: Pascual Guinovart
+repository: >-
+  https://github.com/Chaotique/CoActuem_per_la_Salut_Mental_Chatbot
+license: GPL-3.0
