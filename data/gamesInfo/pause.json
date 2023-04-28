@@ -1,0 +1,34 @@
+{
+    "_id": "pause",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Has posat en pausa el xatbot. Ja no rebràs més missatges del xatbot.",
+                "es": "Has puesto en pausa el chatbot. Ya no recibirás más mensajes del chatbot.",
+                "en": "You have successfully paused the chatbot. You won’t receive any more messages from the chatbot.",
+                "de": "Du hast den Chatbot pausiert. Du bekommst keine Nachrichten mehr vom Chatbot."
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "NA",
+            "text": {
+                "ca": "Recorda que si escrius REPRENDRE pots tornar a rebre missatges.",
+                "es": "Recuerda que si escribes REANUDAR puedes volver a recibir mensajes.",
+                "en": "Remember, you can start receiving messages again simply by typing RESUME.",
+                "de": "Indem du FORTSETZEN schreibst, kannst du wieder Nachrichten erhalten."
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

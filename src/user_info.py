@@ -22,7 +22,8 @@ import sys
 import copy
 import asyncio
 from functools import partial
-
+import datetime
+import pytz
 
 # internal libraries
 from src.status import Status
@@ -36,6 +37,10 @@ from __main__ import clients
 from __main__ import bot
 # load gamesInfo collection from database
 from __main__ import gamesInfo
+
+night_starts_at = datetime.datetime(2021, 1, 1, 21, 00, 00) # day does not matter we only use time
+night_ends_at   = datetime.datetime(2021, 1, 2, 7, 00, 00) # day does not matter we only use time, here one day later than the other (next morning)
+duration_of_night_in_seconds = (night_ends_at-night_starts_at).seconds
 
 class UserInfo(object):
     """
@@ -111,7 +116,11 @@ class UserInfo(object):
         # Default language
         if 'language' not in self.data:
             self.data['language'] = 'ca'
-            
+
+        # Default timeshift_in_seconds
+        if 'timeshift_in_seconds' not in self.data:
+            self.data['timeshift_in_seconds'] = 0
+
     def get_user_id(self):
         """
         returns hashed telegram user id as string
@@ -142,15 +151,37 @@ class UserInfo(object):
         N=len(list(set(list_games_done_CT)))
         # get next game that should be played
         if set(ordered_list_of_games[0:N]) == set(list_games_done_CT): # if games C+T played are exactly the first games in the ordered list
-            next_game_id = ordered_list_of_games[N]                 # get next item from ordered list
-            print("List of relatos was equal to list of gamesdone", self.get_user_id(), list_games_done_CT, next_game_id)
+            if N< len(ordered_list_of_games):
+                next_game_id = ordered_list_of_games[N]                 # get next item from ordered list
+                print("List of relatos was equal to list of gamesdone for user: ", self.get_user_id(),", next game: ", next_game_id)
+            else:
+                next_game_id = None
+                print("user ", self.get_user_id()," finished all stories")
         else:
             next_game_id = [item for item in ordered_list_of_games[0:N] if item not in list_games_done_CT][0] # get first game from ordered list that wasn't already sent
-            print("List of relatos was equal to list of gamesdone", self.get_user_id(), list_games_done_CT, next_game_id)
+            print("List of relatos was not equal to list of gamesdone", self.get_user_id(), list_games_done_CT, next_game_id)
         # now: get game type = game_title           
         next_game_data = gamesInfo.find_one({'_id': next_game_id})
-        game_title = next_game_data.get("title", "Demo")
+        try:
+            game_title = next_game_data.get("title", "Demo")
+        except:
+            game_title = None
+            print("see which next game can't be found.. : ", str(next_game_id))
         return next_game_id, game_title
+
+    def is_in_users_night(self, next_time_CT):
+        """
+        """
+        timeshift_in_seconds     = self.data.get('timeshift_in_seconds', 0)
+        now_here                 = datetime.datetime.now().astimezone(pytz.timezone("Europe/Madrid"))
+        planned_event_here       = now_here + datetime.timedelta(seconds = next_time_CT)
+        planned_event_user_time  = planned_event_here + datetime.timedelta(seconds = timeshift_in_seconds)
+        is_in_users_night        = False
+        if planned_event_user_time.time() > night_starts_at.time() or planned_event_user_time.time() < night_ends_at.time():
+            is_in_users_night    = True
+        else:
+            is_in_users_night    = False
+        return is_in_users_night
     
     def set_next_relats_event_from_list(self, appbot, next_time_CT):
         """
@@ -160,14 +191,21 @@ class UserInfo(object):
         next_time_CT :: is the time in seconds until the user receives the next story of type C+T
         (C, T)= (Compartir vivencias, Trobar solucions junts)
         """
-        if self.data['status']==Status.INBOT or self.data["legal"] and self.data["legal"]=="Si":
+        if self.data['status']==Status.INBOT or (self.data.get("legal",[]) and self.data.get("legal", []) =="Si"):
             user_id = self.get_user_id()
             # get game id of next not already played game
             game_id, game_title = self.get_next_game()
-            if not game_title in ["compartir_vivencias", "encontrar_soluciones_juntos"]:
-                next_time_CT/= 4 # send next game more quickly if its not a "story" 
-            # send this game at specific time (now + next_time_CT)   
-            appbot.add_event(Event.after(next_time_CT, partial(Game.start_game, Game, appbot, game_id, user_id), daytime_only=True, is_new_game=True)) # comment this line out to supress automatic sending according to sequence
+            if game_title and game_id:
+                if not game_title in ["compartir_vivencias", "encontrar_soluciones_juntos"]:
+                    next_time_CT/= 4 # send next game more quickly if its not a "story"
+                print("game_title", game_title)
+                if game_id in ["welcome", "capacitation_Teatre_Amigues", "sociodem_coact"]:
+                    next_time_CT= 0 # directly send the next game
+                elif self.is_in_users_night(next_time_CT):
+                    print("it's night for user ", self.get_user_id())
+                    next_time_CT += duration_of_night_in_seconds
+
+                appbot.add_event(Event.after(next_time_CT, partial(Game.start_game, Game, appbot, game_id, user_id), daytime_only=True, is_new_game=True)) # comment this line out to supress automatic sending according to sequence
         
     def post_init(self, appbot):
         """ 
@@ -178,7 +216,8 @@ class UserInfo(object):
         current_game = {} if current_game is None else current_game # if field current game is null, set empty dict
         print("post_init({}) {} - {}".format(self.data['_id'], self.data.get('status', Status.DOWN), current_game.get('_id', None))) # logging entry
         if self.data['status'] == Status.DOWN:
-            self.data['current_game'] = None
+            return
+            #self.data['current_game'] = None
         #elif self.data['status'] != Status.START: 
         #   self.data['current_game'] = None
         #   appbot.add_waiting(self)
@@ -196,8 +235,11 @@ class UserInfo(object):
                 # set next C+T relats event
                 # get timing of next C+T relat according to rhythm of user
                 time_till_next_CT_in_seconds = when_is_next_CT_according_to_user_rhythm(self)/2
+                if self.is_in_users_night(time_till_next_CT_in_seconds):
+                    print("would be at night for user ", self.get_user_id())
+                    time_till_next_CT_in_seconds += duration_of_night_in_seconds
                 self.set_next_relats_event_from_list(appbot, time_till_next_CT_in_seconds) # add some random offset for rhythm
-        
+            
         
         #if self.data['status'] == Status.DOWN:
         #    self.data['current_game'] = None

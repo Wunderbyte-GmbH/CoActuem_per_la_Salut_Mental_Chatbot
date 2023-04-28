@@ -1,0 +1,84 @@
+{
+    "_id": "hour",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Bon dia! Per adaptar el ritme del xatbot a la teva vida quotidiana, pots escollir el moment del dia que et vagi millor per rebre relats.",
+                "es": "¡Buenos días! Para adaptar el ritmo del chatbot a tu vida cotidiana, puedes elegir el momento del día en que mejor te vaya recibir relatos.",
+                "en": "Hello! To adapt the rhythm of the chatbot to your daily life, you can choose the best time of day for you to receive stories.",
+                "de": "Hallo! Um den Rhythmus des Chatbots an deinen Alltag anzupassen, kannst du die für dich beste Tageszeit aussuchen, um Erzählungen zu erhalten."
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "SA",
+            "text": {
+                "ca": "⏰ En quin moment del dia prefereixes rebre els relats?",
+                "es": "⏰ ¿En qué momento del día prefieres recibir los relatos? ", 
+                "en": "⏰ At what time of day would you like to receive stories? ",
+                "de": "⏰ Zu welcher Tageszeit möchtest du gern Erzählungen erhalten? "
+            },
+            "vars": [
+                {
+                    "name": "horari_relats",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Matí",
+                            "es": "Mañana",
+                            "en": "Morning",
+                            "de": "Morgen"
+                        },
+                        {
+                            "ca": "Migdia",
+                            "es": "Mediodía",
+                            "en": "Midday",
+                            "de": "Mittag"
+                        },
+                        {
+                            "ca": "Tarda",
+                            "es": "Tarde",
+                            "en": "Afternoon/Evening",
+                            "de": "Abend"
+                        },
+                        {
+                            "ca": "Qualsevol de les tres opcions",
+                            "es": "Cualquiera de las tres opciones",
+                            "en": "Any of the three options",
+                            "de": "Ganz gleich welche der drei Optionen"
+                        }
+                    ],
+                    "values": [
+                        "Ma",
+                        "MD",
+                        "Ta",
+                        "TD"
+                    ]
+                }
+            ],
+            "save": "horari_relats",
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies! De tota manera, et pots agafar el temps que vulguis per respondre als relats amb l’atenció que es mereixen.",
+                "es": "¡Gracias! De todos modos, puedes tomarte el tiempo que quieras para responder a los relatos con la atención que merecen.",
+                "en": "Thanks! In any case, you should always read through the stories carefully and take your time to reply.",
+                "de": "Dankeschön! Auf jeden Fall kannst du dir Zeit nehmen, um auf die Erzählungen zu antworten, mit der Aufmerksamkeit die sie verdienen."
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

@@ -71,28 +71,29 @@ class Event(object):
         False:  otherwise
         """
         if time.time() >= self._timestamp:   # as soon as planned time for event is reached...
+            """
             # Do nothing between 19-07
-            if self._daytime_only:
-                hour = int(datetime.datetime.fromtimestamp(int(time.time())).astimezone(pytz.timezone("Europe/Madrid")).strftime('%H'))
+            #if self._daytime_only:
+                #hour = int(datetime.datetime.fromtimestamp(int(time.time())).astimezone(pytz.timezone("Europe/Madrid")).strftime('%H'))
                 #print("Daytime check at {}: {}".format(hour, hour > 19 or hour < 7))
-                from_morning = 7
-                to_evening = 21
-                if hour >= to_evening or hour < from_morning:
+                #from_morning = 7
+                #to_evening = 21
+                #if hour > to_evening and hour < from_morning:
                     # check how long it is until sunrise, postpone action until then.
-                    if self._is_new_game:
-                        if hour < from_morning:
-                            wait_till_dawn = (from_morning+24-to_evening)*60*60#= wait until from_morning and (8-hour) and wait the time since to_evening (24-to_evening+hour)# (8-hour)*60*60 
-                        elif hour >= to_evening:
-                            wait_till_dawn =((24-to_evening)+from_morning+(hour-to_evening))*60*60#= wait until from_morning and (24-hour) and wait the time since to_evening (hour-to_evening)# (24-hour)*60*60
-                        else:
-                            wait_till_dawn = 0
-                        print("waiting_till_dawn: ", wait_till_dawn)
-                        time.sleep(wait_till_dawn) 
-                    await self._callback()     # e.g. self._callback() = check waiting queue
-                    if self._on_done:
-                        await self._on_done()  # e.g. self._on_done() = lambda: self.send_typing(chat_id)
-                    return True
-            
+                    #if self._is_new_game:
+                        #if hour < from_morning:
+                        #    wait_till_dawn = (from_morning+24-to_evening)*60*60#= wait until from_morning and (8-hour) and wait the time since to_evening (24-to_evening+hour)# (8-hour)*60*60 
+                        #elif hour >= to_evening:
+                            #wait_till_dawn =((24-to_evening)+from_morning+(hour-to_evening))*60*60#= wait until from_morning and (24-hour) and wait the time since to_evening (hour-to_evening)# (24-hour)*60*60
+                        #else:
+                            #wait_till_dawn = 0
+                        #print("waiting_till_dawn: ", wait_till_dawn)
+                        #time.sleep(wait_till_dawn)
+                    #await self._callback()     # e.g. self._callback() = check waiting queue
+                    #if self._on_done:
+                        #await self._on_done()  # e.g. self._on_done() = lambda: self.send_typing(chat_id)
+                    #return True
+            """
             # if not _daytime_only, the bot can is allowed to launch the event: 
             await self._callback()     # e.g. self._callback() = check waiting queue
             if self._on_done:

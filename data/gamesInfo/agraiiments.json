@@ -1,0 +1,101 @@
+{
+    "_id": "agraiiments",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "textos_informativos",
+    "messages": {
+        "1": {
+            "type": "SA",
+            "text": {
+                "ca": "&#x1F973; Felicitats! Ja has arribat a respondre a tots els 222 relats que van escriure les persones coinvestigadores.\n\n&#127941; Enhorabona! Ets una de les deu primeres persones que han arribat en aquest punt. T'agra&iuml;m molt la teva dedicaci&#243;. Sense les teves respostes aquesta recerca no seria possible. Esperem tamb&#233; que els relats t'hagin ajudat a reflexionar sobre la salut mental i les xarxes de suport social.",  
+                "es": "&#x1F973; &#161;Felicidades! Ya has llegado a responder a todos los 222 relatos que escribieron las personas coinvestigadoras.\n\n&#127941; Enhorabuena! Eres una de las diez primeras personas que han llegado a este punto. Te agradecemos mucho tu dedicaci&#243;n. Sin tus respuestas esa b&#250;squeda no ser&#225; posible. Esperamos tambi&#233;n que los relatos te hayan ayudado a reflexionar sobre la salud mental y las redes de soporte social.", 
+                "en": "&#x1F973; &#161;Felicidades! Ya has llegado a responder a todos los 222 relatos que escribieron las personas coinvestigadoras.\n\n&#127941; Enhorabuena! Eres una de las diez primeras personas que han llegado a este punto. Te agradecemos mucho tu dedicaci&#243;n. Sin tus respuestas esa b&#250;squeda no ser&#225; posible. Esperamos tambi&#233;n que los relatos te hayan ayudado a reflexionar sobre la salud mental y las redes de soporte social.",
+                "de": "&#x1F973; &#161;Felicidades! Ya has llegado a responder a todos los 222 relatos que escribieron las personas coinvestigadoras.\n\n&#127941; Enhorabuena! Eres una de las diez primeras personas que han llegado a este punto. Te agradecemos mucho tu dedicaci&#243;n. Sin tus respuestas esa b&#250;squeda no ser&#225; posible. Esperamos tambi&#233;n que los relatos te hayan ayudado a reflexionar sobre la salud mental y las redes de soporte social."
+            },
+            "vars":[
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+		    ],
+	        "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "SA",
+            "text": {
+                "ca": "&#128202; Les teves respostes i les respostes de les altres persones participants han constru&iuml;t un conjunt considerable de dades que no existia abans. Gr&#225;cies a la dedicaci&#243; de m&#233;s de 500 participants, ja tenim m&#233;s de deu mil respostes als relats!\n\n&#x1F91D; Ara toca interpretar plegats les dades recollides pel xatbot. Amb aquest esfor&#231; conjunt, podrem formular propostes i accions per enfortir les xarxes de suport social en salut mental. Ben aviat, a trav&#233;s d'aquest canal, et donarem m&#233;s detalls sobre aquesta part tan emocionant d'aquesta recerca." ,
+                "es": "&#128202; Las respuestas tuyas y las de los dem&#225;s participantes han construido un conjunto considerable de datos que no exist&#237;a antes. Gracias a la dedicaci&#243;n de m&#225;s de 500 participantes, &#161;ya tenemos m&#225;s de diez mil respuestas a los relatos!\n\n&#x1F91D; Ahora toca interpretar juntos los datos recogidos por el chatbot. Con este esfuerzo conjunto, podremos formular propuestas y acciones para fortalecer las redes de soporte social en salud mental. En breve, a trav&#233;s de este canal, te daremos m&#225;s detalles sobre esta parte tan emocionante de esta investigaci&#243;n.",
+                "en": "&#128202; Las respuestas tuyas y las de los dem&#225;s participantes han construido un conjunto considerable de datos que no exist&#237;­a antes. Gracias a la dedicaci&#243;n de m&#225;s de 500 participantes, &#161;ya tenemos m&#225;s de diez mil respuestas a los relatos!\n\n&#x1F91D; Ahora toca interpretar juntos los datos recogidos por el chatbot. Con este esfuerzo conjunto, podremos formular propuestas y acciones para fortalecer las redes de soporte social en salud mental. En breve, a trav&#233;s de este canal, te daremos m&#225;s detalles sobre esta parte tan emocionante de esta investigaci&#243;n.",
+                "de": "&#128202; Las respuestas tuyas y las de los dem&#225;s participantes han construido un conjunto considerable de datos que no exist&#237;­a antes. Gracias a la dedicaci&#243;n de m&#225;s de 500 participantes, &#161;ya tenemos m&#225;s de diez mil respuestas a los relatos!\n\n&#x1F91D; Ahora toca interpretar juntos los datos recogidos por el chatbot. Con este esfuerzo conjunto, podremos formular propuestas y acciones para fortalecer las redes de soporte social en salud mental. En breve, a trav&#233;s de este canal, te daremos m&#225;s detalles sobre esta parte tan emocionante de esta investigcai&#243;n."
+            },
+            "vars":[
+                {
+                    "name": "cont",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Continuar",
+                            "es": "Continuar",
+                            "en": "Continue",
+                            "de": "Weiter"
+                        }
+                    ],
+                    "values": [
+                        "si"
+                    ]
+                }
+		    ],
+	        "wait": null,
+            "next": "3"
+          },
+       "3": {
+            "type": "NA",
+            "text": {
+                "ca": "&#128270; Mentrestant, pots trobar m&#233;s informaci&#243; a https://coactuem.ub.edu/processes/interpretacio-dades?locale=ca. S&#225;pigues que sempre escriure'ns a info@coactuem.ub.ed",
+                "es": "&#128270; Mientras tanto, puedes encontrar m&#225;s informaci&#243;n en https://coactuem.ub.edu/processes/interpretacio-dades?locale=es.Sepa que siempre puedes escribirnos en info@coactuem.ub.edu. ",
+                "en":  "&#128270; Mientras tanto, puedes encontrar m&#225;s informaci&#243;n en https://coactuem.ub.edu/processes/interpretacio-dades?locale=es. Sepa que siempre puedes escribirnos en info@coactuem.ub.edu. ",
+                "de": "&#128270; Mientras tanto, puedes encontrar m&#225;s informaci&#243;n en https://coactuem.ub.edu/processes/interpretacio-dades?locale=es. Sepa que siempre puedes escribirnos en info@coactuem.ub.edu. "
+            },
+            "wait": null,
+            "next": "4"
+        },
+        "4": {
+            "type": "NA",
+            "text": {
+                "ca": "Ah! I recorda: Pots deixar el xatbot en marxa. D'aquesta manera rebr&#225;s informaci&#243; sobre el projecte de manera peri&#242;dca.",
+                "es": "&#161;Ah! Y recuerda: Puedes dejar el chatbot en marcha. De esta forma recibir&#225;s informaci&#243;n sobre el proyecto de forma peri&#243;dica.",
+                "en": "&#161;Ah! Y recuerda: Puedes dejar el chatbot en marcha. De esta forma recibir&#225;s informaci&#243;n sobre el proyecto de forma peri&#243;dica.",
+                "de": "&#161;Ah! Y recuerda: Puedes dejar el chatbot en marcha. De esta forma recibir&#225;s informaci&#243;n sobre el proyecto de forma peri&#243;dica."
+            },
+            "wait": null,
+            "next": "5"
+        },
+        "5": {
+            "type": "NA",
+            "text": {
+                "ca": "&#128170; Una vegada m&#233;s: Gr&#225;cies per participar a la recerca. Una forta abra&#231;ada i visca les xarxes de suport social!",
+                "es": "&#128170; Una vez m&#225;s: Gracias por participar en la b&#250;squeda de ciencia ciudadana social de CoActuem por la Salut Mental. &#161;Un fort&#237;­simo abrazo!",  
+                "en": "&#128170; Una vez m&#225;s: Gracias por participar en la b&#250;squeda de ciencia ciudadana social de CoActuem por la Salut Mental. &#161;Un fort&#237;­simo abrazo!",  
+                "de": "&#128170; Una vez m&#225;s: Gracias por participar en la b&#250;squeda de ciencia ciudadana social de CoActuem por la Salut Mental. &#161;Un fort&#237;­simo abrazo!"
+                },
+            "wait": null,
+            "next": null
+        }
+    }
+}

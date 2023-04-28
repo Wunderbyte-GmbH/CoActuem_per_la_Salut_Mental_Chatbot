@@ -1,0 +1,144 @@
+{
+    "_id": "world",
+    "initial_messages": [
+        "1a"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1a": {
+            "type": "NA",
+            "text": {
+                "ca": "Bon dia!\n\nJa has respost als primers relats. Moltes gràcies! <b>Ara pots configurar el teu fus horari.</b>.",
+                "es": "¡Buenos días!\n\nYa has respondido a los primeros relatos. ¡Muchas gracias!  <b>Ahora puedes configurar tu huso horario.</b>",
+                "en": "Hello!\n\nYou’ve now replied to the first batch of stories. Many thanks! Now it’s time to <b>set your time zone</b>.",
+                "de": "Guten Tag!\n\nDu hast bereits die Fragen zu den ersten Erzählungen beantwortet. Vielen Dank! <b>Du kannst jetzt deine Zeitzone festlegen.</b>"
+            },
+            "wait": null,
+            "next": "1b"
+        },
+        "1b": {
+            "type": "NA",
+            "text": {
+                "ca": "Les persones que participen en aquest xatbot viuen a diferents racons del món 🌎. Quan surt el sol a Lima, a Barcelona ja és migdia. Et volem enviar relats i missatges tan sols entre les 07:00h i les 21:00h, però del teu fus horari!",
+                "es": "Las personas que participan en este chatbot viven en diferentes rincones del mundo 🌎. Cuando sale el sol en Lima, en Barcelona ya es mediodía. Queremos enviarte relatos y mensajes solo entre las 07:00h y las 21:00h, ¡pero de tu huso horario!",
+                "en": "There are chatbot participants from all over the world 🌎. When the sun is rising in Lima, it’s already midday in Barcelona. We’d like to send you stories and messages between 7am (07:00) and 9pm (21:00) in your time zone.",
+                "de": "Die Teilnehmer*innen an diesem Chatbot leben in verschiedenen Teilen der Welt 🌎. Wenn die Sonne in Lima aufgeht, ist es in Barcelona bereits Mittag. Wir möchten dir die Erzählungen und Benachrichtigungen zwischen 07:00h und 21:00h zuschicken - aber in deiner Zeitzone!"
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "SA",
+            "text": {
+                "ca": "Vols que el xatbot s’adapti al teu fus horari?",
+                "es": "¿Quieres que el chatbot se adapte a tu huso horario?",
+                "en": "Do you want to set the chatbot to your own time zone?",
+                "de": "Möchtest du, dass sich der Chatbot an deine Zeitzone anpasst?"
+            },
+            "vars": [
+                {
+                    "name": "c",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Sí",
+                            "es": "Sí",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "No",
+                            "es": "No",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "si",
+                        "no"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "c": {
+                    "si": "3si",
+                    "no": "3no"
+                }
+            }
+        },
+        "3si": {
+            "type": "WA",
+            "text": {
+                "ca": "Molt bé! Així doncs, escriu la teva hora exacta. Si us plau, fes servir el format de 24 hores escrivint els dígits de la manera que indiquem. Per exemple, <b>09:15</b> si és un quart de deu del matí o <b>17:00</b> si són les cinc de la tarda. Si no vols respondre, si us plau, escriu <b>NO</b>.",
+                "es": "¡Muy bien! Escribe entonces tu hora exacta. Por favor, utiliza el formato de 24 horas escribiendo los dígitos de la forma que indicamos. Por ejemplo,  <b>09:15</b> si son las nueve y cuarto de la mañana o <b>17:00</b> si son las cinco de la tarde. Si no quieres responder, por favor, escribe <b>NO</b>.",
+                "en": "Great! Please enter the local time where you are. Use the 24-hour clock to write the time, e.g. if it’s a quarter past nine in the morning, write <b>09:15</b>; if it’s five o’clock in the afternoon, write <b>17:00</b>. If you want to skip this step, simply type: <b>NO</b>. ",
+                "de": "Sehr gut! Schreib nun die genaue Uhrzeit auf. Benutze dabei bitte das 24-Stunden-Format und verwende die Zahlen so, wie wir dir hier erklären. Zum Beispiel bedeutet  <b>09:15</b> Viertel nach neun  (oder viertel zehn) vormittags, oder <b>17:00</b> steht für fünf Uhr nachmittags. Wenn du nicht antworten willst, schreib bitte <b>NO</b>."
+            },
+            "vars": [
+                {
+                    "name": "t"
+                }
+            ],
+            "save": "time",
+            "wait": null,
+            "next": null
+        },
+        "3si_nvr": {
+            "type": "NA",
+            "text": {
+                "ca": "Veiem que no vols respondre! T’enviarem relats i missatges entre les 07:00h i les 21:00h, hora local de Barcelona, Espanya. Escrivint o clicant /world, sempre podràs tornar a aquest diàleg.",
+                "es": "¡Vemos que no quieres responder! Te enviaremos relatos y mensajes entre las 07:00h y las 21:00h hora local de Barcelona, España. Escribiendo o clicando /world, siempre podrás volver a este diálogo.",
+                "en": "As you haven’t entered your local time, we’ll send you stories and messages between 7am (07:00) and 9pm (21:00) Barcelona (Spain) time. You can open this dialogue box again at any time by typing or clicking /world.",
+                "de": "Wir sehen, dass du nicht antworten möchtest! Wir werden dir die Erzählungen und Benachrichtigungen zwischen 07:00h und 21:00h Ortszeit Barcelona, Spanien, schicken. Wenn du /world schreibst oder anklickst, kannst du zu diesem Dialog zurückkommen."
+            },
+            "wait": null,
+            "next": null
+        },
+        "3si_else": {
+            "type": "WA",
+            "text": {
+                "ca": "No hem rebut la resposta en el format correcte per poder-la registrar. Si us plau, escriu l’hora en format <b>hh:mm</b>, en què <b>hh</b> és l’hora en format de 24 hores i <b>mm</b> són els minuts.",
+                "es": "No hemos recibido la respuesta en el formato correcto para poder registrarla. Por favor, escribe la hora en formato <b>hh:mm</b>, donde <b>hh</b> es la hora en formato de 24 horas y <b>mm</b> son los minutos.",
+                "en": "You haven’t entered your local time in the correct format. Please use the format <b>hh:mm</b>, where <b>hh</b> is the hour on a 24-hour clock and <b>mm</b> are the minutes. ",
+                "de": "Wir haben die Antwort nicht im korrekten Format erhalten, um sie speichern zu können. Bitte schreib die Uhrzeit im Format <b>hh:mm</b>. Dabei steht<b>hh</b>h für die Stunde im 24-Stunden Format, <b>mm</b> steht für die Minuten. "
+            },
+            "vars": [
+                {
+                    "name": "t"
+                }
+            ],
+            "save": "time",
+            "wait": null,
+            "next": null
+        },
+        "3si_c": {
+            "type": "NA",
+            "text": {
+                "ca": "Ens has escrit que la teva hora local és <b>{var}</b>. Gràcies! Escrivint o pitjant /world, sempre podràs tornar a aquest diàleg.",
+                "es": "Nos has escrito que tu hora local es <b>{var}</b>. ¡Gracias! Escribiendo o pulsando /world, siempre podrás volver a este diálogo.",
+                "en": "You’ve told us that your local time is <b>{var}</b>. Thanks! You can open this dialogue box again at any time by typing or clicking /world. ",
+                "de": "Du hast uns geschrieben, dass deine Ortszeit <b>{var}</b> ist. Danke! Wenn du /world schreibst oder anklickst, kannst du zu diesem Dialog zurückkommen. "
+            },
+            "display": {
+                "var": "{time}"
+            },
+            "wait": null,
+            "next": null
+        },
+        "3no": {
+            "type": "NA",
+            "text": {
+                "ca": "Entesos! T’enviarem relats i missatges entre les 07:00h i les 21:00h, hora local de Barcelona, Espanya. Escrivint o clicant /world, sempre podràs tornar a aquest diàleg.",
+                "es": "¡Entendido! Te enviaremos relatos y mensajes entre las 07:00h y las 21:00h, hora local de Barcelona, España. Escribiendo o clicando /world, siempre podrás volver a este diálogo.",
+                "en": "Got it! We’ll send you stories and messages between 7am (07:00) and 9pm (21:00) Barcelona time (Spain). You can open this dialogue box again at any time by typing or clicking /world.",
+                "de": "Einverstanden! Wir werden dir die Erzählungen und Benachrichtigungen zwischen 07:00h und 21:00h der Ortszeit in Barcelona, Spanien, schicken. Wenn du /world schreibst oder anklickst, kannst du zu diesem Dialog zurückkommen."
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

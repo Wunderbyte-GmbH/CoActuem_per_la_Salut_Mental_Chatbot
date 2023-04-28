@@ -1,0 +1,148 @@
+{
+    "_id": "frequencia_relats",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Una pregunta...",
+                "es": "Una pregunta...",
+                "en": "A quick question...",
+                "de": "Eine Frage..."
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "NA",
+            "text": {
+                "ca": "T’agrada la freqüència amb què t’enviem els relats? Voldríem compartir amb tu un relat cada dia, però potser et sembla poc o potser massa. De tota manera, tingues en compte que sempre podràs agafar-te el temps que vulguis per respondre al relat. Fins que no el responguis, no t’enviarem el següent.",
+                "es": "¿Te gusta la frecuencia con la que te mandamos los relatos? Desearíamos compartir contigo un relato cada día, pero quizá te parezca poco o quizá demasiado. De todos modos, ten en cuenta que siempre podrás tomarte el tiempo que quieras para responder al relato. No te mandaremos el siguiente hasta que lo hayas respondido.",
+                "en": "Are you happy with how often we send you the stories? We’d like to send you one story every day, but this might be too little or too much for you… You can take as much time as you like to reply to each story. We won’t send you the next story until you’ve replied to the current one.",
+                "de": "Bist du zufrieden mit dem zeitlichen Abstand, in dem wir dir diese Erzählungen schicken? Wir möchten jeden Tag eine Erzählung mit dir teilen, aber vielleicht scheint dir das zu häufig oder vielleicht nicht häufig genug. Du kannst dir aber auf jeden Fall immer so viel Zeit nehmen, wie du möchtest, um auf die Fragen zu jeder Erzählung zu antworten. Solange du nicht geantwortet hast, schicken wir dir keine weiteren Erzählungen."
+            },
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "SA",
+            "text": {
+                "ca": "Amb quina freqüència voldries rebre relats?",
+                "es": "¿Con qué frecuencia desearías recibir relatos?",
+                "en": "How often would you like to receive a story?",
+                "de": "Wie oft möchtest du die Erzählungen erhalten?"
+            },
+            "vars": [
+                {
+                    "name": "freq",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Dos al dia",
+                            "es": "Dos al día", 
+                            "en": "Twice a day",
+                            "de": "Zweimal pro Tag"
+
+                        },
+                        {
+                            "ca": "Un al dia",
+                            "es": "Uno al día",
+                            "en": "Once a day",
+                            "de": "Einmal pro Tag"
+                        },
+                        {
+                            "ca": "Tres a la setmana",
+                            "es": "Tres a la semana",
+                            "en": "Three times a week",
+                            "de": "Dreimal pro Woche"
+                        },
+                        {
+                            "ca": "Em sembla bé tal com ho feu ara",
+                            "es": "Me parece bien tal como lo hacéis ahora",
+                            "en": "I’m happy with the current frequency",
+                            "de": "Ich bin zufrieden damit, wie es jetzt ist"
+                        }
+                    ],
+                    "values": [
+                        "6",
+                        "18",
+                        "42",
+                        "dontsave"
+                    ]
+                }
+            ],
+            "save": "freq",
+            "wait": null,
+            "next": {
+                "freq": {
+                    "6": "4_8",
+                    "18": "4_24",
+                    "42": "4_56",
+                    "dontsave": "4_None"
+                }
+            }
+        },
+        "4_8": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies! T’enviarem dos relats al dia de mitjana.",
+                "es": "¡Gracias! Te mandaremos dos relatos al día de promedio.",
+                "en": "Thanks! We’ll send you two stories a day on average.",
+                "de": "Danke! Wir werden im Durchschnitt zwei Erzählungen pro Tag schicken."
+            },
+            "wait": null,
+            "next": "5"
+        },
+        "4_24": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies! T’enviarem aproximadament un relat al dia.",
+                "es": "¡Gracias! Te mandaremos aproximadamente un relato al día.",
+                "en": "Thanks! We’ll send you one story a day on average.",
+                "de": "Danke! Wir werden dir in der Regel eine Erzählung pro Tag schicken."
+            },
+            "wait": null,
+            "next": "5"
+        },
+        "4_56": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies! T’enviarem entre dos i tres relats a la setmana.",
+                "es": "¡Gracias! Te mandaremos entre dos y tres relatos a la semana.",
+                "en": "Thanks! We’ll send you between two and three stories a week.",
+                "de": "Danke! Wir werden dir zwischen zwei und drei Erzählungen pro Woche schicken."
+            },
+            "wait": null,
+            "next": "5"
+        },
+        "4_None": {
+            "type": "NA",
+            "text": {
+                "ca": "Gràcies! Et seguim enviant relats amb la mateixa freqüència. Si cliques o escrius /freq, sempre pots canviar aquesta freqüència.",
+                "es": "¡Gracias! Seguimos mandándote relatos con la misma frecuencia. Si clicas o escribes /freq, siempre puedes cambiar esta frecuencia.",
+                "en": "Thanks! We’ll stick to the current system for sending you stories. You can change how often you receive stories by clicking or typing /freq.",
+                "de": "Danke! Wir werden dir die Erzählungen im gleichen zeitlichen Abstand schicken. Wenn du /freq schreibst oder anklickst, kannst du jederzeit den Zeitabstand ändern."
+            },
+            "wait": null,
+            "next": null
+        },
+        "5": {
+            "type": "NA",
+            "text": {
+                "ca": "Si cliques o escrius /freq, sempre pots canviar aquesta freqüència.",
+                "es": "Si clicas o escribes /freq, siempre puedes cambiar esta frecuencia.",
+                "en": "You can change how often you receive stories by clicking or typing /freq.",
+                "de": "Wenn du /freq schreibst oder anklickst, kannst du jederzeit die Zeitabstände ändern."
+            },
+            "action": "update_rhythm",
+            "wait": null,
+            "next": null
+        }
+    }
+}

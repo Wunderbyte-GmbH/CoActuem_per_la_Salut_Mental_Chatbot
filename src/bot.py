@@ -135,7 +135,7 @@ class Bot(object):
         """
         loads info from clients and from games into appbot
         """
-        User.preload_all_users(self) # from user_info.py
+        User.preload_all_users(self) # from user.py
         Game.preload_all_games()     # from game.py
         
     def restart_bot(self):
@@ -495,7 +495,8 @@ class Bot(object):
                 raise ValueError('User already in list')
 
             self._waiting_list.append(user_info)
-            self._busy_list.remove(user_info)
+            if user_info in self._busy_list:
+                self._busy_list.remove(user_info)
         except Exception as e:
             print("[E] add_waiting {}: {}".format(user_info.get_user_id(), e))
             return False
@@ -506,10 +507,12 @@ class Bot(object):
         
         """
         if len(self._waiting_list) > 0:
+            print("waiting_list: ", self._waiting_list)
             user_info = self._waiting_list[-1]
             self.add_busy(user_info)
             return user_info
-
+        else:
+            print("No one in waiting_list")
         return None
 
     def add_event(self, event):

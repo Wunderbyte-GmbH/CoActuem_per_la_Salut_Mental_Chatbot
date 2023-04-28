@@ -947,10 +947,10 @@
         "out": {
             "type": "NA",
             "text": {
-                "ca": "👍 Ens alegrem que hagis decidit participar en aquesta recerca de ciència ciutadana! Et donem la benvinguda! Ben aviat rebràs nous missatges.",
-                "es": "👍 ¡Nos alegramos de que hayas decidido participar en esta investigación de ciencia ciudadana! ¡Te damos la bienvenida! Muy pronto recibirás nuevos mensajes.",
-                "en": "👍 We’re delighted you’ve decided to take part in this citizen science project! Welcome on board! You’ll soon receive some new messages.",
-                "de": "👍 Wir freuen uns, dass du entschieden hast, an dieser bürgerwissenschaftlichen Forschung teilzunehmen! Und wir heißen dich willkommen! Du wirst in Kürze neue Benachrichtigungen erhalten."
+                "ca": "👍 Ens alegrem que hagis decidit participar en aquesta recerca de ciència ciutadana! Et donem la benvinguda!",
+                "es": "👍 ¡Nos alegramos de que hayas decidido participar en esta investigación de ciencia ciudadana! ¡Te damos la bienvenida!",
+                "en": "👍 We’re delighted you’ve decided to take part in this citizen science project! Welcome on board!",
+                "de": "👍 Wir freuen uns, dass du entschieden hast, an dieser bürgerwissenschaftlichen Forschung teilzunehmen! Und wir heißen dich willkommen!"
             },
             "action": "legal_yes",
             "wait": null,

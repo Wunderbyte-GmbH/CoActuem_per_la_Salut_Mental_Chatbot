@@ -95,13 +95,14 @@ class User(object):
     def preload_all_users(appbot):
         for client in clients.find({}):
             appbot.get_user_info(client['_id'], client)
+            time.sleep(1)
     
     async def sender_is_admin(self):
         """
         check if sender of text message is admin, before handling his message
         """
         is_admin = False
-        if 'admin_pass' in self.info.data and self.info.data['admin_pass'] == 'put here some pwd you like': 
+        if 'admin_pass' in self.info.data and self.info.data['admin_pass'] == 'put_here(some*pwd_you!like': 
             is_admin = True
         return is_admin
         
@@ -207,6 +208,7 @@ class User(object):
             # saves client data for users in busy_list and waiting_list to mongoDB.clients                                
             for player in list_of_active_users:                                                                           
                 player.sync_save()                                                                                        
+            print("sync-saved busy users")
                 
     async def admin_command_trigger_game_only_for_admin_and_partner(self, tokens, tokens_sensitive):
         """
@@ -393,7 +395,6 @@ class User(object):
                 self.info.data['current_game'] = welcome
                 await self.info.data['current_game'].perform_next_action(User.appbot, self.info)
             """
-            print("I was here: ", User.appbot._busy_list)
             await self.start_game("welcome", add_busy=True, skip_status=False, skip_waiting=False)
 
         # move up ESSENTIAL commands, like baja, alta. Make sure game isn't deleted with "Baja", complete Baja list below.
@@ -599,8 +600,11 @@ class User(object):
 
         if not self.info.data['current_game']:
             self.info.data['current_game'] = Game(game_id, [self.info], skip_status=skip_status, skip_waiting=skip_waiting)
-            User.appbot.typing_event(self.info.get_user_id, timeout, lambda: self.info.data['current_game'].perform_next_action(User.appbot, self.info))
-
+            try:
+                User.appbot.typing_event(self.info.get_user_id, timeout, lambda: self.info.data['current_game'].perform_next_action(User.appbot, self.info))
+                await self.info.save()                  # user_info function save
+            except:
+                print(self.info.get_user_id, " typing event and performing next action could not be done.")
 
     async def handle_on_callback(self, query_data):
         """                                                                                                                          
@@ -623,5 +627,12 @@ class User(object):
         """                                                                                                                               
         saves user info with user_info.py save function: updates mongoDB                                                                  
         """                                                                                                                               
+        if isinstance(ex, telepot.exception.BadFlavor):
+            try:
+                Tele_id_kicked = ex.offender["chat"]["id"] # has type int
+                print("user with Tele id ", Tele_id_kicked, " stopped the bot or tried to start it while still being in DB.")
+            except:
+                print("[E] Telegram id could not be retrieved from BadFlavor error message.")
+        
         print("Closing user: {}".format(ex))                                                                                              
         await self.info.save()

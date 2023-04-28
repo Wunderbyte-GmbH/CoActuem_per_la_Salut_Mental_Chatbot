@@ -24,7 +24,8 @@ dbclient = pymongo.MongoClient(serverSelectionTimeoutMS=1000)
 database = dbclient.experiment_db
 bot      = database.bot
 
-########## get list of relatos, shuffle order ###############
+########## get list of stories and dialogues,            ###############
+########## in the order as will be sent to participants  ###############
 filename = "sequence.txt"
 with open(filename) as f:
     content = f.readlines()

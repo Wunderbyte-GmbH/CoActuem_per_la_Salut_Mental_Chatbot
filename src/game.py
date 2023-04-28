@@ -26,6 +26,9 @@ import time
 import telepot
 from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
 from functools import partial
+import datetime
+import pytz
+import asyncio
 
 # internal libraries
 from src.event import Event
@@ -60,7 +63,35 @@ async def on_welcome_ended_yes(appbot, user_info, game):
     # change player status to INBOT
     game._players[0].data['status'] = Status.INBOT
     # check waiting queue 
-    #appbot.add_event(Event.after(5, lambda: appbot.check_waiting_queue(game._players)))
+    # appbot.add_event(Event.after(5, lambda: appbot.check_waiting_queue(game._players)))
+    participant_feedback   = bot.find_one({"_id": 'objects_to_be_sent'})["feed_back_number_participants"]
+    number_active_users    = sum([1 for client in clients.find({}) if client["status"] ==1])
+    p_numbers_bot          = [int(n) for n in participant_feedback.keys()]
+    if number_active_users < max(p_numbers_bot):
+        next_smallest_p_number =  next((p_numbers_bot[x] for x in range(len(p_numbers_bot)) if number_active_users >= p_numbers_bot[x] and p_numbers_bot[min(x+1,len(p_numbers_bot)-1)] >= number_active_users), 0)
+    else:
+        next_smallest_p_number = max(p_numbers_bot)
+    print("number_active_users ", number_active_users)
+    print("next_smallest_p_number", next_smallest_p_number)
+
+    if next_smallest_p_number > 0:#99:
+        game_id   = participant_feedback[str(next_smallest_p_number)]
+        game_info = GameInfo.get_info(game_id)
+        skip = []
+        active_user_infos = [appbot.get_user_info(client["_id"]) for client in clients.find({}) if client["status"] ==1]
+        #print(active_user_infos)
+        for player in active_user_infos:
+            if game_id in player.data['games_done']:
+                skip += [player]
+            elif not player.data['current_game']:
+                game = Game(game_id, [player])
+                player.data['current_game'] = game
+                #await player.data['current_game'].perform_next_action(appbot, player)
+                appbot.typing_event(player.get_user_id(), 2, partial(player.data['current_game'].perform_next_action, appbot, player))
+        for player in skip:
+            appbot.add_waiting(player)
+
+
     
 async def on_update_rhythm(appbot, user_info, game):
     user_id = user_info.data['_id']
@@ -251,10 +282,11 @@ class Game(object):
     """
     storage = {}
 
-    def __init__(self, game_id, player_infos, answers=None, timestamps_answers=None, skip_status=False, skip_waiting=False):
+    def __init__(self, game_id, player_infos, answers=None, timestamps_answers=None, timestamps_sent_messages=None, skip_status=False, skip_waiting=False):
         self._players             = player_infos
         self._answers             = answers if answers else {}
         self._timestamps_answers  = timestamps_answers if timestamps_answers else {}
+        self._timestamps_sent_messages  = timestamps_sent_messages if timestamps_sent_messages else {}
         self._ended               = []
         self._start_time          = time.time() # get current time in sec
         self._end_time            = 0           # get current time in sec
@@ -344,12 +376,12 @@ class Game(object):
         player.data['current_game'] = game
         # warn equip OS which game we play next
         if options.dev:
-            await appbot.send_message(user_id, 'Hola equipo, the next dialogue is called: <b>' + str(game_id) + "</b>. ")
+            await appbot.send_message(user_id, 'Dear Debugger, the next dialogue is called: <b>' + str(game_id) + "</b>. ")
         # start the game with the user
         await player.data['current_game'].perform_next_action(appbot, player)        
 
 
-    async def perform_next_action(self, appbot, user_info, inputs=None):
+    async def perform_next_action(self, appbot, user_info, inputs=None, resend_last=False):
         """
         1) get message, set _last message
         2) if game has ended, end game
@@ -367,16 +399,18 @@ class Game(object):
         'CA' : compare games: presoner 1,2,3 y snowdrift
         'WA' : wait answer (await answer message type without buttons, no next message given)
         """
-        
-        # get message content and update _last_message 
-        if self._message_ids[user_info]:
-            # get the current message content from GameInfo for user
-            message = self.info.data['messages'][self._message_ids[user_info]]
-            # update _last_message
-            self._last_message[user_info] = message
-        else:
-            # get the last message content from Game for user
+        if resend_last:
             message = self._last_message[user_info]
+        else:
+            # get message content and update _last_message 
+            if self._message_ids[user_info]:
+                # get the current message content from GameInfo for user
+                message = self.info.data['messages'][self._message_ids[user_info]]
+                # update _last_message
+                self._last_message[user_info] = message
+            else:
+                # get the last message content from Game for user
+                message = self._last_message[user_info]
 
         # If game has ended for this user, stop!
         if user_info.get_user_id() in self._ended:
@@ -393,7 +427,6 @@ class Game(object):
 
         # get message text in the correct language
         text = user_info.locale(message['text'])
-
         # alter message text in case it has special formatting set by the display field in gamesInfo
         # where variables can be replaced by given answers
         
@@ -428,6 +461,11 @@ class Game(object):
         
         # send message with all gathered objects/items
         sent = await appbot.send_message(user_info.get_user_id(), text, img=img, buttons=buttons, pdf=pdf)
+        # update _timestamps_sent_messages #RETHINK
+        print("message: ", message["_id"])
+        time_now = time.time()
+        new_time = dict(zip([str(time_now).replace(".", "_")], [message["_id"]]))
+        self._timestamps_sent_messages.update(new_time)
         
         # get necessary info to edit sent messages to delete buttons
         if buttons is not None and sent is not None:
@@ -564,7 +602,17 @@ class Game(object):
             if int(token[0:2]) < 24 and int(token[3:5]) < 60:
                 hctf = True
         return hctf               
-        
+
+    def calc_timeshift(self, token):
+        """
+        calculates timeshift in seconds that can be stored as timeshift in database
+        """
+        hour_there, minute_there = int(token[0:2]), int(token[3:5])
+        hour_here,  minute_here  = datetime.datetime.now().astimezone(pytz.timezone("Europe/Madrid")).hour, datetime.datetime.now(pytz.timezone("Europe/Madrid")).astimezone().minute
+        time_there_seconds =  (hour_there*60 + minute_there)*60
+        time_here_seconds  =  (hour_here*60  + minute_here)*60
+        timeshift = ((time_there_seconds-time_here_seconds) + 12.*3600)%(24.*3600)-12.*3600
+        return timeshift
             
     async def react_on_world_written_input(self, appbot, user_info, tokens): 
         user_id = user_info.get_user_id()
@@ -573,15 +621,18 @@ class Game(object):
         if message_id_in_world in ["3si", "3si_else"]:
             token = ' '.join(tokens)
             self._answers["time"] = "'"+' '.join(tokens)+"'" # extra 's to avoid evaluate function
-            user_info.data[self._last_message[user_info]['save']] = ' '.join(tokens).replace("'", "’")
-            # Save new state in user_info
-            await user_info.save()
             # set the next message id accoding to whether input has format hh:mm
             hcf = self.has_correct_time_format(token)
             if token == "NO":
                 self._message_ids[user_info] = "3si_nvr"
             elif hcf: 
                 self._message_ids[user_info] = "3si_c"
+                user_info.data[self._last_message[user_info]['save']] = ' '.join(tokens).replace("'", "’")
+                # Save new state in user_info
+                await user_info.save()
+                print(self.calc_timeshift(token))
+                user_info.data["timeshift_in_seconds"] = self.calc_timeshift(token)
+                await user_info.save()
             else: 
                 self._message_ids[user_info] = "3si_else"
             # make this message get to the other player
@@ -693,7 +744,7 @@ class Game(object):
                     
                     # update _timestamps_answers
                     time_now = time.time()
-                    new_time = dict(zip([str(time_now)], [var_name]))
+                    new_time = dict(zip([str(time_now).replace(".", "_")], [var_name]))
                     self._timestamps_answers.update(new_time)
                     
             # Save inputs if any
@@ -701,6 +752,7 @@ class Game(object):
                 # the user might decide, not to change the configuration. Then the stored value shouldnt be overwritten.
                 if not inputs == 'dontsave':
                     user_info.data[self._last_message[user_info]['save']] = inputs
+                    print("saved inputs: "+inputs+" to "+str(self._last_message[user_info]['save']))
 
             # next_id, can be string or dict
             next_id = self._last_message[user_info]['next']
@@ -732,17 +784,20 @@ class Game(object):
                         await self.perform_next_action(appbot, player, inputs)
 
 
-            if not ca_incomplete:
-                if self._last_message[user_info]['wait']:
-                    wait_time = self._last_message[user_info]['wait']
+            if not ca_incomplete: # TODO very bad to set the waiting time here in the middle of a lot of other stuff
+                if options.dev:
+                    wait_time = 0
                 else:
-                    try:
-                        wait_time = len(user_info.locale(self.info.data['messages'][self._message_ids[user_info]]['text'])/100)
-                        print(" I was here and waited even", wait_time)
-                        if wait_time > 20:
-                            wait_time = min(wait_time, random.uniform(12, 20))
-                    except:
-                        wait_time = random.uniform(4, 6)
+                    if self._last_message[user_info]['wait']:
+                        wait_time = self._last_message[user_info]['wait']
+                    else:
+                        try:
+                            wait_time = len(user_info.locale(self.info.data['messages'][self._message_ids[user_info]]['text'])/100)
+                            print(" I was here and waited even", wait_time)
+                            if wait_time > 20:
+                                wait_time = min(wait_time, random.uniform(12, 20))
+                        except:
+                            wait_time = random.uniform(4, 6)
 
                 #print("{} > Waiting: {}s".format(user_info.get_user_id(), wait_time))
 
@@ -778,21 +833,37 @@ class Game(object):
     async def resume(self, appbot, user_info):
         """
         Try to resume game where it was interrupted
-        """   
-        if hasattr(self, '_last_message') and user_info in self._last_message and 'type' in self._last_message[user_info]:
-            if self._last_message[user_info]['type'] == 'NA':
-                if user_info.get_user_id() in self._ended:
-                    await self.perform_next_action(appbot, user_info, None)
+        """
+        try:
+            if hasattr(self, '_last_message') and self._last_message and not self._last_message[user_info] == None:
+                if (user_info in self._last_message) and ('type' in self._last_message[user_info]):
+                    if self._last_message[user_info]['type'] == 'NA':
+                        if user_info.get_user_id() in self._ended:
+                            await self.perform_next_action(appbot, user_info, None)
+                        else:
+                            await self.wait_for_next_action(appbot, user_info, force=True)
+                    elif self._last_message[user_info]['type'] == 'SA' and (time.time()-self._start_time) > 5*60:#This time, as nobody was able to answer after the error of 3rd Jan, we resend the last message to all # 7*24*60*60: # if after 7 days, started game isn't moved on, send last message again
+                        resend_last = await asyncio.shield(self.perform_next_action(appbot, user_info, None, resend_last=True))
+                        print("last message was resent (>7 days after starting the game) to: ", user_info.get_user_id())
+                        time.sleep(5)
+                    elif self._last_message[user_info]['type'] == 'SA' and self._ignore[user_info]:
+                        await self.perform_next_action(appbot, user_info, None)
+                    elif self._last_message[user_info]['type'] == 'CA' and self._ignore[user_info]:
+                        await self.wait_for_next_action(appbot, user_info, None, force=True)
                 else:
-                    await self.wait_for_next_action(appbot, user_info, force=True)
-        
-            elif self._last_message[user_info]['type'] == 'SA' and self._ignore[user_info]:
-                await self.perform_next_action(appbot, user_info, None)
-        
-            elif self._last_message[user_info]['type'] == 'CA' and self._ignore[user_info]:
-                await self.wait_for_next_action(appbot, user_info, None, force=True)
-        else:
-            await self.perform_next_action(appbot, user_info, None)        
+                    await self.perform_next_action(appbot, user_info, None)        
+        except:
+             # TODO: set initial_message = lastmessage
+             print("some error like TypeError: argument of type 'NoneType' is not iterable", user_info.get_user_id())
+             try:
+                 # try to resend game from scratch
+                 if user_info.data.get('current_game', {}) != {}:
+                     game_id = user_info.data['current_game'].get_game_id()
+                     user_id = user_info.get_user_id()
+                     await self.start_game(appbot, game_id, user_id)
+             except:
+                 print("game with empty _last_message could not be resent.")
+
 
     def to_game_dict(self, all_data=True):
         """
@@ -805,6 +876,7 @@ class Game(object):
             'players': list_of_ids(self._players),
             'answers': self._answers,
             'timestamps_answers': self._timestamps_answers,
+            'timestamps_sent_messages': self._timestamps_sent_messages,            
             'ended': self._ended,
             'start_time': self._start_time,
             'end_time': self._end_time,
@@ -838,7 +910,7 @@ class Game(object):
             except:
                 pass
 
-            game = Game(game_dict['gameId'], players, game_dict['answers'], game_dict.get('timestamps_answers', {}))
+            game = Game(game_dict['gameId'], players, game_dict['answers'], game_dict.get('timestamps_answers', {}), game_dict.get('timestamps_sent_messages', {}))
 
             # Build player dependant statuses
             for player in game.get_players():

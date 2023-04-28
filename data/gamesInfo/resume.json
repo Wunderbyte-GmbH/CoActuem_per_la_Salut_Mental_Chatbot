@@ -1,0 +1,34 @@
+{
+    "_id": "resume",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Et donem la benvinguda de nou!",
+                "es": "¡Te damos la bienvenida de nuevo!",
+                "en": "Welcome back!",
+                "de": "Willkommen zurück!"
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "NA",
+            "text": {
+                "ca": "Recorda que si escrius PAUSAR pots tornar a posar en pausa el xatbot.",
+                "es": "Recuerda que si escribes PAUSAR puedes volver a poner en pausa el chatbot.",
+                "en": "Remember that if you type PAUSE you can pause the chatbot again.",
+                "de": "Vergiss nicht, dass du den Chatbot pausieren kannst, indem du PAUSIEREN schreibst."
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "_id": "unsubscribe",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1": {
+            "type": "SA",
+            "text": {
+                "ca": "Has decidit no participar més al xatbot. No podràs tornar a rebre missatges. Confirmes la teva decisió?",
+                "es": "Has decidido no participar más en el chatbot. No podrás volver a recibir mensajes. Confirmas tu decisión?",
+                "en": "You have decided to unsubscribe from the chatbot. You will not be able to receive any messages again. Do you confirm your decision?",
+                "de": "Du hast dich entschieden, nicht mehr am Chatbot teilzunehmen. Bestätigst du diese Entscheidung?"
+            },
+            "vars": [
+                {
+                    "name": "baixar",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Si, vull donar-me de baixa",
+                            "es": "Si, quiero darme de baja",
+                            "en": "Yes, I want to unsubscribe",
+                            "de": "Ja, ich möchte mich abmelden"
+                        },
+                        {
+                            "ca": "No, vull seguir rebent missatges",
+                            "es": "No, quiero seguir recibiendo mensajes",
+                            "en": "No, I want to keep receiving messages",
+                            "de": "Nein, ich möchte weiterhin Nachrichten erhalten"
+                        }
+                    ],
+                    "values": [
+                        "si",
+                        "no"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "baixar": {
+                    "si": "2si",
+                    "no": "2no"
+                }
+            }
+        },
+        "2si": {
+            "type": "NA",
+            "text": {
+                "ca": "Si vols eliminar les teves dades personals, contacta si us plau amb l’Investigador Principal per email (josep.perello@ub.edu) i t’indicarà el procediment per finalitzar el procés. ",
+                "es": "Si quieres eliminar tus datos personales, contacta por favor con el Investigador Principal por email (josep.perello@ub.edu) y te indicará el procedimiento para finalizar el proceso.",
+                "en": "If you want to delete your personal data, please contact the Principal Investigator by email (josep.perello@ub.edu) and you will be instructed in the procedure.",
+                "de": "Wenn du deine persönlichen Daten löschen möchtest, setz dich bitte per Email mit dem leitenden Wissenschaftler Josep Perelló (josep.perello@ub.edu). Er führt dann mit dir den Prozess zu Ende. "
+            },
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "NA",
+            "text": {
+                "ca": "Recorda però que no podem identificar-te i que les teves dades són molt valuoses per la recerca. Un cop hagis eliminat les teves dades personals, les teves respostes ja no podran ser incloses a la investigació.",
+                "es": "Recuerda pero que no podemos identificarte y que tus datos son muy valiosos para la investigación. Una vez eliminados tus datos personales, tus respuestas ya no podrán ser incluidas en la investigación.",
+                "en": "Remember that we cannot identify you and that your data is very valuable for research. Once your personal data has been deleted, your answers can no longer be taken into account for the investigation.",
+                "de": "Bitte beachte, dass wir dich nicht identifizieren können und dass deine Daten sehr wertvoll für die Forschung sind. Wenn deine persönlichen Daten einmal gelöscht sind, können deine Antworten nicht mehr in die Forschung mit einbezogen werden."
+            },
+            "action": "unsubscribe_final",
+            "wait": null,
+            "next": null
+        },
+        "2no": {
+            "type": "NA",
+            "text": {
+                "ca": "Et donem la benvinguda de nou!",
+                "es": "¡Te damos la bienvenida de nuevo!",
+                "en": "Welcome back!",
+                "de": "Willkommen zurück!"
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

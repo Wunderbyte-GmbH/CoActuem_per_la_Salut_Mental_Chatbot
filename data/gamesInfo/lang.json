@@ -1,0 +1,160 @@
+{
+    "_id": "lang",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_settings",
+    "messages": {
+        "1":{
+            "type": "SA",
+            "text": {
+                "ca": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
+                "es": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
+                "en": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
+                "de": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache"
+            },
+            "vars": [
+                {
+                    "name": "lang",
+                    "type": "button",
+                    "texts": [
+                        "Català",
+                        "Castellano",
+                        "English",
+                        "Deutsch"
+                    ],
+                    "values": [
+                        "ca",
+                        "es",
+                        "en",
+                        "de"
+                    ]
+                }
+            ],
+            "save": "language",
+            "wait": null,
+            "next": {
+                "lang": {
+                    "ca": "2-ca",
+                    "es": "2-es",
+                    "en": "2-en",
+                    "de": "2-de"
+                }
+            }
+        },
+        "2-ca": {
+            "type": "SA",
+            "text": "D’ara en endavant, els continguts apareixeran en català. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en catalán. ¿Es el idioma que querías escoger?\n\nFrom now on you’ll see all the chatbot content in Catalan. Is this the correct language for you?\n\nVon nun an sind alle Inhalte in Katalanisch. Ist das die Sprache, die du auswählen wolltest?",
+            "vars": [
+                {
+                    "name": "lang-ok",
+                    "type": "button",
+                    "texts": [
+                        "Sí / Sí / Yes / Ja",
+                        "No / No / No / Nein"
+                    ],
+                    "values": [
+                        "Si",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "lang-ok": {
+                    "Si": "3",
+                    "No": "1"
+                }
+            }
+        },
+       "2-es": {
+            "type": "SA",
+            "text": "A partir de ahora, los contenidos aparecerán en castellano. ¿Es el idioma que querías escoger?\n\nD’ara en endavant, els continguts apareixeran en castellà. És la llengua que volies triar?\n\nFrom now on you’ll see all the chatbot content in Spanish. Is this the correct language for you?\n\nVon nun an sind alle Inhalte in Spanisch. Ist das die Sprache, die du auswählen wolltest?",
+            "vars": [
+                {
+                    "name": "lang-ok",
+                    "type": "button",
+                    "texts": [
+                        "Sí / Sí / Yes / Ja",
+                        "No / No / No / Nein"
+                    ],
+                    "values": [
+                        "Si",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "lang-ok": {
+                    "Si": "3",
+                    "No": "1"
+                }
+            }
+        },
+        "2-en": {
+            "type": "SA",
+            "text": "From now on you’ll see all the chatbot content in English. Is this the correct language for you?\n\nD’ara en endavant, els continguts apareixeran en inglés. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en inglés. ¿Es el idioma que querías escoger?\n\nVon nun an sind alle Inhalte in Englisch. Ist das die Sprache, die du auswählen wolltest?",
+            "vars": [
+                {
+                    "name": "lang-ok",
+                    "type": "button",
+                    "texts": [
+                        "Sí / Sí / Yes / Ja",
+                        "No / No / No / Nein"
+                    ],
+                    "values": [
+                        "Si",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "lang-ok": {
+                    "Si": "3",
+                    "No": "1"
+                }
+            }
+        },"2-de": {
+            "type": "SA",
+            "text": "Von nun an sind alle Inhalte in Deutsch. Ist das die Sprache, die du auswählen wolltest?\n\nD’ara en endavant, els continguts apareixeran en alemán. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en alemán. ¿Es el idioma que querías escoger?\n\nFrom now on you’ll see all the chatbot content in German. Is this the correct language for you?",
+	    "vars": [
+                {
+                    "name": "lang-ok",
+                    "type": "button",
+                    "texts": [
+                        "Sí / Sí / Yes / Ja",
+                        "No / No / No / Nein"
+                    ],
+                    "values": [
+                        "Si",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "lang-ok": {
+                    "Si": "3",
+                    "No": "1"
+                }
+            }
+        },
+        "3": {
+            "type": "NA",
+            "text": {
+                "ca": "D’acord! A partir d’ara tots els continguts seran en català. Recorda que sempre pots canviar l’idioma del xatbot. Hauràs d’escriure /lang al xatbot.",
+                "es": "¡De acuerdo! A partir de ahora todos los contenidos serán en castellano. Recuerda que siempre puedes cambiar el idioma del chatbot. Deberás escribir /lang en el chatbot.",
+                "en": "Great! From now on you’ll see all the chatbot content in English. Remember, you can always change the chatbot language simply by typing /lang in this chat.",
+                "de": "Einverstanden! Von nun an sind alle Inhalte auf Deutsch. Du kannst jederzeit die Sprache des Chatbots ändern. Dazu musst Du nur /lang an den Chatbot schreiben. "
+            },
+            "wait": null,
+            "next": null
+        }
+
+    }
+}

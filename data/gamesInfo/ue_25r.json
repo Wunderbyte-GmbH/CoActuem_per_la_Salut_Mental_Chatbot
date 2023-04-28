@@ -1,0 +1,45 @@
+{
+    "_id": "ue_25r",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "user_engagement",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Hola!",
+                "es": "¡Hola!",
+                "en": "Hello!",
+                "de": "Hallo!"
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "NA",
+            "text": {
+                "ca": "📬 Avui és un dia especial: ja has donat resposta a 25 relats!",
+                "es": "📬 Hoy es un día especial: ¡ya has dado respuesta a 25 relatos!",
+                "en": "📬 Today is a special day: you’ve responded to 25 stories!",
+                "de": "📬 Heute ist ein besonderer Tag: du hast bereits die Fragen von 25 Erzählungen beantwortet!"
+            },
+            "wait": null,
+            "next": "3"
+        },
+        "3": {
+            "type": "SA",
+            "text": {
+                "ca": "👍 Moltes gràcies per la teva participació. Tu i les altres persones participants al xatbot feu possible una recerca amb un plantejament totalment nou!",
+                "es": "👍 Muchas gracias por tu participación. ¡Tú y las demás personas participantes en el chatbot hacéis posible una investigación con un planteamiento totalmente nuevo!",
+                "en": "👍 Many thanks for taking part. You and the other chatbot participants are contributing to a totally new approach to doing research!",
+                "de": "👍 Vielen Dank für deine Teilnahme. Du und die anderen Teilnehmer am Chatbot machen ein Forschungsprojekt mit einem völlig neuen Ansatz möglich!"
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

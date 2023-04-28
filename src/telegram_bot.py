@@ -46,7 +46,7 @@ class TelegramBot(Bot):
                 per_chat_id(), 
                 create_open, 
                 TelegramUser, 
-                timeout=10), # controlling how long to poll, in seconds (because this bot uses long polling)
+                timeout=600), # controlling how long to poll, in seconds (because this bot uses long polling)
             ])
         # Super: keep parents' inheritance function __init__()
         Bot.__init__(self) 
@@ -100,12 +100,11 @@ class TelegramBot(Bot):
                 l = 0
         else:
             try:
-                l = len(message)//350+1
+                l = len(message)//450+1
             except:
-                l = 1
-            l = max(1, l) # should always be at least 1sec
+                l = 0
             if img or pdf or poll:
-                l += 2
+                l += 1
         return l
 
     async def send_message(self, chat_id, message, img= None, buttons=None, pdf=None, poll=None):
@@ -130,21 +129,21 @@ class TelegramBot(Bot):
                 photo = open("./data/outgoing_files/img/"+img, 'rb')
                 while l>0:
                     await self.bot.sendChatAction(tele_id, 'upload_photo')
-                    sleep(min(1, l)) # the 5 secs that a normal chat action takes
+                    sleep(1)
                     l-=1
                 return await self.bot.sendPhoto(tele_id, photo, caption=message, reply_markup=buttons, parse_mode= 'HTML')
             elif pdf:                
                 pdf_file = open("./data/outgoing_files/"+pdf, 'rb')
                 while l>0:
                     await self.bot.sendChatAction(tele_id, 'upload_document')
-                    sleep(min(1, l)) # the 5 secs that a normal chat action takes
+                    sleep(1)
                     l-=1
                 return await self.bot.sendDocument(tele_id, pdf_file, caption=message, parse_mode= 'HTML')
             elif poll:
                 # feature not working yet!
                 while l>0:
                     await self.bot.sendChatAction(tele_id, 'typing')
-                    sleep(min(1, l)) # the 5 secs that a normal chat action takes
+                    sleep(1)
                     l-=1
                 return await self.bot.sendPoll(tele_id, question, options, is_anonymous=True, allows_multiple_answers=True, parse_mode= 'HTML')                
             else:
@@ -152,7 +151,10 @@ class TelegramBot(Bot):
                     await self.bot.sendChatAction(tele_id, 'typing')
                     sleep(min(1, l)) # the 5 secs that a normal chat action takes
                     l-=1
-                return await self.bot.sendMessage(tele_id, message, reply_markup=buttons, parse_mode= 'HTML')#'Markdown')
+                try:
+                    return await self.bot.sendMessage(tele_id, message, reply_markup=buttons, parse_mode= 'HTML')#'Markdown')
+                except:
+                    print("[E] Message could not be sent: ", message)
         except telepot.exception.BotWasBlockedError as e:
             # Bot is blocked or alike!
             user = self.get_user_info(chat_id)
@@ -161,9 +163,17 @@ class TelegramBot(Bot):
             user.data['status'] = Status.DOWN
             return None
         except Exception as ex:
-            print("[E] While sending to {}: {}".format(user.data['_id'], ex))
+            try:
+                print("[E] While sending to {}: {}".format(user.data['_id'], ex))
+            except:
+                if hasattr(ex, 'message') and hasattr(ex, args):
+                    print(ex.message, ex.args)
+                else:
+                    print(ex)
 
     def send_message_after(self, chat_id, seconds, message, wait=1, on_done=None):
+        if options.dev:
+            seconds = 0
         self.typing_event(chat_id, seconds, lambda: self.send_message(chat_id, message))
 
     def typing_event(self, chat_id, seconds, on_done, wait=1):
