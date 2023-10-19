@@ -1,0 +1,393 @@
+{
+    "_id": "ms1_erholung",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "micro_story_Erholung",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Hallo! Wir fragen dich jetzt, ob du etwas Ähnliches erlebt hast. So können wir die individuellen Erfahrungen mit Hitze besser kennenlernen.\n\n",
+                "es": "Hallo! Wir fragen dich jetzt, ob du etwas Ähnliches erlebt hast. So können wir die individuellen Erfahrungen mit Hitze besser kennenlernen.\n\n",
+                "en": "Hallo! Wir fragen dich jetzt, ob du etwas Ähnliches erlebt hast. So können wir die individuellen Erfahrungen mit Hitze besser kennenlernen.\n\n",
+                "de": "Hallo! Wir fragen dich jetzt, ob du etwas Ähnliches erlebt hast. So können wir die individuellen Erfahrungen mit Hitze besser kennenlernen.\n\n"
+            },
+            "wait": null,
+            "next": "1b"
+        },
+        "1b": {
+            "type": "SA",
+            "text": {
+                "ca": "Silvia erzählt: <b>In meiner Wohngegend gibt es keine Erholungs- oder Grünflächen, in direkter Nähe, die ich gerne nutze. Dort ist es mir zu laut. Dann nehme ich lieber einen weiteren Weg in Kauf, weil mir Ruhe wichtig ist.</b>  \n\n Und du? Hast du das Gleiche erlebt?",
+                "es": "Silvia erzählt: <b>In meiner Wohngegend gibt es keine Erholungs- oder Grünflächen, in direkter Nähe, die ich gerne nutze. Dort ist es mir zu laut. Dann nehme ich lieber einen weiteren Weg in Kauf, weil mir Ruhe wichtig ist.</b>  \n\n Und du? Hast du das Gleiche erlebt?",
+                "en": "Silvia erzählt: <b>In meiner Wohngegend gibt es keine Erholungs- oder Grünflächen, in direkter Nähe, die ich gerne nutze. Dort ist es mir zu laut. Dann nehme ich lieber einen weiteren Weg in Kauf, weil mir Ruhe wichtig ist.</b>  \n\n Und du? Hast du das Gleiche erlebt?",
+                "de": "Silvia erzählt: <b>In meiner Wohngegend gibt es keine Erholungs- oder Grünflächen, in direkter Nähe, die ich gerne nutze. Dort ist es mir zu laut. Dann nehme ich lieber einen weiteren Weg in Kauf, weil mir Ruhe wichtig ist.</b>  \n\n Und du? Hast du das Gleiche erlebt?"
+            },
+           "vars": [
+                {
+                    "name": "yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "es": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "en": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "de": "A) Ja, ich habe genau das gleiche erlebt."
+                        },
+                        {
+                            "ca": "B) Ich habe etwas Ähnliches erlebt.",
+                            "es": "B) Ich habe etwas Ähnliches erlebt.",
+                            "en": "B) Ich habe etwas Ähnliches erlebt.",
+                            "de": "B) Ich habe etwas Ähnliches erlebt."
+                        },
+                        {
+                            "ca": "C) So etwas habe ich noch nie erlebt.",
+                            "es": "C) So etwas habe ich noch nie erlebt.",
+                            "en": "C) So etwas habe ich noch nie erlebt.",
+                            "de": "C) So etwas habe ich noch nie erlebt."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "save": "yo_1",
+            "wait": null,
+            "next": {
+                "yo_1": {
+                    "A": "6A_yo",
+                    "B": "6B_yo",
+                    "C": "6C_yo"
+                }
+            }
+        },
+        "6A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "es": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "en": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "de": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "6B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "es": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "en": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "de": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "6C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "es": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "en": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "de": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "7_yo"
+        },
+        "7_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Ist das die Antwort, die du wählen wolltest?",
+                "es": "Ist das die Antwort, die du wählen wolltest?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Ja",
+                            "es": "Ja",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "Nein",
+                            "es": "Nein",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_yo_1": {
+                    "Sí": "13_yo_1",
+                    "No": "8_yo"
+                }
+            }
+        },
+        "8_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?",
+                "es": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?",
+                "en": "It looks like you haven’t confirmed your choice. To make sure our research is based on reliable information, we need you to confirm your choice. Which response did you want to give?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Für eine Forschung mit zuverlässigen Daten musst du deine Wahl bestätigen. Welche Antwort wolltest du geben?"
+            },
+            "vars": [
+                {
+                    "name": "yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "es": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "en": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "de": "A) Ja, ich habe genau das gleiche erlebt."
+                        },
+                        {
+                            "ca": "B) Ich habe etwas Ähnliches erlebt.",
+                            "es": "B) Ich habe etwas Ähnliches erlebt.",
+                            "en": "B) Ich habe etwas Ähnliches erlebt.",
+                            "de": "B) Ich habe etwas Ähnliches erlebt."
+                        },
+                        {
+                            "ca": "C) So etwas habe ich noch nie erlebt.",
+                            "es": "C) So etwas habe ich noch nie erlebt.",
+                            "en": "C) So etwas habe ich noch nie erlebt.",
+                            "de": "C) So etwas habe ich noch nie erlebt."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "save": "yo_1",
+            "wait": null,
+            "next": {
+                "yo_1": {
+                    "A": "9A_yo",
+                    "B": "9B_yo",
+                    "C": "9C_yo"
+                }
+            }
+        },
+        "9A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "es": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "en": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "de": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "9B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "es": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "en": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "de": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "9C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "es": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "en": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "de": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "10_yo"
+        },
+        "10_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Ist das die Antwort, die du wählen wolltest?",
+                "es": "Ist das die Antwort, die du wählen wolltest?",
+                "en": "Is this the response you wanted to choose?",
+                "de": "Ist das die Antwort, die du wählen wolltest?"
+            },
+            "vars": [
+                {
+                    "name": "v_yo_2",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "Ja",
+                            "es": "Ja",
+                            "en": "Yes",
+                            "de": "Ja"
+                        },
+                        {
+                            "ca": "Nein",
+                            "es": "Nein",
+                            "en": "No",
+                            "de": "Nein"
+                        }
+                    ],
+                    "values": [
+                        "Sí",
+                        "No"
+                    ]
+                }
+            ],
+            "wait": null,
+            "next": {
+                "v_yo_2": {
+                    "Sí": "13_yo_2",
+                    "No": "11_yo"
+                }
+            }
+        },
+        "11_yo": {
+            "type": "SA",
+            "text": {
+                "ca": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?",
+                "es": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?",
+                "en": "It looks like you haven’t confirmed your choice. Don’t worry. \nWhich response did you want to choose?",
+                "de": "Du scheinst deine Wahl nicht bestätigt zu haben. Mach dir keine Sorgen. Welche Antwort wolltest du wählen?"
+            },
+            "vars": [
+                {
+                    "name": "yo_1",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "es": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "en": "A) Ja, ich habe genau das gleiche erlebt.",
+                            "de": "A) Ja, ich habe genau das gleiche erlebt."
+                        },
+                        {
+                            "ca": "B) Ich habe etwas Ähnliches erlebt.",
+                            "es": "B) Ich habe etwas Ähnliches erlebt.",
+                            "en": "B) Ich habe etwas Ähnliches erlebt.",
+                            "de": "B) Ich habe etwas Ähnliches erlebt."
+                        },
+                        {
+                            "ca": "C) So etwas habe ich noch nie erlebt.",
+                            "es": "C) So etwas habe ich noch nie erlebt.",
+                            "en": "C) So etwas habe ich noch nie erlebt.",
+                            "de": "C) So etwas habe ich noch nie erlebt."
+                        }
+                    ],
+                    "values": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "save": "yo_1",
+            "wait": null,
+            "next": {
+                "yo_1": {
+                    "A": "12A_yo",
+                    "B": "12B_yo",
+                    "C": "12C_yo"
+                }
+            }
+        },
+        "12A_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "es": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "en": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>",
+                "de": "Du sagst: <b>A) Ja, ich habe genau das gleiche erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "12B_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "es": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "en": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>",
+                "de": "Du sagst: <b>B) Ich habe etwas Ähnliches erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "12C_yo": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "es": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "en": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>",
+                "de": "Du sagst: <b>C) So etwas habe ich noch nie erlebt.</b>"
+            },
+            "wait": null,
+            "next": "13_yo_3"
+        },
+        "13_yo_1": {
+            "type": "NA",
+            "text": {
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "13_yo_2": {
+            "type": "NA",
+            "text": {
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "13_yo_3": {
+            "type": "NA",
+            "text": {
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
+                "en": "Your response has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
+            },
+            "wait": null,
+            "next": "14"
+        },
+        "14": {
+            "type": "NA",
+            "text": {
+                "ca": "Danke für deine Hilfe bei unserer Forschungsarbeit! Wir werden weiter in Kontakt bleiben!",
+                "es": "Danke für deine Hilfe bei unserer Forschungsarbeit! Wir werden weiter in Kontakt bleiben!",
+                "en": "Thank you for helping with our research! Let’s stay in touch!",
+                "de": "Danke für deine Hilfe bei unserer Forschungsarbeit! Wir werden weiter in Kontakt bleiben!"
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}

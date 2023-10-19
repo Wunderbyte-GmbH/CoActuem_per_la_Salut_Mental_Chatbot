@@ -30,13 +30,14 @@ import pymongo
 # load hashes collection from database
 from __main__ import hashes
 
+HASH_SIZE = 40
 
 def save_unhashed_and_hashed_id_mongodb(hashed_user_id, unhashed_user_id):
     """
     only if id was not yet hashed, this function saves hashed id and unhashed id 
     together in the hashes database in mongodb
     """
-    if len(str(hashed_user_id))==32 and len(str(unhashed_user_id)) != 32 and type(unhashed_user_id)==int:
+    if len(str(hashed_user_id))==HASH_SIZE and len(str(unhashed_user_id)) != 32 and type(unhashed_user_id)==int:
         user_hash = {"_id": hashed_user_id, "Tele_id": unhashed_user_id}
         hashes.update_one(user_hash,{'$set':user_hash},upsert=True)
 
@@ -49,7 +50,7 @@ def hash_id(Telgram_user_id):
         un_hashed_id = Telgram_user_id
     elif type(Telgram_user_id) == dict:
         un_hashed_id = str(Telgram_user_id["id"])
-    if len(un_hashed_id) == 32:
+    if len(un_hashed_id) == HASH_SIZE:
         return Telgram_user_id
     else:
         hashed_user_id = hashlib.sha1(un_hashed_id.encode()).hexdigest()

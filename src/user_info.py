@@ -115,7 +115,7 @@ class UserInfo(object):
         
         # Default language
         if 'language' not in self.data:
-            self.data['language'] = 'ca'
+            self.data['language'] = 'de'
 
         # Default timeshift_in_seconds
         if 'timeshift_in_seconds' not in self.data:
@@ -173,7 +173,7 @@ class UserInfo(object):
         """
         """
         timeshift_in_seconds     = self.data.get('timeshift_in_seconds', 0)
-        now_here                 = datetime.datetime.now().astimezone(pytz.timezone("Europe/Madrid"))
+        now_here                 = datetime.datetime.now().astimezone(pytz.timezone("Europe/Vienna"))
         planned_event_here       = now_here + datetime.timedelta(seconds = next_time_CT)
         planned_event_user_time  = planned_event_here + datetime.timedelta(seconds = timeshift_in_seconds)
         is_in_users_night        = False
@@ -199,12 +199,12 @@ class UserInfo(object):
                 if not game_title in ["compartir_vivencias", "encontrar_soluciones_juntos"]:
                     next_time_CT/= 4 # send next game more quickly if its not a "story"
                 print("game_title", game_title)
-                if game_id in ["welcome", "capacitation_Teatre_Amigues", "sociodem_coact"]:
+                if game_id in ["welcome", "capacitation_Teatre_Amigues", "sociodem_coact", "ms"]: #, "ms1_erholung", "ms2_nahversorgung", "ms3_transport"
                     next_time_CT= 0 # directly send the next game
                 elif self.is_in_users_night(next_time_CT):
                     print("it's night for user ", self.get_user_id())
                     next_time_CT += duration_of_night_in_seconds
-
+                print("next_time_CT= ", next_time_CT)
                 appbot.add_event(Event.after(next_time_CT, partial(Game.start_game, Game, appbot, game_id, user_id), daytime_only=True, is_new_game=True)) # comment this line out to supress automatic sending according to sequence
         
     def post_init(self, appbot):
@@ -260,7 +260,7 @@ class UserInfo(object):
         If isn't a dict: return text as is.
         """
         if type(text) == dict:
-            return text[self.data.get('language', 'ca')]
+            return text[self.data.get('language', 'de')]
         return text
         
                

@@ -1,0 +1,35 @@
+{
+    "_id": "ms",
+    "initial_messages": [
+        "1"
+    ],
+    "points": [
+        "0"
+    ],
+    "title": "micro_stories",
+    "messages": {
+        "1": {
+            "type": "NA",
+            "text": {
+                "ca": "Vielen Dank für deine Antworten! Jetzt kann die Citizen-Science-Forschung beginnen! Wir senden dir nun kurze urbane Hitzegeschichten zu. Sie basieren auf tatsächlichen geschichten von Bewohner:innen Wiens. Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.  \nDie Struktur der Antworten ist immer gleich, um die wissenschaftliche Genauigkeit des Forschungsprojektes beizubehalten. Wähle jeweils einer der drei Antwortoptionen, die deine persönliche Erfahrung am ehesten widerspiegelt.\n",
+                "es": "Vielen Dank für deine Antworten! Jetzt kann die Citizen-Science-Forschung beginnen! Wir senden dir nun kurze urbane Hitzegeschichten zu. Sie basieren auf tatsächlichen geschichten von Bewohner:innen Wiens. Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.  \nDie Struktur der Antworten ist immer gleich, um die wissenschaftliche Genauigkeit des Forschungsprojektes beizubehalten. Wähle jeweils einer der drei Antwortoptionen, die deine persönliche Erfahrung am ehesten widerspiegelt.\n",
+                "en": "Vielen Dank für deine Antworten! Jetzt kann die Citizen-Science-Forschung beginnen! Wir senden dir nun kurze urbane Hitzegeschichten zu. Sie basieren auf tatsächlichen geschichten von Bewohner:innen Wiens. Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.  \nDie Struktur der Antworten ist immer gleich, um die wissenschaftliche Genauigkeit des Forschungsprojektes beizubehalten. Wähle jeweils einer der drei Antwortoptionen, die deine persönliche Erfahrung am ehesten widerspiegelt.\n",
+                "de": "Vielen Dank für deine Antworten! Jetzt kann die Citizen-Science-Forschung beginnen! Wir senden dir nun kurze urbane Hitzegeschichten zu. Sie basieren auf tatsächlichen geschichten von Bewohner:innen Wiens. Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.  \nDie Struktur der Antworten ist immer gleich, um die wissenschaftliche Genauigkeit des Forschungsprojektes beizubehalten. Wähle jeweils einer der drei Antwortoptionen, die deine persönliche Erfahrung am ehesten widerspiegelt.\n"
+            },
+            "wait": null,
+            "next": "2"
+        },
+        "2": {
+            "type": "NA",
+            "text": {
+                "ca": "📬 Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.",
+                "es": "📬 Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.",
+                "en": "📬 Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen.",
+                "de": "📬 Wenn du nicht möchtest, musst du nicht antworten und kannst zur nächsten Geschichte springen."
+            },
+            "wait": null,
+            "next": null
+        }
+    }
+}
+

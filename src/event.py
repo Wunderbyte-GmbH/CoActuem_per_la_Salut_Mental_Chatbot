@@ -74,7 +74,7 @@ class Event(object):
             """
             # Do nothing between 19-07
             #if self._daytime_only:
-                #hour = int(datetime.datetime.fromtimestamp(int(time.time())).astimezone(pytz.timezone("Europe/Madrid")).strftime('%H'))
+                #hour = int(datetime.datetime.fromtimestamp(int(time.time())).astimezone(pytz.timezone("Europe/Vienna")).strftime('%H'))
                 #print("Daytime check at {}: {}".format(hour, hour > 19 or hour < 7))
                 #from_morning = 7
                 #to_evening = 21

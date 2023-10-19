@@ -64,33 +64,35 @@ async def on_welcome_ended_yes(appbot, user_info, game):
     game._players[0].data['status'] = Status.INBOT
     # check waiting queue 
     # appbot.add_event(Event.after(5, lambda: appbot.check_waiting_queue(game._players)))
-    participant_feedback   = bot.find_one({"_id": 'objects_to_be_sent'})["feed_back_number_participants"]
-    number_active_users    = sum([1 for client in clients.find({}) if client["status"] ==1])
-    p_numbers_bot          = [int(n) for n in participant_feedback.keys()]
-    if number_active_users < max(p_numbers_bot):
-        next_smallest_p_number =  next((p_numbers_bot[x] for x in range(len(p_numbers_bot)) if number_active_users >= p_numbers_bot[x] and p_numbers_bot[min(x+1,len(p_numbers_bot)-1)] >= number_active_users), 0)
-    else:
-        next_smallest_p_number = max(p_numbers_bot)
-    print("number_active_users ", number_active_users)
-    print("next_smallest_p_number", next_smallest_p_number)
+    try:
+        participant_feedback   = bot.find_one({"_id": 'objects_to_be_sent'})["feed_back_number_participants"]
+        number_active_users    = sum([1 for client in clients.find({}) if client["status"] ==1])
+        p_numbers_bot          = [int(n) for n in participant_feedback.keys()]
+        if number_active_users < max(p_numbers_bot):
+            next_smallest_p_number =  next((p_numbers_bot[x] for x in range(len(p_numbers_bot)) if number_active_users >= p_numbers_bot[x] and p_numbers_bot[min(x+1,len(p_numbers_bot)-1)] >= number_active_users), 0)
+        else:
+            next_smallest_p_number = max(p_numbers_bot)
+        print("number_active_users ", number_active_users)
+        print("next_smallest_p_number", next_smallest_p_number)
 
-    if next_smallest_p_number > 0:#99:
-        game_id   = participant_feedback[str(next_smallest_p_number)]
-        game_info = GameInfo.get_info(game_id)
-        skip = []
-        active_user_infos = [appbot.get_user_info(client["_id"]) for client in clients.find({}) if client["status"] ==1]
-        #print(active_user_infos)
-        for player in active_user_infos:
-            if game_id in player.data['games_done']:
-                skip += [player]
-            elif not player.data['current_game']:
-                game = Game(game_id, [player])
-                player.data['current_game'] = game
-                #await player.data['current_game'].perform_next_action(appbot, player)
-                appbot.typing_event(player.get_user_id(), 2, partial(player.data['current_game'].perform_next_action, appbot, player))
-        for player in skip:
-            appbot.add_waiting(player)
-
+        if next_smallest_p_number > 0:#99:
+            game_id   = participant_feedback[str(next_smallest_p_number)]
+            game_info = GameInfo.get_info(game_id)
+            skip = []
+            active_user_infos = [appbot.get_user_info(client["_id"]) for client in clients.find({}) if client["status"] ==1]
+            #print(active_user_infos)
+            for player in active_user_infos:
+                if game_id in player.data['games_done']:
+                    skip += [player]
+                elif not player.data['current_game']:
+                    game = Game(game_id, [player])
+                    player.data['current_game'] = game
+                    #await player.data['current_game'].perform_next_action(appbot, player)
+                    appbot.typing_event(player.get_user_id(), 2, partial(player.data['current_game'].perform_next_action, appbot, player))
+            for player in skip:
+                appbot.add_waiting(player)
+    except KeyError:
+        print("exception=KeyError('feed_back_number_participants')")
 
     
 async def on_update_rhythm(appbot, user_info, game):
@@ -160,8 +162,10 @@ def when_is_next_CT_according_to_user_rhythm(user_info):
     last_CT_finished = user_info.data.get('end_of_last_game_of_type_CT', time.time())
     time_now = time.time()
     if last_CT_finished + rhythm < time_now: # if event should actually already have happened
+        print("last_CT_finished + rhythm < time_now: ", time_now)  # Mona
         return random.randrange(3, 60) # (3, 60*60) send next game within now and the next hour (at random, so not the bot isn't overwhelmed after restart)
-    else: 
+    else:
+        print("(last_CT_finished + rhythm) - time_now: ", (last_CT_finished + rhythm) - time_now)  # Mona
         return (last_CT_finished + rhythm) - time_now
 
 
@@ -608,7 +612,7 @@ class Game(object):
         calculates timeshift in seconds that can be stored as timeshift in database
         """
         hour_there, minute_there = int(token[0:2]), int(token[3:5])
-        hour_here,  minute_here  = datetime.datetime.now().astimezone(pytz.timezone("Europe/Madrid")).hour, datetime.datetime.now(pytz.timezone("Europe/Madrid")).astimezone().minute
+        hour_here,  minute_here  = datetime.datetime.now().astimezone(pytz.timezone("Europe/Vienna")).hour, datetime.datetime.now(pytz.timezone("Europe/Vienna")).astimezone().minute
         time_there_seconds =  (hour_there*60 + minute_there)*60
         time_here_seconds  =  (hour_here*60  + minute_here)*60
         timeshift = ((time_there_seconds-time_here_seconds) + 12.*3600)%(24.*3600)-12.*3600

@@ -9,157 +9,23 @@
     "title": "user_settings",
     "messages": {
         "1a": {
-            "type": "SA",
+            "type": "NA",
             "text": {
-                "ca": "💡 Perquè les teves respostes al xatbot siguin valuoses per a la recerca de ciència ciutadana, et voldríem demanar algunes dades sobre tu i la teva relació amb les xarxes de suport social en salut mental. Les xarxes de suport social es refereixen a l’entorn social i afectiu de les persones i a les relacions que s’hi estableixen.",
-                "es": "💡 Para que tus respuestas al chatbot sean valiosas para la investigación de ciencia ciudadana, necesitaríamos algunos datos sobre ti y tu relación con las redes de apoyo social en salud mental. Las redes de apoyo social se refieren al entorno social y afectivo de las personas y a las relaciones que se establecen en él.",
-                "en": "💡 In order to ensure that your answers to the chatbot provide the most useful scientific data for citizen research, we need to ask you for some details about you and your relationship with mental health social support networks. By “social support networks” we mean people’s social and emotional environment and their networks of relationships.",
-                "de": "💡 Damit deine Antworten für die bürgerwissenschaftliche Forschung verwertbar sind, brauchen wir einige Angaben über deine Beziehung zu Unterstützungsnetzwerken für psychische Gesundheit. Mit Unterstützingsnetzwerken sind hier das soziale und emotionsbezogene Umfeld der Personen gemeint und die Beziehungen, die dabei entstehen."
+                "ca": "💡 Wir freuen uns, dass du an dieser Citizen-Science-Forschung teilnimmst! Bevor dir der Chatbot die urbanen Hitzegeschichten sendet, bitten wir dich, deine Geschlechtsidentität, dein Alter und deinen Wohnbezirk anzugeben. Diese Dateneingabe ist optional, sie hilft uns dabei, deine Antworten mit den Antworten von anderen Teilnehmenden zu vergleichen und einzuordnen.\n\n",
+                "es": "💡 Wir freuen uns, dass du an dieser Citizen-Science-Forschung teilnimmst! Bevor dir der Chatbot die urbanen Hitzegeschichten sendet, bitten wir dich, deine Geschlechtsidentität, dein Alter und deinen Wohnbezirk anzugeben. Diese Dateneingabe ist optional, sie hilft uns dabei, deine Antworten mit den Antworten von anderen Teilnehmenden zu vergleichen und einzuordnen.\n\n",
+                "en": "💡 Wir freuen uns, dass du an dieser Citizen-Science-Forschung teilnimmst! Bevor dir der Chatbot die urbanen Hitzegeschichten sendet, bitten wir dich, deine Geschlechtsidentität, dein Alter und deinen Wohnbezirk anzugeben. Diese Dateneingabe ist optional, sie hilft uns dabei, deine Antworten mit den Antworten von anderen Teilnehmenden zu vergleichen und einzuordnen.\n\n",
+                "de": "💡 Wir freuen uns, dass du an dieser Citizen-Science-Forschung teilnimmst! Bevor dir der Chatbot die urbanen Hitzegeschichten sendet, bitten wir dich, deine Geschlechtsidentität, dein Alter und deinen Wohnbezirk anzugeben. Diese Dateneingabe ist optional, sie hilft uns dabei, deine Antworten mit den Antworten von anderen Teilnehmenden zu vergleichen und einzuordnen.\n\n"
             },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
             "wait": null,
             "next": "1b"
         },
         "1b": {
-            "type": "NA",
-            "text": {
-                "ca": "🔎 Abans de fer-te una pregunta, sempre t’explicarem el perquè de la pregunta. Només recollim dades estrictament necessàries per a la recerca.",
-                "es": "🔎 Antes de hacerte una pregunta, siempre te explicaremos el porqué de la misma. Solo recogemos datos estrictamente necesarios para la investigación.",
-                "en": "🔎 Before asking you a question, we’ll always explain the purpose of the question. We only gather data that is strictly necessary for this research.",
-                "de": "🔎 Vor jeder Frage erklären wir dir den Hintergrund der Frage. Wir sammeln nur Daten, die absolut unerlässlich für das Forschungsprojekt sind."
-            },
-            "wait": null,
-            "next": "1c"
-        },
-        "1c": {
             "type": "SA",
             "text": {
-                "ca": "📋 <b>Primer</b> et demanarem un mínim de dades generals sobre la teva persona.\n<b>Després</b> et preguntarem sobre tu i el teu entorn.",
-                "es": "📋 <b>Primero</b> te pediremos un mínimo de datos generales sobre tu persona.\n<b>Después</b> te preguntaremos sobre ti y tu entorno.",
-                "en": "📋 <b>First</b> we’ll ask you for some brief general information about you.\n<b>Then</b> we’ll ask you about you and your environment. ",
-                "de": "📋 <b>Zunächst</b> werden wir dir einige Fragen zu deinen allgemeinen persönlichen Daten stellen.\n<b>Danach</b> werden wir dir Fragen über dich und dein Umfeld stellen. "
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "1d"
-        },
-        "1d": {
-            "type": "NA",
-            "text": {
-                "ca": "🔒 Aquestes dades no es comparteixen amb ningú del xatbot. Recorda també que ens és totalment impossible identificar-te.",
-                "es": "🔒 Estos datos no se comparten con nadie del chatbot. Recuerda también que nos resulta totalmente imposible identificarte.",
-                "en": "🔒 This data is not shared with anyone on the chatbot. Remember, we have absolutely no means of identifying you.",
-                "de": "🔒 Diese Daten werden mit niemandem im Chatbot geteilt. Und vergiss nicht, dass es uns unmöglich ist, dich als Person zu identifizieren."
-            },
-            "wait": null,
-            "next": "1e"
-        },
-        "1e": {
-            "type": "NA",
-            "text": {
-                "ca": "🤝 Per això et demanem, si us plau, que responguis amb la màxima sinceritat.",
-                "es": "🤝 Por eso te pedimos, por favor, que respondas con la mayor sinceridad.",
-                "en": "🤝 We therefore ask to be completely frank and honest in your answers.",
-                "de": "🤝 Deshalb bitten wir dich, möglichst aufrichtig zu antworten."
-            },
-            "wait": null,
-            "next": "1f"
-        },
-        "1f": {
-            "type": "SA",
-            "text": {
-                "ca": "✅ Tingues en compte que pots deixar sense resposta qualsevol pregunta. Comencem!",
-                "es": "✅ Ten en cuenta que puedes dejar sin respuesta cualquier pregunta. ¡Empecemos!",
-                "en": "✅ You can skip any questions you’d rather not answer. Let’s get going!",
-                "de": "✅ Und du kannst auch Fragen unbeantwortet lassen. Fangen wir an!"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "fp_1"
-        },
-        "fp_1": {
-            "type": "SA",
-            "text": {
-                "ca": "📊 Segons dades de l’Espai Situa’t, a Catalunya el 78% de les consultes sobre salut mental d’un familiar les fan dones.\n\nFont: Salut Mental Catalunya (2021)",
-                "es": "📊 Según datos de Espai Situa’t, en Cataluña el 78% de las consultas sobre salud mental de un familiar las realizan mujeres.\n\nFuente: Salut Mental Catalunya (2021)",
-                "en": "📊 According to data from Espai Situa’t, 78% of enquiries about a family member’s mental health in Catalonia are made by women.\n\nSource: Salut Mental Catalunya (2021)",
-                "de": "📊 Laut den Daten des Informationsdiensts Espai Situa’t der katalanischen Federació de Salut Mental stammen 78% der Anfragen zu Themen der psychischen Gesundheit in Katalonien von Frauen.\n\nQuelle: Salut Mental Catalunya (2021)"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "p_1"
-        },
-        "p_1": {
-            "type": "SA",
-            "text": {
-                "ca": "📋 La configuració de les xarxes de suport social en salut mental està fortament influenciada per aspectes de gènere. Quin és el gènere amb què més t'identifiques?",
-                "es": "📋 La configuración de las redes de apoyo social en salud mental está fuertemente influenciada por aspectos de género. ¿Cuál es el género con el que más te identificas?",
-                "en": "📋 Gender plays a major role in shaping mental health social support networks. Which gender do you identify with most?",
-                "de": "📋 Die Zusammensetzung der Unterstützungsnetzwerke für psychische Gesundheit ist stark geschlechtsspezifisch geprägt. Wie würdest du deine Geschlechtsidentität beschreiben?"
+                "ca": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n",
+                "es": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n",
+                "en": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n ",
+                "de": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n "
             },
             "vars": [
                 {
@@ -167,26 +33,26 @@
                     "type": "button",
                     "texts": [
                         {
-                            "ca": "Home",
-                            "es": "Hombre",
+                            "ca": "Mann",
+                            "es": "Mann",
                             "en": "Male",
                             "de": "Mann"
                         },
                         {
-                            "ca": "Dona",
-                            "es": "Mujer",
+                            "ca": "Frau",
+                            "es": "Frau",
                             "en": "Female",
                             "de": "Frau"
                         },
                         {
-                            "ca": "No binària",
-                            "es": "No binario",
+                            "ca": "Nichtbinär",
+                            "es": "Nichtbinär",
                             "en": "Nonbinary",
                             "de": "Nichtbinär"
                         },
                         {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
+                            "ca": "Ich will/kann nicht antworten",
+                            "es": "Ich will/kann nicht antworten",
                             "en": "I'd rather not answer",
                             "de": "Ich will/kann nicht antworten"
                         }
@@ -201,54 +67,77 @@
             ],
             "save": "genere",
             "wait": null,
-            "next": "p_1c"
+            "next": {
+                "genere": {
+                    "m": "m_1b",
+                    "f": "f_1b",
+                    "d": "d_1b",
+                    "nvr": "nvr_1b"
+                }
+            }
         },
-        "p_1c": {
+        "m_1b": {
             "type": "NA",
             "text": {
-                "ca": "La teva resposta s’ha guardat.",
-                "es": "Tu respuesta se ha guardado.",
+                "ca": "Du sagst: <b>Mann</b>",
+                "es": "Du sagst: <b>Mann</b>",
+                "en": "Du sagst: <b>Mann</b>",
+                "de": "Du sagst: <b>Mann</b>"
+            },
+            "wait": null,
+            "next": "p_1b"
+        },
+        "f_1b": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Frau</b>",
+                "es": "Du sagst: <b>Frau</b>",
+                "en": "Du sagst: <b>Frau</b>",
+                "de": "Du sagst: <b>Frau</b>"
+            },
+            "wait": null,
+            "next": "p_1b"
+        },
+        "d_1b": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Nichtbinär</b>",
+                "es": "Du sagst: <b>Nichtbinär</b>",
+                "en": "Du sagst: <b>Nichtbinär</b>",
+                "de": "Du sagst: <b>Nichtbinär</b>"
+            },
+            "wait": null,
+            "next": "p_1b"
+        },
+        "nvr_1b": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "es": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "en": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "de": "Du sagst: <b>Ich will/kann nicht antworten</b>"
+            },
+            "wait": null,
+            "next": "p_1b"
+        },
+        "p_1b": {
+            "type": "NA",
+            "text": {
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
                 "en": "Your answer has been saved.",
                 "de": "Deine Antwort wurde gespeichert."
             },
             "wait": null,
-            "next": "fp_2"
+            "next": "1c"
         },
-        "fp_2": {
+        "1c": {
             "type": "SA",
             "text": {
-                "ca": "📊 Un informe de Making Caring Common ha estimat que als Estats Units el 61% dels joves adults (de 18 a 25 anys) han experimentat un fort malestar associat a un sentiment d’aïllament arran del confinament per la Covid-19.\n\nFont: Loneliness in America, Harvard’s Making Caring Common (2021)",
-                "es": "📊 Un informe de Making Caring Common ha estimado que en los Estados Unidos el 61% de los jóvenes adultos (de 18 a 25 años) han experimentado un intenso malestar asociado a un sentimiento de aislamiento a raíz del confinamiento por la COVID-19.\n\nFuente: Loneliness in America, Harvard’s Making Caring Common (2021)",
-                "en": "📊 A report by the Making Caring Common project found that 61% of young adults (aged 18 to 25) in the United States have reported serious loneliness and a sense of isolation as a result of lockdown during the Covid-19 pandemic.\n\nSource: Loneliness in America, Harvard’s Making Caring Common (2021)",
-                "de": "📊 Ein Bericht des Projektes Making Caring Common schätzt, dass 61% der jungen Erwachsenen (zwischen 18 und 25 Jahren) in den Vereinigten Staaten aufgrund des durch die Covid-19-Pandemie erforderlichen Lockdowns unter starkem Unwohlsein litten, das mit dem Gefühl des Isoliertseins einhergeht.\n\nQuelle: Loneliness in America, Harvard’s Making Caring Common (2021)"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "p_2"
-        },
-        "p_2": {
-            "type": "SA",
-            "text": {
-                "ca": "📋 L’edat és un factor a considerar dins les xarxes de suport social en salut mental. A quin rang d’edat pertanys (en anys)?",
-                "es": "📋 La edad es un factor a considerar dentro de las redes de apoyo social en salud mental. ¿A qué rango de edad perteneces (en años)?",
-                "en": "📋 Age is a key factor in mental health social support networks. In which age bracket do you belong?",
-                "de": "📋 Das Alter ist ein Faktor, der in den Unterstützungsnetzwerken für psychische Gesundheit in Betracht gezogen werden muss. Zu welcher Altersgruppe gehörst du (in Jahren)?"
+                "ca": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "es": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "en": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "de": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n"
             },
             "vars": [
                 {
@@ -292,8 +181,8 @@
                             "de": "65+"
                         },
                         {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
+                            "ca": "ch will/kann nicht antworten",
+                            "es": "ch will/kann nicht antworten",
                             "en": "I'd rather not answer",
                             "de": "Ich will/kann nicht antworten"
                         }
@@ -311,100 +200,303 @@
             ],
             "save": "edat",
             "wait": null,
-            "next": "p_2c"
+            "next": {
+                "edat": {
+                    "1": "e1_1c",
+                    "2": "e2_1c",
+                    "3": "e3_1c",
+                    "4": "e4_1c",
+                    "5": "e5_1c",
+                    "6": "e6_1c",
+                    "nvr": "envr_1c"
+                }
+            }
         },
-        "p_2c": {
+        "e1_1c": {
             "type": "NA",
             "text": {
-                "ca": "Moltes gràcies! La teva resposta s’ha guardat.",
-                "es": "¡Muchas gracias! Tu respuesta se ha guardado.",
+                "ca": "Du sagst: <b>18-24</b>",
+                "es": "Du sagst: <b>18-24</b>",
+                "en": "Du sagst: <b>18-24</b>",
+                "de": "Du sagst: <b>18-24</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "e2_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>25-34</b>",
+                "es": "Du sagst: <b>25-34</b>",
+                "en": "Du sagst: <b>25-34</b>",
+                "de": "Du sagst: <b>25-34</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "e3_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>35-44</b>",
+                "es": "Du sagst: <b>35-44</b>",
+                "en": "Du sagst: <b>35-44</b>",
+                "de": "Du sagst: <b>35-44</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "e4_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>45-54</b>",
+                "es": "Du sagst: <b>45-54</b>",
+                "en": "Du sagst: <b>45-54</b>",
+                "de": "Du sagst: <b>45-54</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "e5_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>55-64</b>",
+                "es": "Du sagst: <b>55-64</b>",
+                "en": "Du sagst: <b>55-64</b>",
+                "de": "Du sagst: <b>55-64</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "e6_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>65+</b>",
+                "es": "Du sagst: <b>65+</b>",
+                "en": "Du sagst: <b>65+</b>",
+                "de": "Du sagst: <b>65+</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "envr_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "es": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "en": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "de": "Du sagst: <b>Ich will/kann nicht antworten</b>"
+            },
+            "wait": null,
+            "next": "p_1c"
+        },
+        "p_1c": {
+            "type": "NA",
+            "text": {
+                "ca": "Vielen Dank! Deine Antwort wurde gespeichert.",
+                "es": "Vielen Dank! Deine Antwort wurde gespeichert.",
                 "en": "Many thanks! Your answer has been saved.",
                 "de": "Vielen Dank! Deine Antwort wurde gespeichert."
             },
             "wait": null,
-            "next": "fp_3"
+            "next": "1d"
         },
-        "fp_3": {
+        "1d": {
             "type": "SA",
             "text": {
-                "ca": "📊 L’Organització Mundial de la Salut (OMS) calcula que el 80% de les persones amb problemes de salut mental al món no reben cap mena d’atenció o cura. L’OMS considera magres i insuficients els nivells de despesa en salut mental per part de països de renda baixa i mitjana.\n\nFont: Mental Health Atlas 2017, OMS (2018).",
-                "es": "📊 La Organización Mundial de la Salud (OMS) calcula que el 80% de las personas con problemas de salud mental en el mundo no reciben atención ni cuidados de ningún tipo. La OMS considera pobre e insuficiente el gasto en salud mental por parte de países de renta baja y media.\n\nFuente: Mental Health Atlas 2017, OMS (2018).",
-                "en": "📊 The World Health Organization (WHO) calculates that 80% of people with mental health problems do not receive any form of attention or care. The WHO rates public expenditure on mental health in low- and middle-income countries as meagre and insufficient.\n\nSource: Mental Health Atlas 2017, WHO (2018).",
-                "de": "📊 Die Weltgesundheitsorganisation (WHO) schätzt, dass 80% der Personen mit psychischen Gesundheitsproblemen nicht betreut oder medizinisch versorgt werden. Die WHO hält die Ausgaben, die für psychische Gesundheit in Ländern mit niedrigem oder mittlerem Einkommen geleistet werden, für zu gering und unzureichend.\n\nQuelle: Mental Health Atlas 2017, OMS (2018)."
+                "ca": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "es": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "en": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "de": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n"
             },
             "vars": [
                 {
-                    "name": "cont",
+                    "name": "codi",
                     "type": "button",
                     "texts": [
                         {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
+                            "ca": "01.Innere Stadt (1010)",
+                            "es": "01.Innere Stadt (1010)",
+                            "en": "01.Innere Stadt (1010)",
+                            "de": "01.Innere Stadt (1010)"
+                        },
+                        {
+                            "ca": "02.Leopoldstadt (1020)",
+                            "es": "02.Leopoldstadt (1020)",
+                            "en": "02.Leopoldstadt (1020)",
+                            "de": "02.Leopoldstadt (1020)"
+                        },
+                        {
+                            "ca": "03.Landstraße (1030)",
+                            "es": "03.Landstraße (1030)",
+                            "en": "03.Landstraße (1030)",
+                            "de": "03.Landstraße (1030)"
+                        },
+                        {
+                            "ca": "04.Wieden (1040)",
+                            "es": "04.Wieden (1040)",
+                            "en": "04.Wieden (1040)",
+                            "de": "04.Wieden (1040)"
+                        },
+                        {
+                            "ca": "05.Margareten (1050)",
+                            "es": "05.Margareten (1050)",
+                            "en": "05.Margareten (1050)",
+                            "de": "05.Margareten (1050)"
+                        },
+                        {
+                            "ca": "06.Mariahilf (1060)",
+                            "es": "06.Mariahilf (1060)",
+                            "en": "06.Mariahilf (1060)",
+                            "de": "06.Mariahilf (1060)"
+                        },
+                        {
+                            "ca": "07.Neubau (1070)",
+                            "es": "07.Neubau (1070)",
+                            "en": "07.Neubau (1070)",
+                            "de": "07.Neubau (1070)"
+                        },
+                        {
+                            "ca": "08.Josefstadt (1080) ",
+                            "es": "08.Josefstadt (1080) ",
+                            "en": "08.Josefstadt (1080) ",
+                            "de": "08.Josefstadt (1080) "
+                        },
+                        {
+                            "ca": "09.Alsergrund (1090)",
+                            "es": "09.Alsergrund (1090)",
+                            "en": "09.Alsergrund (1090)",
+                            "de": "09.Alsergrund (1090)"
+                        },
+                        {
+                            "ca": "10.Favoriten (1100)",
+                            "es": "10.Favoriten (1100)",
+                            "en": "10.Favoriten (1100)",
+                            "de": "10.Favoriten (1100)"
+                        },
+                        {
+                            "ca": "11.Simmering (1110) ",
+                            "es": "11.Simmering (1110) ",
+                            "en": "11.Simmering (1110) ",
+                            "de": "11.Simmering (1110) "
+                        },
+                        {
+                            "ca": "12.Meidling (1120)",
+                            "es": "12.Meidling (1120)",
+                            "en": "12.Meidling (1120)",
+                            "de": "12.Meidling (1120)"
+                        },
+                        {
+                            "ca": "13.Hietzing (1130) ",
+                            "es": "13.Hietzing (1130) ",
+                            "en": "13.Hietzing (1130) ",
+                            "de": "13.Hietzing (1130) "
+                        },
+                        {
+                            "ca": "14.Penzing (1140)",
+                            "es": "14.Penzing (1140)",
+                            "en": "14.Penzing (1140)",
+                            "de": "14.Penzing (1140)"
+                        },
+                        {
+                            "ca": "15.Rudolfsheim (1150) ",
+                            "es": "15.Rudolfsheim (1150) ",
+                            "en": "15.Rudolfsheim (1150) ",
+                            "de": "15.Rudolfsheim (1150) "
+                        },
+                        {
+                            "ca": "16.Ottakring (1160) ",
+                            "es": "16.Ottakring (1160) ",
+                            "en": "16.Ottakring (1160) ",
+                            "de": "16.Ottakring (1160) "
+                        },
+                        {
+                            "ca": "17.Hernals (1170) ",
+                            "es": "17.Hernals (1170) ",
+                            "en": "17.Hernals (1170) ",
+                            "de": "17.Hernals (1170) "
+                        },
+                        {
+                            "ca": "18.Währing (1180) ",
+                            "es": "18.Währing (1180) ",
+                            "en": "18.Währing (1180) ",
+                            "de": "18.Währing (1180) "
+                        },
+                        {
+                            "ca": "19.Döbling (1190) ",
+                            "es": "19.Döbling (1190) ",
+                            "en": "19.Döbling (1190) ",
+                            "de": "19.Döbling (1190) "
+                        },
+                        {
+                            "ca": "20.Brigittenau (1200) ",
+                            "es": "20.Brigittenau (1200) ",
+                            "en": "20.Brigittenau (1200) ",
+                            "de": "20.Brigittenau (1200) "
+                        },
+                        {
+                            "ca": "21.Floridsdorf (1210) ",
+                            "es": "21.Floridsdorf (1210) ",
+                            "en": "21.Floridsdorf (1210) ",
+                            "de": "21.Floridsdorf (1210) "
+                        },
+                        {
+                            "ca": "22.Donaustadt (1220)",
+                            "es": "22.Donaustadt (1220)",
+                            "en": "22.Donaustadt (1220)",
+                            "de": "22.Donaustadt (1220)"
+                        },
+                        {
+                            "ca": "23.Liesing (1230) ",
+                            "es": "23.Liesing (1230) ",
+                            "en": "23.Liesing (1230) ",
+                            "de": "23.Liesing (1230) "
+                        },
+                        {
+                            "ca": "ch will/kann nicht antworten",
+                            "es": "ch will/kann nicht antworten",
+                            "en": "I'd rather not answer",
+                            "de": "Ich will/kann nicht antworten"
                         }
                     ],
                     "values": [
-                        "si"
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+						"7",
+						"8",
+						"9",
+						"10",
+						"11",
+						"12",
+						"13",
+						"14",
+						"15",
+						"16",
+						"17",
+						"18",
+						"19",
+						"20",
+						"21",
+						"22",
+						"23",
+                        "nvr"
                     ]
                 }
             ],
-            "wait": null,
-            "next": "p_3"
-        },
-        "p_3": {
-            "type": "WA",
-            "text": {
-                "ca": "🌍 Podries escriure a quin país vius? Si no vols respondre, no et preocupis: escriu NO.",
-                "es": "🌍 ¿Podrías escribir en qué país vives? Si no quieres responder, no te preocupes: escribe NO.",
-                "en": "🌍 Could you write us which country you live in? If you’d rather not say, simply type: NO.",
-                "de": "🌍 Kannst du bitte schreiben, in welchem Land du lebst? Wenn du nicht antworten willst, mach dir keine Sorgen, schreib einfach NEIN."
-            },
-            "save": "area",
-            "wait": null,
-            "next": null
-        },
-        "p_3c": {
-            "type": "NA",
-            "text": {
-                "ca": "La teva resposta s’ha guardat.",
-                "es": "Tu respuesta se ha guardado.",
-                "en": "Your answer has been saved.",
-                "de": "Deine Antwort wurde gespeichert."
-            },
-            "wait": null,
-            "next": "fp_4"
-        },
-        "fp_4": {
-            "type": "NA",
-            "text": {
-                "ca": "📊 Durant els darrers 35 anys, s’ha observat una acumulació de dades empíriques que suggereixen una associació positiva entre espais verds i salut mental. La qualitat de l’entorn on viuen les persones influeix en el seu benestar emocional.\n\nFont: Landscape and Urban Planning (2020), 103823.",
-                "es": "📊 Durante los últimos 35 años se ha observado una acumulación de datos empíricos que sugieren una asociación positiva entre espacios verdes y salud mental. La calidad del entorno donde viven las personas influye en su bienestar emocional.\n\nFuente: Landscape and Urban Planning (2020), 103823.",
-                "en": "📊 Over the last 35 years, a growing amount of empirical data has suggested a positive link between green spaces and mental health. The quality of people’s environment has an impact on their emotional wellbeing.\n\nSource: Landscape and Urban Planning (2020), 103823.",
-                "de": "📊 In den vergangenen 35 Jahren wurden umfassende empirische Daten gesammelt, die auf eine positive Auswirkung zwischen Grünflächen und psychischer Gesundheit hinweisen. Die Qualität der Umgebung, in der wir leben, hat einen direkten Einfluss auf unser seelisches Wohlbefinden.\n\nQuelle: Landscape and Urban Planning (2020), 103823."
-            },
-            "wait": null,
-            "next": "p_4"
-        },
-        "p_4": {
-            "type": "WA",
-            "text": {
-                "ca": "🏠 Per aquesta raó, podries escriure el teu codi postal? Si no el saps o no vols respondre, no et preocupis: escriu NO.",
-                "es": "🏠 Por esta razón, ¿podrías escribir tu código postal? Si no lo conoces o no quieres responder, no te preocupes: escribe NO.",
-                "en": "🏠 That’s why we ask you write us your postcode. If you don’t know it or would rather not say, simply type: NO.",
-                "de": "🏠 Kannst du uns deshalb bitte deine Postleitzahl schreiben? Wenn du nicht antworten willst, mach dir keine Sorgen, schreib einfach NEIN."
-            },
             "save": "codi",
             "wait": null,
-            "next": null
+            "next": "p_1d"
         },
-        "p_4c": {
+        "p_1d": {
             "type": "NA",
             "text": {
-                "ca": "Moltes gràcies! Estem recopilant totes les teves respostes.",
-                "es": "¡Muchas gracias! Estamos recopilando todas tus respuestas.",
-                "en": "Many thanks! We’re saving all your answers.",
-                "de": "Vielen Dank! Wir fassen deine Antworten zusammen."
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
+                "en": "Your answer has been saved.",
+                "de": "Deine Antwort wurde gespeichert."
             },
             "wait": null,
             "next": "vp1-4"
@@ -412,10 +504,10 @@
         "vp1-4": {
             "type": "SA",
             "text": {
-                "ca": "✅ Has afirmat que: {gen-ca}, {edat-ca}, el teu pais és {area-ca} i el teu codi postal és {codi-ca}.\n\n🔎 Revisa, si us plau, si la informació resumida és correcta. Ho és? Si no ho és, pots respondre a les preguntes de nou.",
-                "es": "✅ Has afirmado que: {gen-es}, {edat-es}, tu país es {area-ca} y tu código postal es {codi-ca}.\n\n🔎 Por favor, revisa si la información resumida es correcta. ¿Lo es? Si no lo es, puedes responder de nuevo las preguntas.",
-                "en": "✅ You’ve told us: {gen-en}, {edat-en}, your country is {area-ca}, and your postcode is {codi-ca}.\n\n🔎 Please check that all this information is correct. All good? If not, you can answer the questions again.",
-                "de": "✅ Du hast folgende Angaben gemacht: {gen-de}, {edat-de}, du lebst in {area-ca} und deine Postleitzahl ist {codi-ca}.\n\n🔎 Bitte überprüfe, ob die hier zusammengefasste Information korrekt ist. Ist sie korrekt? Wenn das nicht der Fall ist, kannst du die Fragen erneut beantworten."
+                "ca": "✅ Has afirmat que: {gen-ca}, {edat-ca}, el teu codi postal és {codi-ca}.\n\n🔎 Revisa, si us plau, si la informació resumida és correcta. Ho és? Si no ho és, pots respondre a les preguntes de nou.",
+                "es": "✅ Has afirmado que: {gen-es}, {edat-es}, tu código postal es {codi-ca}.\n\n🔎 Por favor, revisa si la información resumida es correcta. ¿Lo es? Si no lo es, puedes responder de nuevo las preguntas.",
+                "en": "✅ You’ve told us: {gen-en}, {edat-en}, your postcode is {codi-ca}.\n\n🔎 Please check that all this information is correct. All good? If not, you can answer the questions again.",
+                "de": "✅ Du hast folgende Angaben gemacht: {gen-de}, {edat-de}, deine Postleitzahl ist {codi-ca}.\n\n🔎 Bitte überprüfe, ob die hier zusammengefasste Information korrekt ist. Ist sie korrekt? Wenn das nicht der Fall ist, kannst du die Fragen erneut beantworten."
             },
             "display": {
                 "gen-ca": "'ets home' if '{genere}' == 'm' else 'ets dona' if '{genere}' == 'f' else 'tens una identitat de gènere no binària' if '{genere}' == 'd' else 'no vols compartir la teva identitat de gènere' if '{genere}' == 'nvr' else ''",
@@ -426,7 +518,6 @@
                 "edat-es": "'tienes 18-24 años' if '{edat}' == '1' else 'tienes 25-34 años' if '{edat}' == '2' else 'tienes 35-44 años' if '{edat}' == '3' else 'tienes 45-54 años' if '{edat}' == '4' else 'tienes 55-64 años' if '{edat}' == '5' else 'tienes más de 65 años' if '{edat}' == '6' else 'no quieres compartir tu edad' if '{edat}' == 'nvr' else ''",
                 "edat-en": "'you’re 18-24 years old' if '{edat}' == '1' else 'you’re 25-34 years old' if '{edat}' == '2' else 'you’re 35-44 years old' if '{edat}' == '3' else 'you’re 45-54 years old' if '{edat}' == '4' else 'you’re 55-64 years old' if '{edat}' == '5' else 'you’re over 65 years old' if '{edat}' == '6' else 'you’d rather not share your age' if '{edat}' == 'nvr' else ''",
                 "edat-de": "'du bist 18-24 Jahre alt' if '{edat}' == '1' else 'du bist 25-34 Jahre alt' if '{edat}' == '2' else 'du bist 35-44 Jahre alt' if '{edat}' == '3' else 'du bist 45-54 Jahre alt' if '{edat}' == '4' else 'du bist 55-64 Jahre alt' if '{edat}' == '5' else 'du bist über 65 Jahre alt' if '{edat}' == '6' else 'du willst dein Alter nicht mitteilen' if '{edat}' == 'nvr' else ''",
-                "area-ca": "'{area}'",
                 "codi-ca": "'{codi}'"
             },
             "vars": [
@@ -435,14 +526,14 @@
                     "type": "button",
                     "texts": [
                         {
-                            "ca": "Sí, és correcta.",
-                            "es": "Sí, es correcta.",
+                            "ca": "Ja, sie sind korrekt.",
+                            "es": "Ja, sie sind korrekt.",
                             "en": "Yes, it’s correct.",
                             "de": "Ja, sie sind korrekt."
                         },
                         {
-                            "ca": "No, vull modificar les meves respostes.",
-                            "es": "No, quiero modificar mis respuestas.",
+                            "ca": "Nein, ich möchte meine Antworten ändern.",
+                            "es": "Nein, ich möchte meine Antworten ändern.",
                             "en": "No, I’d like to change my answers.",
                             "de": "Nein, ich möchte meine Antworten ändern."
                         }
@@ -457,44 +548,44 @@
             "next": {
                 "c_1": {
                     "Sí": "wait_a2",
-                    "No": "p_1-2"
+                    "No": "1b-2"
                 }
             }
         },
-        "p_1-2": {
+        "1b-2": {
             "type": "SA",
             "text": {
-                "ca": "📋 La configuració de les xarxes de suport social en salut mental està fortament influenciada per aspectes de gènere. Quin és el gènere amb què més t'identifiques?",
-                "es": "📋 La configuración de las redes de apoyo social en salud mental está fuertemente influenciada por aspectos de género. ¿Cuál es el género con el que más te identificas?",
-                "en": "📋 Gender plays a major role in shaping mental health social support networks. Which gender do you identify with most?",
-                "de": "📋 Die Zusammensetzung der Unterstützungsnetzwerke für psychische Gesundheit ist stark geschlechtsspezifisch geprägt. Wie würdest du deine Geschlechtsidentität beschreiben?"
-            },
+                "ca": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n",
+                "es": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n",
+                "en": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n ",
+                "de": "📋 Die Auswirkungen von Hitze sind oft mit genderspezifischen Faktoren verbunden. So waren 2022 in den Gruppen der einkommensschwachen und älteren Stadtbewohner:innen Wiens Frauen überrepräsentiert. Laut Gleichtsellungsmonitor machten 74% der Bevölkerung über 90 Jahren Frauen* aus. (Gleichtstellungsmonitor, Stadt Wien, 2022) Kannst du daher bitte deine Geschlechtsidentität angeben?\n\n "
+           },
             "vars": [
                 {
                     "name": "genere",
                     "type": "button",
                     "texts": [
                         {
-                            "ca": "Home",
-                            "es": "Hombre",
+                            "ca": "Mann",
+                            "es": "Mann",
                             "en": "Male",
                             "de": "Mann"
                         },
                         {
-                            "ca": "Dona",
-                            "es": "Mujer",
+                            "ca": "Frau",
+                            "es": "Frau",
                             "en": "Female",
                             "de": "Frau"
                         },
                         {
-                            "ca": "No binària",
-                            "es": "No binario",
+                            "ca": "Nichtbinär",
+                            "es": "Nichtbinär",
                             "en": "Nonbinary",
                             "de": "Nichtbinär"
                         },
                         {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
+                            "ca": "Ich will/kann nicht antworten",
+                            "es": "Ich will/kann nicht antworten",
                             "en": "I'd rather not answer",
                             "de": "Ich will/kann nicht antworten"
                         }
@@ -509,26 +600,77 @@
             ],
             "save": "genere",
             "wait": null,
-            "next": "p_1c-2"
+                       "next": {
+                "genere": {
+                    "m": "m_1b-2",
+                    "f": "f_1b-2",
+                    "d": "d_1b-2",
+                    "nvr": "nvr_1b-2"
+                }
+            }
         },
-        "p_1c-2": {
+        "m_1b-2": {
             "type": "NA",
             "text": {
-                "ca": "La teva resposta s’ha guardat.",
-                "es": "Tu respuesta se ha guardado.",
+                "ca": "Du sagst: <b>Mann</b>",
+                "es": "Du sagst: <b>Mann</b>",
+                "en": "Du sagst: <b>Mann</b>",
+                "de": "Du sagst: <b>Mann</b>"
+            },
+            "wait": null,
+            "next": "p_1b-2"
+        },
+        "f_1b-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Frau</b>",
+                "es": "Du sagst: <b>Frau</b>",
+                "en": "Du sagst: <b>Frau</b>",
+                "de": "Du sagst: <b>Frau</b>"
+            },
+            "wait": null,
+            "next": "p_1b-2"
+        },
+        "d_1b-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Nichtbinär</b>",
+                "es": "Du sagst: <b>Nichtbinär</b>",
+                "en": "Du sagst: <b>Nichtbinär</b>",
+                "de": "Du sagst: <b>Nichtbinär</b>"
+            },
+            "wait": null,
+            "next": "p_1b-2"
+        },
+        "nvr_1b-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "es": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "en": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "de": "Du sagst: <b>Ich will/kann nicht antworten</b>"
+            },
+            "wait": null,
+            "next": "p_1b-2"
+        },
+        "p_1b-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Deine Antwort wurde gespeichert.",
+                "es": "Deine Antwort wurde gespeichert.",
                 "en": "Your answer has been saved.",
                 "de": "Deine Antwort wurde gespeichert."
             },
             "wait": null,
-            "next": "p_2-2"
+            "next": "1c-2"
         },
-        "p_2-2": {
+        "1c-2": {
             "type": "SA",
             "text": {
-                "ca": "📋 L’edat és un factor a considerar dins les xarxes de suport social en salut mental. A quin rang d’edat pertanys (en anys)?",
-                "es": "📋 La edad es un factor a considerar dentro de las redes de apoyo social en salud mental. ¿A qué rango de edad perteneces (en años)?",
-                "en": "📋 Age is a key factor in mental health social support networks. In which age bracket do you belong?",
-                "de": "📋 Das Alter ist ein Faktor, der in den Unterstützungsnetzwerken für psychische Gesundheit in Betracht gezogen werden muss. Zu welcher Altersgruppe gehörst du (in Jahren)?"
+                "ca": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "es": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "en": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n",
+                "de": "📊 Die (gesundheitlichen) Auswirkungen von Hitze in Stadt ist u.a. Vom Alter abhängig. (Hitzeaktionsplan, Stadt Wien, 2022, Seite 22) Kannst du daher bitte angeben, zu welcher Altersgruppe gehörst du (in Jahren)?\n\n"
             },
             "vars": [
                 {
@@ -572,8 +714,8 @@
                             "de": "65+"
                         },
                         {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
+                            "ca": "ch will/kann nicht antworten",
+                            "es": "ch will/kann nicht antworten",
                             "en": "I'd rather not answer",
                             "de": "Ich will/kann nicht antworten"
                         }
@@ -591,59 +733,301 @@
             ],
             "save": "edat",
             "wait": null,
-            "next": "p_2c-2"
+            "next": {
+                "edat": {
+                    "1": "e1_1c-2",
+                    "2": "e2_1c-2",
+                    "3": "e3_1c-2",
+                    "4": "e4_1c-2",
+                    "5": "e5_1c-2",
+                    "6": "e6_1c-2",
+                    "nvr": "envr_1c-2"
+                }
+            }
         },
-        "p_2c-2": {
+        "e1_1c-2": {
             "type": "NA",
             "text": {
-                "ca": "Moltes gràcies! La teva resposta s’ha guardat.",
-                "es": "¡Muchas gracias! Tu respuesta se ha guardado.",
+                "ca": "Du sagst: <b>18-24</b>",
+                "es": "Du sagst: <b>18-24</b>",
+                "en": "Du sagst: <b>18-24</b>",
+                "de": "Du sagst: <b>18-24</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "e2_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>25-34</b>",
+                "es": "Du sagst: <b>25-34</b>",
+                "en": "Du sagst: <b>25-34</b>",
+                "de": "Du sagst: <b>25-34</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "e3_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>35-44</b>",
+                "es": "Du sagst: <b>35-44</b>",
+                "en": "Du sagst: <b>35-44</b>",
+                "de": "Du sagst: <b>35-44</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "e4_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>45-54</b>",
+                "es": "Du sagst: <b>45-54</b>",
+                "en": "Du sagst: <b>45-54</b>",
+                "de": "Du sagst: <b>45-54</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "e5_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>55-64</b>",
+                "es": "Du sagst: <b>55-64</b>",
+                "en": "Du sagst: <b>55-64</b>",
+                "de": "Du sagst: <b>55-64</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "e6_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>65+</b>",
+                "es": "Du sagst: <b>65+</b>",
+                "en": "Du sagst: <b>65+</b>",
+                "de": "Du sagst: <b>65+</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "nvr_1b-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "es": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "en": "Du sagst: <b>Ich will/kann nicht antworten</b>",
+                "de": "Du sagst: <b>Ich will/kann nicht antworten</b>"
+            },
+            "wait": null,
+            "next": "p_1c-2"
+        },
+        "p_1c-2": {
+            "type": "NA",
+            "text": {
+                "ca": "Vielen Dank! Deine Antwort wurde gespeichert.",
+                "es": "Vielen Dank! Deine Antwort wurde gespeichert.",
                 "en": "Many thanks! Your answer has been saved.",
                 "de": "Vielen Dank! Deine Antwort wurde gespeichert."
             },
             "wait": null,
-            "next": "p_3-2"
+            "next": "1d-2"
         },
-        "p_3-2": {
-            "type": "WA",
+        "1d-2": {
+            "type": "SA",
             "text": {
-                "ca": "🌍 Podries escriure a quin país vius? Si no vols respondre, no et preocupis: escriu NO.",
-                "es": "🌍 ¿Podrías escribir en qué país vives? Si no quieres responder, no te preocupes: escribe NO.",
-                "en": "🌍 Could you write us which country you live in? If you’d rather not say, simply type: NO.",
-                "de": "🌍 Kannst du bitte schreiben, in welchem Land du lebst? Wenn du nicht antworten willst, mach dir keine Sorgen, schreib einfach NEIN."
+                "ca": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "es": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "en": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n",
+                "de": "🏠 Sogenannte urbane Hitzeinseln können dazu beitragen, dass sich die Temperaturen innerhalb der Stadt während Hitzewellen stark unterscheiden. (Urbane Hitzeinseln, Stadt Wien, 2019). Kannst du daher bitte angeben, in welchem Bezirk du wohnst?\n\n"
             },
-            "save": "area",
-            "wait": null,
-            "next": null
-        },
-        "p_3c-2": {
-            "type": "NA",
-            "text": {
-                "ca": "La teva resposta s’ha guardat.",
-                "es": "Tu respuesta se ha guardado.",
-                "en": "Your answer has been saved.",
-                "de": "Deine Antwort wurde gespeichert."
-            },
-            "wait": null,
-            "next": "p_4-2"
-        },
-        "p_4-2": {
-            "type": "WA",
-            "text": {
-                "ca": "🏠 Podries escriure el teu codi postal? Si no el saps o no vols respondre, no et preocupis: escriu NO.",
-                "es": "🏠 ¿Podrías escribir tu código postal? Si no lo conoces o no quieres responder, no te preocupes: escribe NO.",
-                "en": "🏠 Please write us your postcode. If you don’t know it or would rather not say, simply type: NO.",
-                "de": "🏠 Kannst du uns bitte deine Postleitzahl schreiben? Wenn du nicht antworten willst, mach dir keine Sorgen, schreib einfach NEIN."
-            },
+            "vars": [
+                {
+                    "name": "codi",
+                    "type": "button",
+                    "texts": [
+                        {
+                            "ca": "01.Innere Stadt (1010)",
+                            "es": "01.Innere Stadt (1010)",
+                            "en": "01.Innere Stadt (1010)",
+                            "de": "01.Innere Stadt (1010)"
+                        },
+                        {
+                            "ca": "02.Leopoldstadt (1020)",
+                            "es": "02.Leopoldstadt (1020)",
+                            "en": "02.Leopoldstadt (1020)",
+                            "de": "02.Leopoldstadt (1020)"
+                        },
+                        {
+                            "ca": "03.Landstraße (1030)",
+                            "es": "03.Landstraße (1030)",
+                            "en": "03.Landstraße (1030)",
+                            "de": "03.Landstraße (1030)"
+                        },
+                        {
+                            "ca": "04.Wieden (1040)",
+                            "es": "04.Wieden (1040)",
+                            "en": "04.Wieden (1040)",
+                            "de": "04.Wieden (1040)"
+                        },
+                        {
+                            "ca": "05.Margareten (1050)",
+                            "es": "05.Margareten (1050)",
+                            "en": "05.Margareten (1050)",
+                            "de": "05.Margareten (1050)"
+                        },
+                        {
+                            "ca": "06.Mariahilf (1060)",
+                            "es": "06.Mariahilf (1060)",
+                            "en": "06.Mariahilf (1060)",
+                            "de": "06.Mariahilf (1060)"
+                        },
+                        {
+                            "ca": "07.Neubau (1070)",
+                            "es": "07.Neubau (1070)",
+                            "en": "07.Neubau (1070)",
+                            "de": "07.Neubau (1070)"
+                        },
+                        {
+                            "ca": "08.Josefstadt (1080) ",
+                            "es": "08.Josefstadt (1080) ",
+                            "en": "08.Josefstadt (1080) ",
+                            "de": "08.Josefstadt (1080) "
+                        },
+                        {
+                            "ca": "09.Alsergrund (1090)",
+                            "es": "09.Alsergrund (1090)",
+                            "en": "09.Alsergrund (1090)",
+                            "de": "09.Alsergrund (1090)"
+                        },
+                        {
+                            "ca": "10.Favoriten (1100)",
+                            "es": "10.Favoriten (1100)",
+                            "en": "10.Favoriten (1100)",
+                            "de": "10.Favoriten (1100)"
+                        },
+                        {
+                            "ca": "11.Simmering (1110) ",
+                            "es": "11.Simmering (1110) ",
+                            "en": "11.Simmering (1110) ",
+                            "de": "11.Simmering (1110) "
+                        },
+                        {
+                            "ca": "12.Meidling (1120)",
+                            "es": "12.Meidling (1120)",
+                            "en": "12.Meidling (1120)",
+                            "de": "12.Meidling (1120)"
+                        },
+                        {
+                            "ca": "13.Hietzing (1130) ",
+                            "es": "13.Hietzing (1130) ",
+                            "en": "13.Hietzing (1130) ",
+                            "de": "13.Hietzing (1130) "
+                        },
+                        {
+                            "ca": "14.Penzing (1140)",
+                            "es": "14.Penzing (1140)",
+                            "en": "14.Penzing (1140)",
+                            "de": "14.Penzing (1140)"
+                        },
+                        {
+                            "ca": "15.Rudolfsheim (1150) ",
+                            "es": "15.Rudolfsheim (1150) ",
+                            "en": "15.Rudolfsheim (1150) ",
+                            "de": "15.Rudolfsheim (1150) "
+                        },
+                        {
+                            "ca": "16.Ottakring (1160) ",
+                            "es": "16.Ottakring (1160) ",
+                            "en": "16.Ottakring (1160) ",
+                            "de": "16.Ottakring (1160) "
+                        },
+                        {
+                            "ca": "17.Hernals (1170) ",
+                            "es": "17.Hernals (1170) ",
+                            "en": "17.Hernals (1170) ",
+                            "de": "17.Hernals (1170) "
+                        },
+                        {
+                            "ca": "18.Währing (1180) ",
+                            "es": "18.Währing (1180) ",
+                            "en": "18.Währing (1180) ",
+                            "de": "18.Währing (1180) "
+                        },
+                        {
+                            "ca": "19.Döbling (1190) ",
+                            "es": "19.Döbling (1190) ",
+                            "en": "19.Döbling (1190) ",
+                            "de": "19.Döbling (1190) "
+                        },
+                        {
+                            "ca": "20.Brigittenau (1200) ",
+                            "es": "20.Brigittenau (1200) ",
+                            "en": "20.Brigittenau (1200) ",
+                            "de": "20.Brigittenau (1200) "
+                        },
+                        {
+                            "ca": "21.Floridsdorf (1210) ",
+                            "es": "21.Floridsdorf (1210) ",
+                            "en": "21.Floridsdorf (1210) ",
+                            "de": "21.Floridsdorf (1210) "
+                        },
+                        {
+                            "ca": "22.Donaustadt (1220)",
+                            "es": "22.Donaustadt (1220)",
+                            "en": "22.Donaustadt (1220)",
+                            "de": "22.Donaustadt (1220)"
+                        },
+                        {
+                            "ca": "23.Liesing (1230) ",
+                            "es": "23.Liesing (1230) ",
+                            "en": "23.Liesing (1230) ",
+                            "de": "23.Liesing (1230) "
+                        },
+                        {
+                            "ca": "ch will/kann nicht antworten",
+                            "es": "ch will/kann nicht antworten",
+                            "en": "I'd rather not answer",
+                            "de": "Ich will/kann nicht antworten"
+                        }
+                    ],
+                    "values": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+						"7",
+						"8",
+						"9",
+						"10",
+						"11",
+						"12",
+						"13",
+						"14",
+						"15",
+						"16",
+						"17",
+						"18",
+						"19",
+						"20",
+						"21",
+						"22",
+						"23",
+                        "nvr"
+                    ]
+                }
+            ],
             "save": "codi",
             "wait": null,
-            "next": null
+            "next": "p_1d-2"
         },
-        "p_4c-2": {
+        "p_1d-2": {
             "type": "NA",
             "text": {
-                "ca": "Moltes gràcies! Estem recopilant totes les teves respostes.",
-                "es": "¡Muchas gracias! Estamos recopilando todas tus respuestas.",
+                "ca": "Vielen Dank! Wir fassen deine Antworten zusammen.",
+                "es": "Vielen Dank! Wir fassen deine Antworten zusammen.",
                 "en": "Many thanks! We’re saving all your answers.",
                 "de": "Vielen Dank! Wir fassen deine Antworten zusammen."
             },
@@ -653,1981 +1037,12 @@
         "wait_a2": {
             "type": "NA",
             "text": {
-                "ca": "Moltes gràcies, ja has respost al primer bloc del qüestionari. En breu t’enviarem les preguntes relacionades amb les xarxes de suport en salut mental.",
-                "es": "Muchas gracias, ya has respuesto el primer bloque del cuestionario. En breve te mandaremos las preguntas relacionadas con las redes de apoyo en salud mental.",
-                "en": "Many thanks! You’ve now completed the first set of questions. You’ll soon receive a set of questions on mental health social support networks.",
-                "de": "Vielen Dank, du hast den ersten Block des Fragebogens beantwortet. In Kürze werden wir dir Fragen bezüglich der Unterstützungsnetzwerke für psychische Gesundheit schicken."
-            },
-            "wait": 1800,
-            "next": "a2"
-        },
-        "a2": {
-            "type": "SA",
-            "text": {
-                "ca": "Seguim amb una segona tanda de preguntes. En aquest cas et demanem informació més delicada. Precisament perquè les teves respostes no quedin visibles al teu mòbil, <b>no en rebràs un resum</b> per a la teva validació. Així podrem vetllar per la teva privacitat. Gràcies pel teu temps!",
-                "es": "Seguimos con una segunda ronda de preguntas. En este caso te pedimos información más delicada. Precisamente para que tus respuestas no queden visibles en tu móvil, <b>no recibirás un resumen</b> para que lo valides. Así podremos velar por tu privacidad. ¡Gracias por tu tiempo!",
-                "en": "Here’s the second set of questions. This time we’ll be touching on more sensitive topics. To avoid your answers appearing on your mobile phone, you <b>won’t receive a summary</b> to check. That way we can do our utmost to respect your privacy. Thank you for your time!",
-                "de": "Weiter geht es mit der zweiten Fragenrunde. Dieses Mal fragen wir dich nach eher delikaten Angaben. Damit deine Antworten nicht auf deinem Mobiltelefon angezeigt werden, werden wir dir <b>keine Zusammenfassung</b> zur Bestätigung schicken. So ist für den Schutz deiner Privatsphäre gesorgt. Danke, dass du dir die Zeit dafür nimmst!"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "2"
-        },
-        "2": {
-            "type": "SA",
-            "text": {
-                "ca": "🎨 Totes les persones som importants dins les xarxes de suport social en salut mental, però cada persona en forma part d'una manera diferent. Recollir les singularitats de cadascú és el punt de partida d’aquesta recerca.",
-                "es": "🎨 Todas las personas somos importantes dentro de las redes de apoyo social en salud mental, pero cada persona forma parte de ellas de una manera diferente. Recoger las singularidades de cada cual es el punto de partida de esta investigación.",
-                "en": "🎨 Everyone has their own unique role to play in mental health social support networks. That’s why this research starts out by gathering information on people’s individual characteristics.",
-                "de": "🎨 Alle Personen sind wichtig in den Unterstützungsnetzwerken für psychische Gesundheit, doch spielt dabei jede einzelne Person eine andere Rolle. Die Besonderheiten jeder Person zu sammeln ist der Ausgangspunkt dieser Forschung."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "fp_5"
-        },
-        "fp_5": {
-            "type": "SA",
-            "text": {
-                "ca": "📊 Un estudi recent d’OpenSystems de la Universitat de Barcelona ha identificat que les persones amb problemes de salut mental són les que fan l'esforç més gran per contribuir al benestar dins un grup, però també són les més exposades i vulnerables.\n\nFont: Scientific Reports (2018), 8(1), 1-9.",
-                "es": "📊 Un estudio reciente de OpenSystems de la Universitat de Barcelona ha identificado que las personas con problemas de salud mental son las que mayor esfuerzo hacen por contribuir al bienestar dentro de un grupo, pero también son las más expuestas y vulnerables.\n\nFuente: Scientific Reports (2018), 8(1), 1-9.",
-                "en": "📊 A recent study by OpenSystems at the Universitat de Barcelona found that people with mental health problems make the greatest effort to contribute to a group’s wellbeing but are also the most vulnerable and exposed members.\n\nSource: Scientific Reports (2018), 8(1), 1–9.",
-                "de": "📊 Eine kürzlich veröffentlichte Studie von OpenSystems der Universität Barcelona zeigt auf, dass Personen mit psychischen  Gesundheitsproblemen diejenigen sind, die sich am meisten um das Wohlbefinden innerhalb einer Gruppe bemühen, doch sind sie gleichzeitig  besonders ausgesetzt und verletzlich.\n\nQuelle: Scientific Reports (2018), 8(1), 1-9."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "3"
-        },
-        "3": {
-            "type": "NA",
-            "text": {
-                "ca": "📋 Ara et preguntem per <b>les teves vivències en relació amb la salut mental</b>. Recorda que si alguna pregunta t'incomoda, no tens per què respondre-la.",
-                "es": "📋 Ahora te preguntaremos por <b>tus vivencias con relación a la salud mental</b>. Recuerda que si alguna pregunta te incomoda no tienes por qué responderla.",
-                "en": "📋 Now we’d like you to tell us about <b>your lived experience of mental health</b>. Remember, you can skip any questions you’d rather not answer.",
-                "de": "📋 Wir werden dir jetzt Fragen zu <b>deiner Erfahrung mit mentaler Gesundheit stellen</b>. Und vergiss nicht, dass du nicht antworten musst, wenn dir eine Frage Unbehagen verursacht."
-            },
-            "wait": null,
-            "next": "p_5"
-        },
-        "p_5": {
-            "type": "SA",
-            "text": {
-                "ca": "Vius o has viscut problemes de salut mental?",
-                "es": "¿Vives o has vivido problemas de salud mental?",
-                "en": "Do you live, or have you ever lived, mental health problems yourself?",
-                "de": "Hast oder hattest du psychische Gesundheitsprobleme?"
-            },
-            "vars": [
-                {
-                    "name": "pp",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp",
-            "wait": null,
-            "next": {
-                "pp": {
-                    "Sí": "p_5a",
-                    "No": "fp_6",
-                    "nvr": "fp_6"
-                }
-            }
-        },
-        "p_5a": {
-            "type": "SA",
-            "text": {
-                "ca": "🏠 Convius amb una o diverses persones?",
-                "es": "🏠 ¿Convives con una o varias personas?",
-                "en": "🏠 Do you live with any other persons?",
-                "de": "🏠 Lebst du mit einer oder mit mehreren Personen zusammen?"
-            },
-            "vars": [
-                {
-                    "name": "pp_v",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_v",
-            "wait": null,
-            "next": {
-                "pp_v": {
-                    "Sí": "p_5a_si",
-                    "No": "p_5b",
-                    "nvr": "p_5b"
-                }
-            }
-        },
-        "p_5a_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🏠🌡 <b>En relació amb el teu benestar emocional:</b> com definiries el grau d’implicació en el teu benestar <b>de les persones amb qui convius</b>?",
-                "es": "🏠🌡 <b>Respecto a tu bienestar emocional:</b> C¿cómo definirías el grado de implicación en tu bienestar <b>de las personas con las que convives</b>?",
-                "en": "🏠🌡 <b>With regard to your emotional wellbeing</b> what kind of a role do <b>the persons you live with</b> play in your emotional wellbeing?",
-                "de": "🏠🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>der Personen, mit denen du zusammenlebst</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_v_g",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_v_g",
-            "wait": null,
-            "next": "p_5b"
-        },
-        "p_5b": {
-            "type": "SA",
-            "text": {
-                "ca": " 🤝🌡 <b>En relació al teu benestar emocional:</b> Com definiries el grau d’implicació en el teu benestar <b>dels teus familiars amb qui no convius</b>?",
-                "es": " 🤝🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de los familiares con los que no convives</b>?",
-                "en": " 🤝🌡 <b>With regard to your emotional wellbeing:</b>, what kind of a role do <b>members of your family who you don’t live with</b> play in your emotional wellbeing?",
-                "de": " 🤝🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>der Familienmitglieder, mit denen du nicht zusammenlebst</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bf",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bf",
-            "wait": null,
-            "next": "p_5c"
-        },
-        "p_5c": {
-            "type": "SA",
-            "text": {
-                "ca": " 🤝🌡 <b>En relació amb el teu benestar emocional:</b> com definiries el grau d’implicació en el teu benestar <b>de les teves amistats més properes</b>?",
-                "es": " 🤝🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de tus amistades más cercanas</b>?",
-                "en": " 🤝🌡 <b>With regard to your emotional wellbeing</b>, what kind of a role do <b>your closest friends</b> play in your emotional wellbeing?",
-                "de": " 🤝🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>deiner engsten Freunde</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bef",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bef",
-            "wait": null,
-            "next": "p_5d"
-        },
-        "p_5d": {
-            "type": "SA",
-            "text": {
-                "ca": "🏫🌡 <b>En relació amb el teu benestar emocional:</b> com definiries el grau d’implicació en el teu benestar <b>de les persones del teu entorn laboral</b>?",
-                "es": "🏫🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de las personas de tu entorno laboral</b>?",
-                "en": "🏫🌡 <b>With regard to your emotional wellbeing</b>, what kind of a role do <b>your coworkers</b> play in your emotional wellbeing?",
-                "de": "🏫🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>der Personen in deinem Arbeitsumfeld</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bel",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No tinc companys de feina",
-                            "es": "No tengo compañeros de trabajo",
-                            "en": "I don’t have any coworkers",
-                            "de": "Ich habe keine Arbeitskollegen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nt",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bel",
-            "wait": null,
-            "next": "p_5e"
-        },
-        "p_5e": {
-            "type": "SA",
-            "text": {
-                "ca": " 🏘🌡 <b>En relació al teu benestar emocional:</b> com definiries el grau d'implicació en el teu benestar <b>de les persones del teu veïnat o barri</b>?",
-                "es": " 🏘🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de las personas de tu vecindario o barrio</b>?",
-                "en": " 🏘🌡 <b>With regard to your emotional wellbeing</b> , what kind of a role do <b>your neighbours</b> play in your emotional wellbeing?",
-                "de": " 🏘🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>der Personen in deiner Nachbarschaft oder in deinem Viertel</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bev",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bev",
-            "wait": null,
-            "next": "p_5f"
-        },
-        "p_5f": {
-            "type": "SA",
-            "text": {
-                "ca": "🎭🌡 <b>En relació al teu benestar emocional:</b> com definiries el grau d'implicació en el teu benestar <b>de les persones amb qui et relaciones a través d’activitats culturals o d’oci</b>?",
-                "es": "🎭🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de las personas con quienes te relacionas a través de actividades culturales o de ocio</b>?",
-                "en": "🎭🌡 <b>With regard to your emotional wellbeing</b>, what kind of a role do <b>the persons you do cultural or leisure activities with</b> play in your emotional wellbeing?",
-                "de": "🎭🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung der <b>Personen, zu denen du über kulturelle oder Freizeitaktivitäten eine Beziehung hast</b> an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bec",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bec",
-            "wait": null,
-            "next": "p_5g"
-        },
-        "p_5g": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En relació al teu benestar emocional:</b> com definiries el grau d’implicació en el teu benestar <b>del teu entorn social, en termes generals</b>?",
-                "es": "🤝🌡 <b>Respecto a tu bienestar emocional:</b> ¿cómo definirías el grado de implicación en tu bienestar <b>de tu entorno social, en términos generales</b>?",
-                "en": "🤝🌡 <b>With regard to your emotional wellbeing</b>, what kind of a role does your <b>social environment</b> in general play in your emotional wellbeing?",
-                "de": "🤝🌡 <b>Bezüglich deines seelischen Wohlbefindens:</b> wie würdest du den Grad der Beteiligung <b>deines sozialen Umfelds, ganz allgemein gesehen</b>, an deinem Wohlbefinden beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bes",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bes",
-            "wait": null,
-            "next": "p_5h"
-        },
-        "p_5h": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b> I tu, en relació amb el benestar emocional dels teus familiars o de les persones amb qui et relaciones</b>: com definiries el teu grau d'implicació?",
-                "es": "🤝🌡 <b>Y tú, respecto al bienestar emocional de tus familiares o de las personas con quienes te relacionas:</b> ¿cómo definirías tu grado de implicación?",
-                "en": "🤝🌡 <b>Turning to you, with regard to the emotional wellbeing of your family and the persons around you</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🤝🌡 <b>Und du, wie würdest du deinen</b> Grad der Beteiligung <b>bezüglich des seelischen Wohlbefinden deiner Familienangehörigen oder der Personen, zu denen du eine Beziehung hast</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "pp_bea",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No saben dels meus problemes",
-                            "es": "No saben de mis problemas",
-                            "en": "They know nothing about my problems",
-                            "de": "Sie wissen nichts von meinen Problemen"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nsdmp",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "pp_bea",
-            "wait": null,
-            "next": "wait_afp_6"
-        },
-        "wait_afp_6": {
-            "type": "NA",
-            "text": {
-                "ca": "Moltes gràcies, ja has respost al segon bloc de preguntes. En breu t’enviarem el darrer bloc de preguntes sobre el teu entorn social.",
-                "es": "Muchas gracias, ya has respondido el segundo bloque de preguntas. En breve te mandaremos el último bloque de preguntas sobre tu entorno social.",
-                "en": "Many thanks! You’ve now completed the second set of questions. You’ll soon receive a set of questions on your social environment.",
-                "de": "Vielen Dank, du hast den zweiten Fragenblock beantwortet. In Kürze schicken wir dir den letzten Fragenblock über dein soziales Umfeld."
-            },
-            "wait": 1800,
-            "next": "afp_6"
-        },
-        "afp_6": {
-            "type": "NA",
-            "text": {
-                "ca": "Seguim amb la tercera i darrera tanda de preguntes. Les teves respostes ens seran molt útils per a la recerca.",
-                "es": "Seguimos con la tercera y última ronda de preguntas. Tus respuestas nos serán muy útiles para la investigación.",
-                "en": "Here’s the third and final set of questions. Your answers will be extremely useful for our research.",
-                "de": "Weiter geht es mit der dritten und letzten Fragerunde. Deine Antworten werden uns bei unserer Forschung sehr nützlich sein."
-            },
-            "wait": null,
-            "next": "fp_6"
-        },
-        "fp_6": {
-            "type": "SA",
-            "text": {
-                "ca": "📊 Moltes gràcies per respondre. El mateix estudi de la Universitat de Barcelona destaca la rellevància dels cuidadors informals en la recuperació de les persones amb problemes de salut mental.\n\nFont: Scientific Reports (2018), 8(1), 1-9 (2018).",
-                "es": "📊 Muchas gracias por responder. El mismo estudio de la Universitat de Barcelona destaca la relevancia de los cuidadores informales en la recuperación de las personas con problemas de salud mental.\n\nFuente: Scientific Reports (2018), 8(1), 1-9 (2018).",
-                "en": "📊 Many thanks for answering. The same study by Universitat de Barcelona stresses the key role that informal caregivers play in helping people recover from mental health problems.\n\nSource: Scientific Reports (2018), 8(1), 1–9 (2018).",
-                "de": "📊 Vielen Dank für deine Antworten. Die vorher erwähnte Studie der Universität Barcelona weist auf die Wichtigkeit der informellen pflegenden Personen beim Genesungsprozess von Personen mit psychischen Gesundheitsproblemen hin.\n\nQuelle: Scientific Reports (2018), 8(1), 1-9 (2018)."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "4"
-        },
-        "4": {
-            "type": "NA",
-            "text": {
-                "ca": "📋 Ara et preguntem per <b>les teves vivències dins les xarxes de suport en salut mental</b>. Recorda que si alguna pregunta t'incomoda, no tens per què respondre-la.",
-                "es": "📋 Ahora te preguntaremos por <b>tus vivencias dentro de las redes de apoyo en salud mental</b>. Recuerda que si alguna pregunta te incomoda no tienes por qué responderla.",
-                "en": "📋 Now we’d like you to tell us about your <b>lived experience of mental health social support networks</b>. Remember, you can skip any questions you’d rather not answer.",
-                "de": "📋 Wir werden dir jetzt Fragen zu <b>deiner Erfahrung in den Unterstützungsnetzwerken für psychischer Gesundheit</b> stellen. Und vergiss nicht, dass du nicht antworten musst, wenn dir eine Frage Unbehagen verursacht."
-            },
-            "wait": null,
-            "next": "p_cui"
-        },
-        "p_cui": {
-            "type": "SA",
-            "text": {
-                "ca": "Ets <b>persona cuidadora</b> d’una persona que té amb problemes de salut mental?",
-                "es": "Eres <b>persona cuidadora</b> de una persona que tiene problemas de salud mental?",
-                "en": "Are you a <b>caregiver</b> for someone with mental health problems?",
-                "de": "Bist du <b>pflegende Person</b> einer Person mit psychischen Gesundheitsproblemen?"
-            },
-            "vars": [
-                {
-                    "name": "p_cuid",
-                    "type": "button",
-                    "texts": [
-                       {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_cuid",
-            "wait": null,
-            "next": {
-                "p_cuid": {
-                    "Sí": "p_6a",
-                    "No": "p_6a_kn",
-                    "nvr": "p_6a_kn"
-                }
-            }
-        },
-        "p_6a": {
-            "type": "SA",
-            "text": {
-                "ca": "🏠 Convius amb una o diverses persones que té o tenen problemes de salut mental?",
-                "es": "🏠 ¿Convives con una o varias personas que tiene o tienen problemas de salud mental?",
-                "en": "🏠 Do you live with persons with mental health problems?",
-                "de": "🏠 Lebst du mit einer oder mehreren Personen mit psychischen Gesundheitsproblemen zusammen?"
-            },
-            "vars": [
-                {
-                    "name": "p_c",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_c",
-            "wait": null,
-            "next": {
-                "p_c": {
-                    "Sí": "p_6a_si",
-                    "No": "p_6b",
-                    "nvr": "p_6b"
-                }
-            }
-        },
-        "p_6a_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🏠🌡 <b>En relació amb el benestar emocional de les persones amb qui convius:</b> com definiries <b>el teu grau d’implicació</b>?",
-                "es": "🏠🌡 <b>Respecto al bienestar emocional de las personas con quienes convives:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🏠🌡 <b>With regard to the emotional wellbeing of the persons you live with</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🏠🌡 <b>Bezüglich des seelischen Wohlbefindens der Personen, mit denen du zusammenlebst:</b> Wie würdest du deinen Grad der Beteiligung beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_c_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_c_si",
-            "wait": null,
-            "next": "p_6b"
-        },
-        "p_6b": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝 Una o vàries persones del <b>teu nucli familiar, però no de convivència,</b> té o tenen problemes de salut mental?",
-                "es": "🤝 ¿Una o varias personas de <b>tu núcleo familiar, pero no de convivencia,</b> tiene o tienen problemas de salud mental?",
-                "en": "🤝 Do any of the people <b>in your family who you don’t live with</b> have mental health problems?",
-                "de": "🤝 Hat eine oder haben mehrere Personen <b>deiner direkten Familie, mit denen du aber nicht zusammenlebst,</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_f",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_f",
-            "wait": null,
-            "next": {
-                "p_f": {
-                    "Sí": "p_6b_si",
-                    "No": "p_6c",
-                    "nvr": "p_6c"
-                }
-            }
-        },
-        "p_6b_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En relació amb el benestar emocional d’aquests familiars amb qui no convius:</b> com definiries <b>el teu grau d’implicació</b>?",
-                "es": "🤝🌡 <b>Respecto al bienestar emocional de esos familiares con quienes no convives:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🤝🌡 <b>With regard to the emotional wellbeing of family members who you don’t live with</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🤝🌡 Wie würdest du deinen <b>Grad der Beteiligung am seelischen Wohlbefinden dieser Familienangehörigen, mit denen du nicht zusammenlebst</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_f_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_f_si",
-            "wait": null,
-            "next": "p_6c"
-        },
-        "p_6c": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝 Una o vàries de les <b>teves amistats més properes</b> té o tenen problemes de salut mental?",
-                "es": "🤝 ¿Una o varias de <b>tus amistades más cercanas</b> tiene o tienen problemas de salud mental?",
-                "en": "🤝  Do any of your <b>close friends</b> have mental health problems?",
-                "de": "🤝 Hat eine oder haben mehrere Personen <b>deines engsten Freundeskreises</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_a",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_a",
-            "wait": null,
-            "next": {
-                "p_a": {
-                    "Sí": "p_6c_si",
-                    "No": "p_6d",
-                    "nvr": "p_6d"
-                }
-            }
-        },
-        "p_6c_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En relació amb el benestar emocional d’aquestes amistats més properes:</b> com definiries <b>el teu grau d’implicació</b>?",
-                "es": "🤝🌡 <b>Respecto al bienestar emocional de esas amistades más cercanas:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🤝🌡 <b>With regard to your close friends’ emotional wellbeing</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🤝🌡 Wie würdest du <b>deinen Grad der Beteiligung am seelischen Wohlbefinden deiner engsten Freunde</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_a_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_a_si",
-            "wait": null,
-            "next": "p_6d"
-        },
-        "p_6d": {
-            "type": "SA",
-            "text": {
-                "ca": "🏫 Una o diverses persones del <b>teu entorn laboral</b> té o tenen problemes de salut mental?",
-                "es": "🏫 ¿Una o varias personas de <b>tu entorno laboral</b> tiene o tienen problemas de salud mental?",
-                "en": "🏫 Do any of <b>your coworkers</b> have mental health problems?",
-                "de": "🏫 Hat eine oder haben mehrere Personen aus <b>deinem Arbeitsumfeld</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_l",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_l",
-            "wait": null,
-            "next": {
-                "p_l": {
-                    "Sí": "p_6d_si",
-                    "No": "p_6e",
-                    "nvr": "p_6e"
-                }
-            }
-        },
-        "p_6d_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🏫🌡 <b>En relació amb el benestar emocional d’aquestes persones del teu entorn laboral:</b> com definiries <b>el teu grau d’implicació</b>?",
-                "es": "🏫🌡 <b>Respecto al bienestar emocional de esas personas de tu entorno laboral:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🏫🌡 <b> With regard to your coworkers’ emotional wellbeing</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🏫🌡 Wie würdest du <b>deinen Grad der Beteiligung am seelischen Wohlbefinden dieser Personen aus deinem Arbeitsumfeld</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_l_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_l_si",
-            "wait": null,
-            "next": "p_6e"
-        },
-        "p_6e": {
-            "type": "SA",
-            "text": {
-                "ca": "🏘 Una o diverses persones del <b>teu veïnat</b> té o tenen problemes de salut mental?",
-                "es": "🏘 ¿Una o varias personas de <b>tu vecindario</b> tiene o tienen problemas de salud mental?",
-                "en": "🏘 Do any of <b>your neighbours</b> have mental health problems?",
-                "de": "🏘 Hat eine oder haben mehrere Personen aus <b>deiner Nachbarschaft</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_v",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_v",
-            "wait": null,
-            "next": {
-                "p_v": {
-                    "Sí": "p_6e_si",
-                    "No": "p_6f",
-                    "nvr": "p_6f"
-                }
-            }
-        },
-        "p_6e_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🏘🌡 <b>En relació amb el benestar emocional d’aquestes persones del teu veïnat:</b> com definiries el <b>teu grau d’implicació</b>?",
-                "es": "🏘🌡 <b>Respecto al bienestar emocional de esas personas de tu vecindario:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🏘🌡 <b>With regard to your neighbours’ emotional wellbeing</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🏘🌡 Wie würdest du <b>deinen Grad der Beteiligung am seelischen Wohlbefinden dieser Personen aus deiner Nachbarschaft</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_v_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_v_si",
-            "wait": null,
-            "next": "p_6f"
-        },
-        "p_6f": {
-            "type": "SA",
-            "text": {
-                "ca": "🎭 Una o diverses persones <b>amb qui et relaciones a través d’activitats culturals o d’oci</b> té o tenen problemes de salut mental?",
-                "es": "🎭 ¿Una o varias personas <b>con quienes te relacionas a través de actividades culturales o de ocio</b> tiene o tienen problemas de salud mental?",
-                "en": "🎭 Do any of the persons <b>you do cultural or leisure activities with</b> have mental health problems?",
-                "de": "🎭 Hat eine oder haben mehrere Personen, <b>mit denen du über kulturelle oder Freizeitaktivitäten zu tun hast</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_ac",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_ac",
-            "wait": null,
-            "next": {
-                "p_ac": {
-                    "Sí": "p_6f_si",
-                    "No": "p_6grau1",
-                    "nvr": "p_6grau1"
-                }
-            }
-        },
-        "p_6f_si": {
-            "type": "SA",
-            "text": {
-                "ca": "🎭🌡 <b>En relació amb el benestar emocional d’aquestes persones amb qui et relaciones a través d’activitats culturals o d’oci:</b> com definiries <b>el teu grau d’implicació</b>?",
-                "es": "🎭🌡 <b>Respecto al bienestar emocional de esas personas con quienes te relacionas a través de actividades culturales o de ocio:</b> ¿cómo definirías <b>tu grado de implicación</b>?",
-                "en": "🎭🌡 <b>With regard to the emotional wellbeing of the persons you do cultural or leisure activities with</b>, what kind of a role do <b>you</b> play in their emotional wellbeing?",
-                "de": "🎭🌡 Wie würdest du <b>deinen Grad der Beteiligung am seelischen Wohlbefinden dieser Personen, mit denen du über kulturelle oder Freizeitaktivitäten zu tun hast</b>, beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_ac_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_ac_si",
-            "wait": null,
-            "next": "p_6grau1"
-        },
-        "p_6grau1": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En general,</b> com definiries el teu grau d’implicació en referència als problemes de salut mental del teu entorn social?",
-                "es": "🤝🌡 <b>En general,</b> ¿cómo definirías tu grado de implicación en referencia a los problemas de salud mental de tu entorno social?",
-                "en": "🤝🌡 <b>In general,</b> what kind of a role do you play in your social environment’s mental health problems?",
-                "de": "🤝🌡 Wie würdest du <b>im Allgemeinen</b> deinen Grad der Beteiligung bezüglich psychischer Gesundheitsprobleme in deinem sozialen Umfeld beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_g1",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_g1",
-            "wait": null,
-            "next": "p_6grau2"
-        },
-        "p_6grau2": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En general, en relació amb el teu propi benestar,</b> com definiries el grau d’implicació de les persones amb qui et relaciones i que tenen problemes de salut mental?",
-                "es": "🤝🌡 <b>En general, respecto a tu propio bienestar,</b> ¿cómo definirías el grado de implicación de las personas con quienes te relacionas y que tienen problemas de salud mental?",
-                "en": "🤝🌡 <b>In general, with regard to your own wellbeing,</b> what kind of a role do the persons around you with mental health problems play in your wellbeing?",
-                "de": "🤝🌡 Wie würdest du <b>im Allgemeinen</b> den Grad der Beteiligung der Personen, mit denen du zu tun hast und die psychische Gesundheitsprobleme haben, <b>an deinem eigenen Wohlbefinden</b> beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_g2",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_g2",
-            "wait": null,
-            "next": "5"
-        },
-        "p_6a_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🏠 Convius amb una o diverses persones que té o tenen problemes de salut mental?",
-                "es": "🏠 ¿Convives con una o varias personas que tiene o tienen problemas de salud mental?",
-                "en": "🏠 Do you live with persons with mental health problems?",
-                "de": "🏠 Lebst du mit einer oder mehreren Personen mit psychischen Gesundheitsproblemen zusammen?"
-            },
-            "vars": [
-                {
-                    "name": "p_c",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_c",
-            "wait": null,
-            "next": {
-                "p_c": {
-                    "Sí": "p_6a_si",
-                    "No": "p_6b_kn",
-                    "nvr": "p_6b_kn"
-                }
-            }
-        },
-        "p_6b_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝 Una o vàries persones del <b>teu nucli familiar, però no de convivència,</b> té o tenen problemes de salut mental?",
-                "es": "🤝 ¿Una o varias personas de <b>tu núcleo familiar, pero no de convivencia,</b> tiene o tienen problemas de salud mental?",
-                "en": "🤝 Do any of the people <b>in your family who you don’t live with</b> have mental health problems?",
-                "de": "🤝 Hat eine oder haben mehrere Personen <b>deiner direkten Familie, mit denen du aber nicht zusammenlebst,</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_f",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_f",
-            "wait": null,
-            "next": {
-                "p_f": {
-                    "Sí": "p_6b_si",
-                    "No": "p_6c_kn",
-                    "nvr": "p_6c_kn"
-                }
-            }
-        },
-        "p_6c_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝 Una o vàries de les <b>teves amistats més properes</b> té o tenen problemes de salut mental?",
-                "es": "🤝 ¿Una o varias de <b>tus amistades más cercanas</b> tiene o tienen problemas de salud mental?",
-                "en": "🤝  Do any of your <b>close friends</b> have mental health problems?",
-                "de": "🤝 Hat eine oder haben mehrere Personen <b>deines engsten Freundeskreises</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_a",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_a",
-            "wait": null,
-            "next": {
-                "p_a": {
-                    "Sí": "p_6c_si",
-                    "No": "p_6d_kn",
-                    "nvr": "p_6d_kn"
-                }
-            }
-        },
-        "p_6d_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🏫 Una o diverses persones del <b>teu entorn laboral</b> té o tenen problemes de salut mental?",
-                "es": "🏫 ¿Una o varias personas de <b>tu entorno laboral</b> tiene o tienen problemas de salud mental?",
-                "en": "🏫 Do any of <b>your coworkers</b> have mental health problems?",
-                "de": "🏫 Hat eine oder haben mehrere Personen aus <b>deinem Arbeitsumfeld</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_l",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_l",
-            "wait": null,
-            "next": {
-                "p_l": {
-                    "Sí": "p_6d_si",
-                    "No": "p_6e_kn",
-                    "nvr": "p_6e_kn"
-                }
-            }
-        },
-        "p_6e_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🏘 Una o diverses persones del <b>teu veïnat</b> té o tenen problemes de salut mental?",
-                "es": "🏘 ¿Una o varias personas de <b>tu vecindario</b> tiene o tienen problemas de salud mental?",
-                "en": "🏘 Do any of <b>your neighbours</b> have mental health problems?",
-                "de": "🏘 Hat eine oder haben mehrere Personen aus <b>deiner Nachbarschaft</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_v",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_v",
-            "wait": null,
-            "next": {
-                "p_v": {
-                    "Sí": "p_6e_si",
-                    "No": "p_6f_kn",
-                    "nvr": "p_6f_kn"
-                }
-            }
-        },
-        "p_6f_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🎭 Una o diverses persones <b>amb qui et relaciones a través d’activitats culturals o d’oci</b> té o tenen problemes de salut mental?",
-                "es": "🎭 ¿Una o varias personas <b>con quienes te relacionas a través de actividades culturales o de ocio</b> tiene o tienen problemas de salud mental?",
-                "en": "🎭 Do any of the persons <b>you do cultural or leisure activities with</b> have mental health problems?",
-                "de": "🎭 Hat eine oder haben mehrere Personen, <b>mit denen du über kulturelle oder Freizeitaktivitäten zu tun hast</b> ein psychisches Gesundheitsproblem?"
-            },
-            "vars": [
-                {
-                    "name": "p_ac",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_ac",
-            "wait": null,
-            "next": {
-                "p_ac": {
-                    "Sí": "p_6f_si",
-                    "No": "p_6grau1_kn",
-                    "nvr": "p_6grau1_kn"
-                }
-            }
-        },
-        "p_6grau1_kn": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝🌡 <b>En general,</b> com definiries el teu grau d’implicació en referència als problemes de salut mental del teu entorn social?",
-                "es": "🤝🌡 <b>En general,</b> ¿cómo definirías tu grado de implicación en referencia a los problemas de salud mental de tu entorno social?",
-                "en": "🤝🌡 <b>In general,</b> what kind of a role do you play in your social environment’s mental health problems?",
-                "de": "🤝🌡 Wie würdest du <b>im Allgemeinen</b> deinen Grad der Beteiligung bezüglich psychischer Gesundheitsprobleme in deinem sozialen Umfeld beschreiben?"
-            },
-            "vars": [
-                {
-                    "name": "p_g1",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Alt",
-                            "es": "Alto",
-                            "en": "Major",
-                            "de": "Hoch"
-                        },
-                        {
-                            "ca": "Mitjà",
-                            "es": "Medio",
-                            "en": "Moderate",
-                            "de": "Mittel"
-                        },
-                        {
-                            "ca": "Baix",
-                            "es": "Bajo",
-                            "en": "Minor",
-                            "de": "Niedrig"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "a",
-                        "m",
-                        "b",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_g1",
-            "wait": null,
-            "next": "5"
-        },
-        "5": {
-            "type": "NA",
-            "text": {
-                "ca": "📋 Moltes gràcies per donar-nos aquesta informació tan valuosa. Gairebé hem acabat! Només queden dues preguntes més sobre la teva implicació en activitats relacionades amb les xarxes de suport en salut mental.",
-                "es": "📋 Muchas gracias por darnos esta información tan valiosa. ¡Casi hemos terminado! Solo quedan otras dos preguntas sobre tu implicación en actividades relacionadas con las redes de apoyo en salud mental.",
-                "en": "📋 Many thanks for providing us with this valuable information! We’re almost done! There are just two more questions on your involvement with activities linked to mental health social support networks.",
-                "de": "📋 Vielen Dank dafür, dass du uns diese wertvollen Informationen gegeben hast. Wir sind fast fertig! Wir haben nur noch zwei weitere Fragen zu deiner Beteiligung an Aktivitäten, die mit den Unterstützungsnetzwerken für psychische Gesundheit zu tun haben. "
-            },
-            "wait": null,
-            "next": "p_7"
-        },
-        "p_7": {
-            "type": "SA",
-            "text": {
-                "ca": "Tens o has tingut vinculació amb alguna associació de persones amb experiencia pròpia en salut mental o dels seus familiars?",
-                "es": "¿Tienes o has tenido vinculación con alguna asociación de personas con experiencia propia en salud mental o de sus familiares?",
-                "en": "Do you have, or have you ever had, any links to any association of people with a lived experience in mental health or of their relatives?",
-                "de": "Hast du oder hattest du eine Verbindung zu einem Verein von Personen mit eigener Erfahrung im Bereich der psychischen Gesundheit oder deren Familienangehörigen?"
-            },
-            "vars": [
-                {
-                    "name": "p_ass",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_ass",
-            "wait": null,
-            "next": "p_8"
-        },
-        "p_8": {
-            "type": "SA",
-            "text": {
-                "ca": "📋 La teva feina està relacionada amb l'àmbit de la salut mental?",
-                "es": "📋 ¿Tu trabajo está relacionado con el ámbito de la salud mental?",
-                "en": "📋 Do you work in a job related to the field of mental health?",
-                "de": "📋 Hat deine Arbeit etwas mit dem Bereich psychische Gesundheit zu tun?"
-            },
-            "vars": [
-                {
-                    "name": "p_prof",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Sí",
-                            "es": "Sí",
-                            "en": "Yes",
-                            "de": "Ja"
-                        },
-                        {
-                            "ca": "No",
-                            "es": "No",
-                            "en": "No",
-                            "de": "Nein"
-                        },
-                        {
-                            "ca": "No vull/puc respondre",
-                            "es": "No quiero/puedo responder",
-                            "en": "I'd rather not answer",
-                            "de": "Ich will/kann nicht antworten"
-                        }
-                    ],
-                    "values": [
-                        "Sí",
-                        "No",
-                        "nvr"
-                    ]
-                }
-            ],
-            "save": "p_prof",
-            "wait": null,
-            "next": {
-                "p_prof": {
-                    "Sí": "p_8_si",
-                    "No": "f",
-                    "nvr": "f"
-                }
-            }
-        },
-        "p_8_si": {
-            "type": "SA",
-            "text": {
-                "ca": "A quina categoria professional pertanys?\n\n<b>A) Professional</b> de la <b>salut mental</b>\n<b>B) Altres professionals</b> de l’àmbit de la <b>salut</b>\n<b>C) Altres professionals</b> de l’àmbit <b>social</b>\n<b>D) Altres àmbits</b>: justícia, educació, lleure, cultura, recerca...",
-                "es": "¿A qué categoría profesional perteneces?\n\n<b>A) Profesional</b> de la <b>salud mental</b>\n<b>B) Otros profesionales</b> del ámbito de la <b>salud</b>\n<b>C) Otros profesionales</b> del ámbito <b>social</b>\n<b>D) Otros ámbitos</b>: justicia, educación, ocio, cultura, investigación...",
-                "en": "Which professional category do you belong to?\n\n<b>A) ) Mental health professional</b>\n<b>B) Other healthcare professional</b>\n<b>C) Professional</b> working in the <b>social sphere</b>\n<b>D) Professional working in other areas</b>, e.g. legal, education, leisure, culture, research, etc.",
-                "de": "Zu welcher Berufsgruppe gehörst du?\n\n<b>A) Fachpersonal</b> für <b>psychische Gesundheit</b>\n<b>B) Anderes Fachpersonal</b> im <b>Gesundheitsbereich</b>\n<b>C) Anderes Fachpersonal </b>im <b>Sozialbereich</b>\n<b>D) Andere Bereiche</b>: Justiz, Erziehung, Freizeit, Kultur, Forschung..."
-            },
-            "vars": [
-                {
-                    "name": "p_prof_si",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "A)",
-                            "es": "A)",
-                            "en": "A)",
-                            "de": "A)"
-                        },
-                        {
-                            "ca": "B)",
-                            "es": "B)",
-                            "en": "B)",
-                            "de": "B)"
-                        },
-                        {
-                            "ca": "C)",
-                            "es": "C)",
-                            "en": "C)",
-                            "de": "C)"
-                        },
-                        {
-                            "ca": "D)",
-                            "es": "D)",
-                            "en": "D)",
-                            "de": "D)"
-                        }
-                    ],
-                    "values": [
-                        "psm",
-                        "apasa",
-                        "apaso",
-                        "a"
-                    ]
-                }
-            ],
-            "save": "p_prof_si",
-            "wait": null,
-            "next": "f"
-        },
-        "f": {
-            "type": "NA",
-            "text": {
-                "ca": "👍 Gràcies per l’esforç! Ja has respost a totes les preguntes i hem pogut guardar totes les teves respostes amb èxit. Si desitges revisar-les o consultar-les, envia’ns un correu a: 📩 info.coactuem@ub.edu\n\nBen aviat rebràs vivències relacionades amb la salut mental, en forma de relats breus. Ja pots començar la recerca de ciència ciutadana!",
-                "es": "👍 ¡Gracias por el esfuerzo! Ya has respuesto todas las preguntas y hemos podido guardar todas tus respuestas con éxito. Si deseas revisarlas o consultarlas, envíanos un correo a: 📩 info.coactuem@ub.edu\n\nMuy pronto recibirás vivencias relacionada con la salud mental, en forma de relatos breves. ¡Ya puedes empezar la investigación en ciencia ciudadana!",
-                "en": "👍 Thank you for all your time and effort! You’ve now completed all the questions and we’ve saved all your answers. If you’d like to check them over, email us at: 📩 info.coactuem@ub.edu\n\nYou’ll soon receive a series of brief real-life stories of experiences linked to mental health. Let the citizen science research begin!",
-                "de": "👍 Danke für deine Bemühungen! Du hast jetzt alle Fragen beantwortet und wir konnten alle deine Antworten erfolgreich speichern. Wenn du sie überprüfen oder abrufen willst, schick uns eine E-Mail an 📩 info.coactuem@ub.edu\n\nDu wirst in Kürze Erfahrungen, die mit psychischer Gesundheit zu tun haben in Form von kurzen Erzählungen erhalten. Jetzt kann die bürgerwissenschaftliche Forschung beginnen!"
+                "ca": "Vielen Dank, du hast den ersten Block des Fragebogens beantwortet. In Kürze werden wir dir Fragen bezüglich der Unterstützungsnetzwerke für Urbane Hitzegeschichten schicken.\n\n",
+                "es": "Vielen Dank, du hast den ersten Block des Fragebogens beantwortet. In Kürze werden wir dir Fragen bezüglich der Unterstützungsnetzwerke für Urbane Hitzegeschichten schicken.\n\n",
+                "en": "Many thanks! You’ve now completed the first set of questions. You’ll soon receive a set of questions on mUrbane Hitzegeschichten.\n\n",
+                "de": "Vielen Dank, du hast den ersten Block des Fragebogens beantwortet. In Kürze werden wir dir Fragen bezüglich der Unterstützungsnetzwerke für Urbane Hitzegeschichten schicken.\n\n"
             },
             "action": "update_sociodem",
-            "wait": null,
             "next": null
         }
     }

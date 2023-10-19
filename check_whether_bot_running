@@ -9,7 +9,7 @@ full_path=$(realpath $0)
 dir_path=$(dirname $full_path)
 cd $dir_path
 
-time=$(TZ=Europe/Madrid date +%d.%m.%Y-%H:%M:%S)
+time=$(TZ=Europe/Vienna date +%d.%m.%Y-%H:%M:%S)
 echo $time
 echo $time >> log/errorOutput.log
 echo $time >> log/output.log

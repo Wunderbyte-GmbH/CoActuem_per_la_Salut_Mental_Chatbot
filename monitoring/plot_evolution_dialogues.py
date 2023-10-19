@@ -55,7 +55,7 @@ here = os.path.dirname(__file__)
 from datetime import datetime
 import time
 import pytz as tz
-tz_M = tz.timezone("Europe/Madrid")
+tz_M = tz.timezone("Europe/Vienna")
 
 # cargar datos de la base de datos
 dbclient  = pymongo.MongoClient(serverSelectionTimeoutMS=1000)

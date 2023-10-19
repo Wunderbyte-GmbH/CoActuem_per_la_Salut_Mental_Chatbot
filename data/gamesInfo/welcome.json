@@ -11,711 +11,128 @@
         "1": {
             "type": "NA",
             "text": {
-                "ca": "Et donem la benvinguda al xatbot <b>CoActuem per la Salut Mental</b>!",
-                "es": "Et donem la benvinguda al xatbot <b>CoActuem per la Salut Mental</b>!",
-                "en": "Et donem la benvinguda al xatbot <b>CoActuem per la Salut Mental</b>!",
-                "de": "Et donem la benvinguda al xatbot <b>CoActuem per la Salut Mental</b>!"
+                "ca": "Willkommen! Der Chatbot <b>Urbane Hitzegeschichten</b> lädt dich ein, deine Erfahrungen mit städtischer Hitze in einer Citizen-Science-Forschung zu teilen. Der Chatbot zeigt dir kurze <b>urbane Hitzegeschichten</b> und bittet dich diese aus deiner Erfahrung heraus zu beantworten.\n\n",
+                "es": "Willkommen! Der Chatbot <b>Urbane Hitzegeschichten</b> lädt dich ein, deine Erfahrungen mit städtischer Hitze in einer Citizen-Science-Forschung zu teilen. Der Chatbot zeigt dir kurze <b>urbane Hitzegeschichten</b> und bittet dich diese aus deiner Erfahrung heraus zu beantworten.\n\n",
+                "en": "Willkommen! Der Chatbot <b>Urbane Hitzegeschichten</b> lädt dich ein, deine Erfahrungen mit städtischer Hitze in einer Citizen-Science-Forschung zu teilen. Der Chatbot zeigt dir kurze <b>urbane Hitzegeschichten</b> und bittet dich diese aus deiner Erfahrung heraus zu beantworten.\n\n",
+                "de": "Willkommen! Der Chatbot <b>Urbane Hitzegeschichten</b> lädt dich ein, deine Erfahrungen mit städtischer Hitze in einer Citizen-Science-Forschung zu teilen. Der Chatbot zeigt dir kurze <b>urbane Hitzegeschichten</b> und bittet dich diese aus deiner Erfahrung heraus zu beantworten.\n\n"
             },
             "wait": null,
             "next": "2"
         },
         "2": {
-            "type": "NA",
-            "text": {
-                "ca": "¡Te damos la bienvenida al chatbot <b>CoActuamos para la Salud Mental</b>!",
-                "es": "¡Te damos la bienvenida al chatbot <b>CoActuamos para la Salud Mental</b>!",
-                "en": "¡Te damos la bienvenida al chatbot <b>CoActuamos para la Salud Mental</b>!",
-                "de": "¡Te damos la bienvenida al chatbot <b>CoActuamos para la Salud Mental</b>!"
-            },
-            "wait": null,
-            "next": "3"
-        },
-        "3": {
-            "type": "NA",
-            "text": {
-                "ca": "Welcome to the <b>CoAct for Mental Health</b> chatbot!",
-                "es": "Welcome to the <b>CoAct for Mental Health</b> chatbot!",
-                "en": "Welcome to the <b>CoAct for Mental Health</b> chatbot!",
-                "de": "Welcome to the <b>CoAct for Mental Health</b> chatbot!"
-            },
-            "wait": null,
-            "next": "4"
-        },
-        "4": {
-            "type": "NA",
-            "text": {
-                "ca": "Willkommen im Chatbot <b>CoAct für Mentale Gesundheit</b>!",
-                "es": "Willkommen im Chatbot <b>CoAct für Mentale Gesundheit</b>!",
-                "en": "Willkommen im Chatbot <b>CoAct für Mentale Gesundheit</b>!",
-                "de": "Willkommen im Chatbot <b>CoAct für Mentale Gesundheit</b>!"
-            },
-            "wait": null,
-            "next": "5"
-        },
-        "5": {
             "type": "SA",
             "text": {
-                "ca": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
-                "es": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
-                "en": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache",
-                "de": "Tria la teva llengua / Selecciona tu idioma / Choose your language / Wähle Deine Sprache"
+                "ca": "Ziel des Chatbots ist es, persönliche Erfahrungen mit Hitze in der Stadt zu sammeln. So möchten wir herausfinden wie Hitze unseren Alltag beeinflusst und welche Auswirkungen unser direktes städitsches Umfeld darauf hat.\n\n",
+                "es": "Ziel des Chatbots ist es, persönliche Erfahrungen mit Hitze in der Stadt zu sammeln. So möchten wir herausfinden wie Hitze unseren Alltag beeinflusst und welche Auswirkungen unser direktes städitsches Umfeld darauf hat.\n\n",
+                "en": "Ziel des Chatbots ist es, persönliche Erfahrungen mit Hitze in der Stadt zu sammeln. So möchten wir herausfinden wie Hitze unseren Alltag beeinflusst und welche Auswirkungen unser direktes städitsches Umfeld darauf hat.\n\n",
+                "de": "Ziel des Chatbots ist es, persönliche Erfahrungen mit Hitze in der Stadt zu sammeln. So möchten wir herausfinden wie Hitze unseren Alltag beeinflusst und welche Auswirkungen unser direktes städitsches Umfeld darauf hat.\n\n"
             },
             "vars": [
                 {
                     "name": "lang",
                     "type": "button",
                     "texts": [
-                        "Català",
-                        "Castellano",
-                        "English",
-                        "Deutsch"
+                        {
+                            "ca": "Weiter",
+                            "es": "Weiter",
+                            "en": "Weiter",
+                            "de": "Weiter"
+                        }
                     ],
                     "values": [
-                        "ca",
-                        "es",
-                        "en",
                         "de"
                     ]
                 }
             ],
             "save": "language",
             "wait": null,
-            "next": {
-                "lang": {
-                    "ca": "6-ca",
-                    "es": "6-es",
-                    "en": "6-en",
-                    "de": "6-de"
-                }
-            }
+            "next": "3"
         },
-        "6-ca": {
+        "3": {
+            "type": "NA",
+            "text": {
+                "ca": "Die Citizen-Science-Forschung <b>Urbane Hitzegeschichten</b> organisiert die TU Wien mit der Stadt Wien und der Universität Barcelona im Rahmen des Forschungsprojekts OPUSH. Im Team sind Forscher*innen aus Architektur, Raumplanung, Soziologie, Erziehungswissenschaften, Physik, Kommunikationswissenschaften, Linguistik und Literaturwissenschaften, Informationstechnik und Computerwissenschaften.\n\n",
+                "es": "Die Citizen-Science-Forschung <b>Urbane Hitzegeschichten</b> organisiert die TU Wien mit der Stadt Wien und der Universität Barcelona im Rahmen des Forschungsprojekts OPUSH. Im Team sind Forscher*innen aus Architektur, Raumplanung, Soziologie, Erziehungswissenschaften, Physik, Kommunikationswissenschaften, Linguistik und Literaturwissenschaften, Informationstechnik und Computerwissenschaften.\n\n",
+                "en": "Die Citizen-Science-Forschung <b>Urbane Hitzegeschichten</b> organisiert die TU Wien mit der Stadt Wien und der Universität Barcelona im Rahmen des Forschungsprojekts OPUSH. Im Team sind Forscher*innen aus Architektur, Raumplanung, Soziologie, Erziehungswissenschaften, Physik, Kommunikationswissenschaften, Linguistik und Literaturwissenschaften, Informationstechnik und Computerwissenschaften.\n\n",
+                "de": "Die Citizen-Science-Forschung <b>Urbane Hitzegeschichten</b> organisiert die TU Wien mit der Stadt Wien und der Universität Barcelona im Rahmen des Forschungsprojekts OPUSH. Im Team sind Forscher*innen aus Architektur, Raumplanung, Soziologie, Erziehungswissenschaften, Physik, Kommunikationswissenschaften, Linguistik und Literaturwissenschaften, Informationstechnik und Computerwissenschaften.\n\n"
+            },
+            "wait": null,
+            "next": "4"
+        },
+        "4": {
             "type": "SA",
-            "text": "D’ara en endavant, els continguts apareixeran en català. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en catalán. ¿Es el idioma que querías escoger?\n\nFrom now on you’ll see all the chatbot content in Catalan. Is this the correct language for you?\n\nVon nun an sind alle Inhalte in Katalanisch. Ist das die Sprache, die du auswählen wolltest?",
+            "text": {
+                "ca": "Finanziert wird die Forschung in der Joint Programming Initiative Urban Europe, ERA-NET Urban Transformation Capacities (ENUTC), Forschungs- und Entwicklungsprogramm Horizon 2020 der Europäischen Union, Grant Agreement Nr. 101003758.\n\n",
+                "es": "Finanziert wird die Forschung in der Joint Programming Initiative Urban Europe, ERA-NET Urban Transformation Capacities (ENUTC), Forschungs- und Entwicklungsprogramm Horizon 2020 der Europäischen Union, Grant Agreement Nr. 101003758.\n\n",
+                "en": "Finanziert wird die Forschung in der Joint Programming Initiative Urban Europe, ERA-NET Urban Transformation Capacities (ENUTC), Forschungs- und Entwicklungsprogramm Horizon 2020 der Europäischen Union, Grant Agreement Nr. 101003758.\n\n",
+                "de": "Finanziert wird die Forschung in der Joint Programming Initiative Urban Europe, ERA-NET Urban Transformation Capacities (ENUTC), Forschungs- und Entwicklungsprogramm Horizon 2020 der Europäischen Union, Grant Agreement Nr. 101003758.\n\n"
+            },
             "vars": [
                 {
-                    "name": "lang-ok",
+                    "name": "cont",
                     "type": "button",
                     "texts": [
-                        "Sí / Sí / Yes / Ja",
-                        "No / No / No / Nein"
+                        {
+                            "ca": "Weiter",
+                            "es": "Weiter",
+                            "en": "Weiter",
+                            "de": "Weiter"
+                        }
                     ],
                     "values": [
-                        "Si",
-                        "No"
+                        "si"
                     ]
                 }
             ],
             "wait": null,
-            "next": {
-                "lang-ok": {
-                    "Si": "7",
-                    "No": "5"
-                }
-            }
+            "next": "5"
         },
-        "6-es": {
+        "5": {
+            "type": "NA",
+            "text": {
+                "ca": "Alle, die mindestens 18 Jahre alt, sind können teilnehmen! Die Daten werden auf einem sicheren Server in Österreich und ausschließlich anonymisiert gespeichert. Die Forschung wurde vom Ethik-Komitee der TU Wien begutachtet und erfüllt die nationalen sowie europäischen Standards, die maximalen Datenschutz garantieren.\n\n",
+                "es": "Alle, die mindestens 18 Jahre alt, sind können teilnehmen! Die Daten werden auf einem sicheren Server in Österreich und ausschließlich anonymisiert gespeichert. Die Forschung wurde vom Ethik-Komitee der TU Wien begutachtet und erfüllt die nationalen sowie europäischen Standards, die maximalen Datenschutz garantieren.\n\n",
+                "en": "Alle, die mindestens 18 Jahre alt, sind können teilnehmen! Die Daten werden auf einem sicheren Server in Österreich und ausschließlich anonymisiert gespeichert. Die Forschung wurde vom Ethik-Komitee der TU Wien begutachtet und erfüllt die nationalen sowie europäischen Standards, die maximalen Datenschutz garantieren.\n\n",
+                "de": "Alle, die mindestens 18 Jahre alt, sind können teilnehmen! Die Daten werden auf einem sicheren Server in Österreich und ausschließlich anonymisiert gespeichert. Die Forschung wurde vom Ethik-Komitee der TU Wien begutachtet und erfüllt die nationalen sowie europäischen Standards, die maximalen Datenschutz garantieren.\n\n"
+            },
+            "wait": null,
+            "next": "6"
+        },
+        "6": {
             "type": "SA",
-            "text": "A partir de ahora, los contenidos aparecerán en castellano. ¿Es el idioma que querías escoger?\n\nD’ara en endavant, els continguts apareixeran en castellà. És la llengua que volies triar?\n\nFrom now on you’ll see all the chatbot content in Spanish. Is this the correct language for you?\n\nVon nun an sind alle Inhalte in Spanisch. Ist das die Sprache, die du auswählen wolltest?",
+            "text": {
+                "ca": "<b>Wir speichern keine Telefonnummern oder Benutzernamen, die Identifizierung erfolgt lediglich über eine Zahlenreihe. Niemand kann sehen, ob du im Chatbot angemeldet bist und niemand kann dich mit deinen Antworten in Verbindung bringen</b>. Bei Fragen kannst du uns unter helena.bernhardt@tuwien.ac.at kontaktieren.",
+                "es": "<b>Wir speichern keine Telefonnummern oder Benutzernamen, die Identifizierung erfolgt lediglich über eine Zahlenreihe. Niemand kann sehen, ob du im Chatbot angemeldet bist und niemand kann dich mit deinen Antworten in Verbindung bringen</b>. Bei Fragen kannst du uns unter helena.bernhardt@tuwien.ac.at kontaktieren.",
+                "en": "<b>Wir speichern keine Telefonnummern oder Benutzernamen, die Identifizierung erfolgt lediglich über eine Zahlenreihe. Niemand kann sehen, ob du im Chatbot angemeldet bist und niemand kann dich mit deinen Antworten in Verbindung bringen</b>. Bei Fragen kannst du uns unter helena.bernhardt@tuwien.ac.at kontaktieren.",
+                "de": "<b>Wir speichern keine Telefonnummern oder Benutzernamen, die Identifizierung erfolgt lediglich über eine Zahlenreihe. Niemand kann sehen, ob du im Chatbot angemeldet bist und niemand kann dich mit deinen Antworten in Verbindung bringen</b>. Bei Fragen kannst du uns unter helena.bernhardt@tuwien.ac.at kontaktieren."
+            },
             "vars": [
                 {
-                    "name": "lang-ok",
+                    "name": "cont",
                     "type": "button",
                     "texts": [
-                        "Sí / Sí / Yes / Ja",
-                        "No / No / No / Nein"
+                        {
+                            "ca": "Weiter",
+                            "es": "Weiter",
+                            "en": "Weiter",
+                            "de": "Weiter"
+                        }
                     ],
                     "values": [
-                        "Si",
-                        "No"
+                        "si"
                     ]
                 }
             ],
             "wait": null,
-            "next": {
-                "lang-ok": {
-                    "Si": "7",
-                    "No": "5"
-                }
-            }
-        },
-        "6-en": {
-            "type": "SA",
-            "text": "From now on you’ll see all the chatbot content in English. Is this the correct language for you?\n\nD’ara en endavant, els continguts apareixeran en inglés. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en inglés. ¿Es el idioma que querías escoger?\n\nVon nun an sind alle Inhalte in Englisch. Ist das die Sprache, die du auswählen wolltest?",
-            "vars": [
-                {
-                    "name": "lang-ok",
-                    "type": "button",
-                    "texts": [
-                        "Yes / Sí / Sí / Ja",
-                        "No / No / No / Nein"
-                    ],
-                    "values": [
-                        "Si",
-                        "No"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": {
-                "lang-ok": {
-                    "Si": "7",
-                    "No": "5"
-                }
-            }
-        },
-        "6-de": {
-            "type": "SA",
-            "text": "Von nun an sind alle Inhalte in Deutsch. Ist das die Sprache, die du auswählen wolltest?\n\nD’ara en endavant, els continguts apareixeran en alemán. És la llengua que volies triar?\n\nA partir de ahora, los contenidos aparecerán en alemán. ¿Es el idioma que querías escoger?\n\nFrom now on you’ll see all the chatbot content in German. Is this the correct language for you?",
-            "vars": [
-                {
-                    "name": "lang-ok",
-                    "type": "button",
-                    "texts": [
-                        "Ja / Sí / Sí / Yes",
-                        "Nein / No / No / No"
-                    ],
-                    "values": [
-                        "Si",
-                        "No"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": {
-                "lang-ok": {
-                    "Si": "7",
-                    "No": "5"
-                }
-            }
+            "next": "7"
         },
         "7": {
             "type": "NA",
             "text": {
-                "ca": "D’acord! A partir d’ara tots els continguts seran en català.",
-                "es": "¡De acuerdo! A partir de ahora todos los contenidos serán en castellano.",
-                "en": "Great! From now on you’ll see all the chatbot content in English.",
-                "de": "Einverstanden! Von nun an sind alle Inhalte auf Deutsch."
-            },
-            "wait": null,
-            "next": "8"
-        },
-        "8": {
-            "type": "SA",
-            "text": {
-                "ca": "💡 <b>Què et demana el xatbot?</b> Reflexionar sobre vivències relacionades amb la salut mental, presentades en forma de relats breus. Et demana que responguis partint de la teva experiència personal i del teu punt de vista singular i únic.",
-                "es": "💡 <b>¿Qué te pide el chatbot?</b> Reflexionar sobre vivencias relacionadas con la salud mental, presentadas en forma de relatos breves. Te pide que respondas partiendo de tu experiencia personal y de tu punto de vista singular y único.",
-                "en": "💡 <b>What does the chatbot require me to do?</b> To reflect on a range of experiences related to mental health that are covered in a series of brief stories. The chatbot asks you to respond on the grounds of your personal experience and your own unique perspective.",
-                "de": "💡 <b>Worum bittet dich der Chatbot?</b> Über Erfahrungen nachzudenken, die mit psychischer Gesundheit zu tun haben und die in Form kurzer Erzählungen vorgestellt werden. Er fordert dich auf, bei deiner Antwort von deiner eigenen Erfahrung auszugehen und deine eigene Meinung darzustellen."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "9"
-        },
-        "9": {
-            "type": "SA",
-            "text": {
-                "ca": "💬 <b>Què et pregunta exactament?</b> Has de triar entre diferents opcions. Per exemple, per saber si has viscut una experiència similar a la relatada. Un altre exemple: conèixer què hauries fet davant la situació que s’està compartint.",
-                "es": "💬 <b> ¿Qué te pregunta exactamente?</b> Debes elegir entre diferentes opciones. Por ejemplo, para saber si has vivido una experiencia similar a la relatada. Otro ejemplo: conocer qué habrías hecho ante la situación que se está compartiendo.",
-                "en": "💬 <b>What exactly will I be asked?</b> You’ll have to choose between different options designed to find out whether you’ve had a similar experience or what you would have done in the same situation, for example.",
-                "de": "💬 <b>Wonach genau fragt er dich?</b> Dir stehen verschiedene Optionen zur Auswahl. Zum Beispiel wollen wir wissen, ob du ein ähnliches Erlebnis gehabt hast das erzählte. Ein anderes Beispiel: wir möchten wissen, was du in der erzählten Situation tun würdest."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "10"
-        },
-        "10": {
-            "type": "SA",
-            "text": {
-                "ca": "🔎 <b>Quin valor tenen les teves respostes?</b> Els relats estan concebuts per conèixer, de manera directa o indirecta, les xarxes de suport social en salut mental. Les teves respostes als relats permeten fer una recerca de ciència ciutadana que proposi accions, mesures o recomanacions polítiques en relació amb les xarxes de suport social en salut mental.",
-                "es": "🔎 <b>¿Qué valor tienen tus respuestas?</b> Los relatos están concebidos para conocer, de forma directa o indirecta, las redes de apoyo social en salud mental. Tus respuestas a los relatos permiten realizar una investigación de ciencia ciudadana que proponga acciones, medidas o recomendaciones políticas con relación a las redes de apoyo social en salud mental.",
-                "en": "🔎 <b>How will my answers be used?</b> The stories use a range of direct and indirect means to learn about the mental health social support networks. Your answers to the stories enables a citizen science project that puts forward actions, measures and policy recommendations related to mental health social support networks.",
-                "de": "🔎 <b>Welchen Wert haben deine Antworten?</b> Die Erzählungen sind dazu gedacht, mehr über die sozialen Unterstützungsnetzwerke für psychische Gesundheit direkt oder indirekt in Erfahrung zu bringen. Deine Antworten auf die Erzählungen ermöglichen es, eine bürgerwissenschaftliche Forschung durchzuführen, die Aktionen, Maßnahmen oder politische Empfehlungen im Bereich der Unterstützungsnetzwerke für psychische Gesundheit vorschlägt. "
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "11"
-        },
-        "11": {
-            "type": "SA",
-            "text": {
-                "ca": "🤝 <b>Què són les xarxes de suport social en salut mental?</b> Es refereixen a l’entorn social i afectiu de les persones, a les seves xarxes de relacions. D’una manera o altra, totes en formem part.",
-                "es": "🤝 <b> ¿Qué son las redes de apoyo social en salud mental?</b> Se refieren al entorno social y afectivo de las personas, a sus redes de relaciones. De un modo u otro, todas formamos parte de ellas.",
-                "en": "🤝 <b>What are mental health social support networks?</b> People’s social and emotional environment and their networks of relationships. We all form part of them in one way or another.",
-                "de": "🤝 <b>Was sind Unterstützungsnetzwerke für psychische Gesundheit?</b> Damit ist das soziale und emotionsbezogene Umfeld der Personen gemeint, ihre Beziehungsnetzwerke also. Auf die eine oder andere Art sind wir alle Teil davon."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "12"
-        },
-        "12": {
-            "type": "SA",
-            "text": {
-                "ca": "👩‍💻 <b>Qui comparteix amb tu les seves vivències a través del xatbot?</b> Un grup de persones amb experiència pròpia en salut mental, incloent-hi familiars. Actuen com a persones coinvestigadores. Els relats volen ser escoltats per moltes persones, des de qualsevol indret del món.",
-                "es": "👩‍💻 <b>¿Quién comparte sus vivencias contigo a través del chatbot?</b> Un grupo de personas con experiencia propia en salud mental, incluyendo a familiares. Actúan como personas coinvestigadoras. Los relatos quieren ser escuchados por muchas personas, desde cualquier lugar del mundo.",
-                "en": "👩‍💻 <b>Who shares their experiences with me on the chatbot?</b> A group of people who have experienced mental health problems either directly themselves or indirectly through a family member. These people act as co-researchers in the project. The idea is for the stories to be shared with as many people as possible worldwide.",
-                "de": "👩‍💻 <b>Wer teilt mit dir seine Erfahrungen im Chatbot?</b> Eine Gruppe von Personen mit eigener Erfahrung im Bereich der psychischen Gesundheit, dazu zählen auch deren Familienmitglieder. Sie treten als Co-Forscher*innen auf. Die Erzählungen sollen von möglichst vielen Personen auf der ganzen Welt gelesen werden, ganz gleich wo sie sind."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "13"
-        },
-        "13": {
-            "type": "SA",
-            "text": {
-                "ca": "🏫 <b>Qui promou aquesta recerca?</b> El grup OpenSystems de la Universitat de Barcelona i la Federació Salut Mental Catalunya. Compta amb un equip més ampli de persones coinvestigadores, amb experiència pròpia en salut mental. I també amb una comunitat de persones i organitzacions que participen en la gestió i el coneixement en l’àmbit de la salut mental comunitària. Pots trobar més informació sobre el projecte a: 🔗  coactuem.ub.edu.",
-                "es": "🏫 <b>¿Quién promueve esta investigación?</b> El grupo OpenSystems de la Universitat de Barcelona y la Federació Salut Mental Catalunya. Cuenta con un equipo más amplio de personas coinvestigadoras, con experiencia propia en salud mental. Y también con una comunidad de personas y organizaciones que participan en la gestión y el conocimiento en el ámbito de la salud mental comunitaria. Encontrarás más información sobre el proyecto en: 🔗 coactuem.ub.edu.",
-                "en": "🏫 <b>Who is doing this research?</b> The OpenSystems research group at the Universitat de Barcelona and Federació Salut Mental Catalunya, with the support of an extended team of co-researchers with lived experience of mental health, together with a community of people and organisations involved in knowledge management in the field of community mental health. You can find out more about the project at: 🔗 coactuem.ub.edu",
-                "de": "🏫 <b>Wer bringt dieses Forschungsprojekt voran?</b> Die Gruppe OpenSystems der Universität Barcelona und die Stiftung für psychische Gesundheit in Katalonien (Federació Salut Mental Catalunya). Sie umfasst ein Team aus zahlreichen Co-Forscher*innen, mit eigener Erfahrung im Bereich der psychischen Gesundheit sowie einer Gruppe von Personen und Organisationen, die am Management beteiligt sind und ihre Kenntnisse im Bereich der gemeinschaftlichen psychischen Gesundheit beisteuern. Mehr Information über das Projekt findest du unter: 🔗 coactuem.ub.edu"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "14"
-        },
-        "14": {
-            "type": "SA",
-            "text": {
-                "ca": "🇪🇺 <b>Qui finança el xatbot CoActuem per la Salut Mental?</b> Forma part de CoAct, una iniciativa global finançada a través del programa de recerca i innovació Horitzó 2020 de la Unió Europea, amb contracte núm. 873048: 🔗 coactproject.eu",
-                "es": "🇪🇺 <b>¿Quién financia el chatbot CoActuamos por la Salud Mental?</b> Forma parte de CoAct, una iniciativa global financiada a través del programa de investigación e innovación Horizonte 2020 de la Unión Europea, con contrato núm. 873048: 🔗 coactproject.eu",
-                "en": "🇪🇺 <b>Who funds the CoAct for Mental Health chatbot?</b> It forms part of the CoAct global initiative funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement number 873048: 🔗 coactproject.eu",
-                "de": "🇪🇺 <b>Wer finanziert den Chatbot CoAct für Mentale Gesundheit?</b> Er ist Teil von CoAct, einer globalen Finanzierungsinitiative, die über das Forschungs- und Innovationsprogramm Horizon 2020 der Europäischen Union läuft, mit der Vertragsnummer 873048. 🔗 coactproject.eu"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "15"
-        },
-        "15": {
-            "type": "SA",
-            "text": {
-                "ca": "✅ <b>Cal complir unes condicions per poder-hi participar?</b> Sí, has de tenir 18 anys o més. Més enllà d’aquesta limitació, totes les persones hi podem participar, ja que, directament o indirectament, totes hem viscut experiències relacionades amb la salut mental. La diversitat de perspectives és molt benvinguda.",
-                "es": "✅ <b>¿Hay que cumplir alguna condición para poder participar?</b> Sí, debes tener 18 años o más. Más allá de esta limitación, todas las personas podemos participar, ya que, directa o indirectamente, todas hemos vivido experiencias relacionadas con la salud mental. La diversidad de perspectivas es muy bienvenida.",
-                "en": "✅ <b>Are there any limitations on who can take part?</b> The only limitation is that you should be aged 18 or over. All adults are very welcome to take part, given that each and every one of us has some direct or indirect experience of mental health. We are keen to hear from the widest possible range of perspectives.",
-                "de": "✅ <b>Welche Bedingungen muss man erfüllen, um teilnehmen zu können?</b> Du musst mindestens 18 Jahre alt sein. Abgesehen von dieser Bedingung kann jede/r teilnehmen, denn direkt oder indirekt haben wir alle schon Erfahrungen mit psychischer Gesundheit gemacht. Je mehr Perspektiven dabei beleuchtet werden, umso besser."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "16_varies_missatges"
-        },
-        "16_varies_missatges": {
-            "type": "NA",
-            "text": {
-                "ca": "🛡 <b>Per què el xatbot és un entorn privat i segur?</b> El xatbot està ubicat en un servidor dins la Universitat de Barcelona. La recerca associada ha estat aprovada pel Comitè d’Ètica de la Universitat de Barcelona. Segueix estàndards europeus que garanteixen la màxima privacitat.",
-                "es": "🛡 <b>¿Por qué el chatbot es un entorno privado y seguro?</b> El chatbot está ubicado en un servidor dentro de la Universitat de Barcelona. La investigación asociada ha sido aprobada por el Comité de Ética de la Universitat de Barcelona. Sigue estándares europeos que garantizan la máxima privacidad.",
-                "en": "🛡 <b>How can I be sure that the chatbot is a safe private environment?</b> The chatbot is housed on a server at the Universitat de Barcelona. The research project has been approved by the university’s Ethics Committee and follows stringent European privacy standards.",
-                "de": "🛡 <b>Warum Ist der Chatbot ein privates und sicheres Umfeld?</b> Der Chatbot befindet sich auf einem Server der Universität Barcelona. Die damit verbundene Forschung wurde vom Ethik-Komitee der Universität Barcelona genehmigt. Sie erfüllt europäische Standards, die maximalen Datenschutz garantieren."
-            },
-            "wait": null,
-            "next": "16_a"
-        },
-        "16_a": {
-            "type": "NA",
-            "text": {
-                "ca": "•  📱 No conservem en cap moment el teu número de telèfon ni el teu nom d'usuari a Telegram.",
-                "es": "•  📱 En ningún momento conservamos tu número de teléfono ni tu nombre de usuario en Telegram.",
-                "en": "•  📱 We never store your phone number or Telegram username.",
-                "de": "•  📱 Wir speichern auf keinen Fall deine Telefonnummer oder deinen Benutzernamen bei Telegram. "
-            },
-            "wait": null,
-            "next": "16_b"
-        },
-        "16_b": {
-            "type": "NA",
-            "text": {
-                "ca": "•  🔐 Només t’identifiquem a través d’una sèrie de dígits que proporciona la mateixa aplicació de Telegram, per tal de fer-te arribar els missatges.",
-                "es": "•  🔐 Sólo te identificamos a través de una serie de dígitos que proporciona la propia aplicación de Telegram, a fin de hacerte llegar los mensajes.",
-                "en": "•  🔐  Our sole means of identifying you is a series of digits (Telegram ID) generated by the Telegram app so that we can send you messages.",
-                "de": "•  🔐 Du wirst lediglich durch eine Reihe von Zahlen identifiziert, die von der App Telegram vergeben wird, um dir Benachrichtigungen schicken zu können."
-            },
-            "wait": null,
-            "next": "16_c"
-        },
-        "16_c": {
-            "type": "NA",
-            "text": {
-                "ca": "•  🔒 Tu mantindràs  una comunicació anònima amb el xatbot. Ningú altre pot saber si estàs subscrit al xatbot ni relacionar-la amb les teves respostes.",
-                "es": "•  🔒 Tú mantendrás una comunicación anónima con el chatbot. Nadie más puede saber si estás suscrito al chatbot ni relacionarte con tus respuestas. ",
-                "en": "•  🔒 You will maintain an anonymous communication with the chatbot. No one has any means of knowing if you are connected to the chatbot or tracing your answers back to you.",
-                "de": "•  🔒 Du behältst bei der Kommunikation mit dem Chatbot deine Anonymität bei. Niemand kann wissen, ob du im Chatbot angemeldet bist und niemand kann dich mit deinen Antworten in Verbindung bringen."
-            },
-            "wait": null,
-            "next": "16_d"
-        },
-        "16_d": {
-            "type": "SA",
-            "text": {
-                "ca": "•  👤 Només et comunicaràs amb el xatbot, no rebràs missatges directes de cap altra persona.",
-                "es": "•  👤 Sólo te comunicarás con el chatbot, no recibirás mensajes directos de ninguna otra persona.",
-                "en": "•  👤 You will only communicate with the chatbot, you will not receive messages from anyone else.",
-                "de": "•  👤 Du kommuniziert nur mit dem Chatbot. Du erhältst keine direkten Benachrichtigungen von anderen Personen."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "17"
-        },
-        "17": {
-            "type": "SA",
-            "text": {
-                "ca": "💡 <b>Com respondre als relats?</b> Reflexiona i madura la teva decisió, sense pressa. Respon de manera sincera i basant-te en la teva experiència personal. D’aquesta manera les dades recollides seran valuoses per fer ciència i millorar les xarxes de suport social en salut mental.",
-                "es": "💡 <b>¿Cómo responder a los relatos?</b> Reflexiona y madura tu decisión, sin prisa. Responde de forma sincera y basándote en tu experiencia personal. De este modo los datos recogidos serán valiosos para hacer ciencia y mejorar las redes de apoyo social en salud mental.",
-                "en": "💡 <b>How should I respond to the stories?</b> Take your time to think carefully about how you want to respond. You should reply frankly and honestly and base your answers on your own personal experience. This will provide the most useful scientific data to help improve mental health social support networks.",
-                "de": "💡 <b>Wie solltest du auf die Erzählungen reagieren?</b> Denk nach und triff deine Entscheidung in aller Ruhe und wohlüberlegt. Antworte ehrlich und berufe dich dabei auf deine persönliche Erfahrung. So sind die erfassten Daten wissenschaftlich verwertbar und können zur Verbesserung der Unterstützungsnetzwerke für psychische Gesundheit beitragen."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "18"
-        },
-        "18": {
-            "type": "SA",
-            "text": {
-                "ca": "📊 <b>Quines dades es recullen per fer ciència ciutadana?</b> Com a equip de recerca, recollim les teves respostes als relats. Aquestes dades s’encreuen amb les teves respostes a un qüestionari sociodemogràfic. Recorda, però, que en cap cas et podem identificar. Et convidarem a participar en la interpretació del conjunt de dades anonimitzades un cop es tanqui el xatbot.",
-                "es": "📊 <b>¿Qué datos se recogen para hacer ciencia ciudadana?</b>  Como equipo de investigación, recogemos tus respuestas a los relatos. Estos datos se entrecruzan con tus respuestas a un cuestionario sociodemográfico. Recuerda que, sin embargo, en ningún caso podemos identificarte. Te invitaremos a participar en la interpretación del conjunto de datos anonimizados una vez que se cierre el chatbot.",
-                "en": "📊 <b>What data does this citizen science project gather?</b> As a research team, we gather your replies to the stories. This data is then crossed with your answers to a sociodemographic questionnaire. Remember, you remain anonymous at all times: we have no means of identifying you. You’ll be invited to take part in interpreting the anonymised data once the chatbot has closed.",
-                "de": "📊 <b>Welche Daten werden für bürgerwissenschaftliche Zwecke erfasst?</b> Als Forschungsteam sammeln wir deine Reaktionen auf die Erzählungen. Diese Angaben werden dann mit deinen Antworten in einem soziodemografischen Fragebogens verglichen. Doch kannst du sicher sein, dass wir dich als Person auf keinen Fall identifizieren können. Wenn der Chatbot geschlossen wird, werden wir dich einladen, an einer Auswertung aller anonym gesammelten Daten teilzunehmen."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "19"
-        },
-        "19": {
-            "type": "SA",
-            "text": {
-                "ca": "⚠️ <b>ATENCIÓ!</b> El xatbot no és un servei d'ajuda psicològica professional, sinó una eina de recerca científica participativa. Si necessites ajuda, posa't en contacte amb un/a professional de la salut.\n\nEt volem advertir que els relats es basen en vivències reals. Les vivències relacionades amb els problemes de salut mental poden ser impactants i dures, però també molt esperançadores i emotives. Tingues-ho en compte abans de decidir si hi vols participar. Si sents que t’incomoda pots deixar de respondre i fer-ho més tard. Pots, fins i tot, abandonar el xatbot quan vulguis.",
-                "es": "⚠️ <b>ATENCIÓ!</b> El chatbot no es un servicio de ayuda psicológica profesional, sino una herramienta de investigación científica participativa. Si necesitas ayuda, ponte en contacto con un/a profesional de la salud.\n\nQueremos advertirte que los relatos se basan en vivencias reales. Las vivencias relacionadas con los problemas de salud mental pueden ser impactantes y duras, pero también muy esperanzadoras y emotivas. Tenlo en cuenta antes de decidir si quieres participar. Si sientes que te incomoda puedes dejar de responder y hacerlo más tarde. Incluso puedes abandonar el chatbot cuando lo desees.",
-                "en": "⚠️ <b>IMPORTANT!</b> The chatbot is a participatory scientific research tool. It is not a professional psychological support service. If you need help, you should contact a healthcare professional.\n\nYou should be aware that the stories are based on real-life experiences. Mental health problems can lead to hard-hitting experiences but can also create very moving and inspiring stories. Please bear this in mind before deciding whether or not to take part. You can skip any questions you’d rather not answer and come back later. You can exit the chatbot whenever you want.",
-                "de": "⚠️ <b>ACHTUNG!</b> Der Chatbot ist kein professioneller psychologischer Hilfsdienst, er ist ein Werkzeug zur partizipativen wissenschaftlichen Forschung. Wenn du Hilfe brauchst, setz dich mit einem Arzt / einer Ärztin in Verbindung.\n\nWir wollen dich darauf hinweisen, dass die Erzählungen auf wahren Begebenheiten beruhen. Erlebnisse, die mit psychischen Gesundheitsproblemen zu tun haben, können brutal und hart, aber auch voller Hoffnung und Emotionen sein. Das solltest du berücksichtigen, bevor du entscheidest, ob du teilnehmen willst. Wenn dir das Antworten unbehaglich ist, kannst du jederzeit aufhören und später weitermachen. Und du kannst den Chatbot verlassen, wann immer du willst."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "21"
-        },
-        "20": {
-            "type": "NA",
-            "text": {
-                "ca": "🎥 Aquí pots trobar un vídeo curt que resumeix el que t’estem explicant i que et pot servir per animar altres persones a participar-hi.",
-                "es": "🎥 Aquí encontrarás un vídeo breve que resume lo que te estamos explicando y que puede servirte para animar a otras personas a participar.",
-                "en": "🎥 This short video summarises these basic steps. You might find it useful for encouraging other people to take part.",
-                "de": "🎥 Hier findest du ein kurzes Video, der zusammenfasst, was wir dir erklärt haben. Damit kannst du auch weitere Personen zur Teilnahme animieren."
-            },
-            "wait": null,
-            "next": "21"
-        },
-        "21": {
-            "type": "SA",
-            "text": {
-                "ca": "🔎 <b>Tens preguntes o voldries saber més sobre el projecte?</b> Pots consultar el web: 🔗  coactuem.ub.edu i contactar amb nosaltres a través del correu: 📩 info.coactuem@ub.edu",
-                "es": "🔎 <b>¿Tienes preguntas o querrías saber más sobre el proyecto?</b> Puedes consultar la web: 🔗 coactuem.ub.edu y contactar con nosotros a través del correo: 📩 info.coactuem@ub.edu",
-                "en": "🔎 <b>Got any more questions or want to find out more about the project?</b> Check out the website: 🔗 coactuem.ub.edu or email us at: 📩  info.coactuem@ub.edu",
-                "de": "🔎 <b>Hast du Fragen oder willst du mehr über das Projekt wissen?</b> Du kannst die Website 🔗 coactuem.ub.edu aufrufen und uns per E-Mail unter 📩 info.coactuem@ub.edu kontaktieren."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "22"
-        },
-        "22": {
-            "type": "NA",
-            "text": {
-                "ca": "✅ <b>Et demanem el teu consentiment per poder seguir.</b> Donar el teu consentiment significa que acceptes voluntàriament participar en el projecte CoActuem per la Salut Mental, que entens el teu paper en aquest projecte i que ens autoritzes a utilitzar les dades que ens proporciones.",
-                "es": "✅ <b>Te pedimos tu consentimiento para poder seguir.</b> Dar tu consentimiento significa que aceptas voluntariamente participar en el proyecto CoActuamos por la Salud Mental, que entiendes tu papel en dicho proyecto y que nos autorizas a utilizar los datos que nos proporcionas.",
-                "en": "✅ <b>We need your consent to go any further.</b> Giving your informed consent means that you freely accept to take part in the CoAct for Mental Health project, you fully understand your role in the project and you authorise us to use the data you provide.",
-                "de": "✅ <b>Um fortzufahren, bitten wir dich um dein Einverständnis.</b> Dein Einverständnis zu geben bedeutet, dass du freiwillig am Projekt CoAct für psychische Gesundheit teilnimmst, dass du deine Rolle in diesem Projekt verstehst und dass du uns die Genehmigung gibst, die Daten, die du uns zur Verfügung stellst, zu verwerten."
-            },
-            "vars": [
-                {
-                    "name": "ICpdf",
-                    "type": "pdf",
-                    "file_name": {
-                        "ca": "ICs/Informed_Consent_CAT.pdf",
-                        "es": "ICs/Informed_Consent_CAST.pdf",
-                        "en": "ICs/Informed_Consent_EN.pdf",
-                        "de": "ICs/Informed_Consent_DE.pdf"
-                    }
-                }
-            ],
-            "wait": null,
-            "next": "22_b"
-        },
-        "22_b": {
-            "type": "SA",
-            "text": {
-                "ca": "📄 Si us plau, llegeix amb atenció aquest document en PDF, que detalla tota la informació sobre el projecte, la teva participació i la teva privacitat. Si no pots obrir el PDF en el teu dispositiu, trobaràs la mateixa informació a: 🔗 coactuem.ub.edu/pages/informed_consent_cat",
-                "es": "📄 Por favor, lee con atención este documento en PDF, que detalla toda la información sobre el proyecto, tu participación y tu privacidad. Si no puedes abrir el PDF en tu dispositivo, encontrarás la misma información en: 🔗 coactuem.ub.edu/pages/informed_consent_cast",
-                "en": "📄 Please read this PDF file carefully. It contains detailed information on the project, including your participation and your privacy. If you can’t open the PDF file on your device, you’ll find the same information online at: 🔗 coactuem.ub.edu/pages/informed_consent_en",
-                "de": "📄 Bitte lies dieses PDF-Dokument sorgfältig durch. Es enthält ausführliche Informationen über das Projekt, deine Teilnahme und den Schutz deiner Daten. Falls du das PDF-Dokument auf deinem Gerät nicht öffnen kannst, findest du die gleiche Information unter 🔗 https://coactuem.ub.edu/pages/informed_consent_de"
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "23_varies_missatges"
-        },
-        "23_varies_missatges": {
-            "type": "SA",
-            "text": {
-                "ca": "💡 Recorda que la teva participació en aquesta recerca només és possible si dones el teu consentiment. D’aquesta manera, ens autoritzes a utilitzar les dades que proporciones.",
-                "es": "💡 Recuerda que tu participación en esta investigación solo es posible si das tu consentimiento. De este modo nos autorizas a utilizar los datos que proporcionas.",
-                "en": "💡 Remember, you can only take part in this research if you give your informed consent authorising us to use the data you provide.",
-                "de": "💡 Bitte beachte, dass deine Teilnahme an dieser Forschungsarbeit nur möglich ist, wenn du dein Einverständnis gibst. Damit erlaubst du uns, die von dir bereitgestellten Daten zu nutzen."
-            },
-            "vars": [
-                {
-                    "name": "cont",
-                    "type": "button",
-                    "texts": [
-                        {
-                            "ca": "Continuar",
-                            "es": "Continuar",
-                            "en": "Continue",
-                            "de": "Weiter"
-                        }
-                    ],
-                    "values": [
-                        "si"
-                    ]
-                }
-            ],
-            "wait": null,
-            "next": "23_a"
-        },
-        "23_a": {
-            "type": "NA",
-            "text": {
-                "ca": "🖋 Declaro:\n\n✔️ Tinc 18 anys o més i soc competent per proporcionar el meu consentiment.\n✔️ Se m’ha informat sobre l'objectiu del projecte <b>CoActuem per la Salut Mental</b> i sobre l’ús de les dades que proporciono.\n✔️ Entenc que no és obligatori participar-hi. Si decideixo participar-hi, entenc que puc decidir deixar de rebre continguts en qualsevol moment escrivint PAUSAR al xatbot.\n✔️ Puc deixar de participar definitivament escrivint BAIXA. Podré llavors eliminar les meves dades personals seguint el procediment que se m’indicarà al contactar l'Investigador Principal.\n✔️ Les meves dades anonimitzades es podran utilitzar per escriure publicacions científiques, a més de publicar-se en accés obert per fomentar la seva reutilització en l’àmbit de la recerca.\n✔️  He rebut una còpia d’aquest acord en forma de PDF.",
-                "es": "🖋 Declaro:\n\n✔️ Tengo 18 años o más y soy competente para proporcionar mi consentimiento.\n✔️ Se me ha informado sobre el objetivo del proyecto <b>CoActuamos por la Salud Mental</b> y sobre el uso de los datos que proporciono.\n✔️ Entiendo que no es obligatorio participar en él. Si decido participar, entiendo que puedo decidir dejar de recibir contenidos en cualquier momento escribiendo PAUSAR en el chatbot.\n✔️ Puedo dejar de participar definitivamente escribiendo BAJA. Podré entonces eliminar mis datos personales siguiendo el procedimiento que se me indicará cuando contacte con el Investigador Principal.\n✔️ Mis datos anonimizados podrán ser utilizados para escribir publicaciones científicas, además de publicarse en acceso abierto para fomentar su reutilización en el ámbito de la investigación.\n✔️ He recibido una copia de este acuerdo en forma de PDF.",
-                "en": "🖋 I hereby declare the following:\n\n✔️  ️ I am 18 or over and fit and able to give my consent.\n✔️ I have been duly informed of the purpose of the <b>CoAct for Mental Health</b> project and of the use that will be made of the data I provide.\n✔️ I understand that I am under no obligation to take part. If I decide to participate, I understand that I can decide to stop receiving content at any time by typing PAUSE on the chatbot.\n✔️  I can definitely stop participating by typing UNSUBSCRIBE. I will then be able to delete my personal data following the procedure indicated to me after contacting the Principal Investigator.\n✔️My anonymised data may be used to write scientific publications and may be openly published to encourage further use in the field of research.\n✔️ I have received a copy of this agreement as a PDF file.",
-                "de": "🖋 Ich erkläre hiermit:\n\n✔️ Ich bin 18 Jahre oder älter und befähigt, mein Einverständnis zu geben.\n✔️ Man hat mich über die Ziele des Projektes <b>CoAct für Mentale Gesundheit</b> und über die Nutzung der von mir bereitgestellten Daten informiert.\n✔️ Ich verstehe, dass die Teilnahme nicht verpflichtend ist. Ich weiß, dass ich - auch wenn ich mich zur Teilnahme entschließe - entscheiden kann, keine weiteren Inhalte vom Chatbot zu erhalten, indem ich PAUSAR an den Chatbot schreibe.\n✔️ Ich kann meine Teilnahme abbrechen, indem ich ABMELDEN an den Chatbot schreibe. Ich kann dann meine persönlichen Daten löschen, der Prozedur folgend, die mir der leitende Wissenschaftler des Projekts nach Kontaktaufnahme mitteilt.\n✔️ Meine anonymisierten Daten dürfen zur Verfassung von wissenschaftlichen Veröffentlichungen verwendet werden und sie können offen zugänglich veröffentlicht werden, um sie zu Forschungszwecken weiterzuverwenden.\n✔️ Ich habe eine Kopie dieser Vereinbarung in PDF-Format erhalten."
-            },
-            "wait": null,
-            "next": "dp"
-        },
-        "dp": {
-            "type": "NA",
-            "text": {
-                "ca": "Les <b>dades personals</b> guardades seran:\n\n <b>-</b> identitat de gènere (optatiu)\n <b>-</b> rang d’edat (optatiu)\n <b>-</b> pais de residència (optatiu)\n <b>-</b> codi postal (optatiu)\n <b>-</b> vivències dins les xarxes de suport social en salut mental (optatives)\n <b>-</b> respostes als relats: si has viscut la mateixa experiència o què faries davant una determinada situació.\n <b>-</b> Telegram ID: la sèrie de dígits que ens proporciona l'aplicació i que guardem només per fer-te arribar els missatges.\n\n<b>No conservem en cap moment ni el teu número de telèfon ni el teu nom d'usuari a Telegram.</b>",
-                "es": "Los <b>datos personales</b> guardados serán:\n\n <b>-</b> identidad de género (optativo)\n <b>-</b>  rango de edad (optativo)\n <b>-</b>  país de residencia (optativo)\n <b>-</b>  código postal (optativo)\n <b>-</b>  vivencias dentro de las redes de apoyo social en salud mental (optativas)\n <b>-</b>  respuestas a los relatos: si has vivido la misma experiencia o qué harías ante una determinada situación.\n <b>-</b>  Telegram ID: la serie de dígitos que nos proporciona la aplicación y que guardamos sólo para hacerte llegar los mensajes.\n\n<b>No conservamos en ningún momento ni tu número de teléfono ni tu nombre de usuario en Telegram.</b>",
-                "en": "The <b>personal data</b> we will save is the following:\n\n <b>-</b> gender identity (optional)\n <b>-</b>  age bracket (optional)\n <b>-</b>  country of residence (optional)\n <b>-</b>  zip code (optional)\n <b>-</b>  experiences within social support networks in mental health (optional)\n <b>-</b>  responses to the stories: whether you have lived the same experience or what would you do in a certain situation.\n <b>-</b>  Telegram ID: the series of digits that the application provides us and that we save only to send you messages.\n\n<b>We do not keep your phone number nor your username on Telegram at any time.</b>",
-                "de": "Die <b>personenbezogenen Daten</b> die wir speichern werden sein:\n\n <b>-</b> Geschlechtsidentität (optional)\n <b>-</b>  Altersgruppe (optional)\n <b>-</b>  Wohnsitz (Land, optional)\n <b>-</b>  Postleitzahl (optional)\n <b>-</b>  Erfahrungen in sozialen Unterstützungsnetzwerken im Bereich psychische Gesundheit (optional)\n <b>-</b>  Antworten auf die Geschichten: ob du die gleiche Erfahrung gemacht hast oder was du in einer bestimmten Situation tun würdest.\n <b>-</b>  Telegramm-ID: die Ziffernfolge, die uns die Anwendung bereitstellt und die wir nur speichern, um dir Nachrichten zu senden.\n\n<b>Wir speichern weder deine Telefonnummer noch deinen Benutzernamen bei Telegram.</b>"
+                "ca": "🖋 Um zu beginnen, bitten wir dich dein Einverständnis zu geben, dass du:\n\n✔️ über 18 Jahre alt bist,\n✔️ freiwillig teilnimmst,\n✔️ deine Rolle in diesem Projekt verstanden hast\n✔️ uns die Genehmigung gibst, die von dir angegebenen Daten für die Forschung zu verwerten. Diese Daten umfassen Geschlechtsidentität (optional), Altersgruppe (optional), Postleitzahl (optional) Erfahrungen mit Hitze in der Stadt, Telegramm-ID Ziffernfolge (notwendig zum Senden der Nachrichten an dich).\n✔️ du deine Teilnahme am Chatbot abbrechen kannst, indem du ABMELDEN an den Chatbot schreibst. Du kannstdann deine persönlichen Daten löschen, der Prozedur folgend, die dir der/die leitende Wissenschaftler/in des Projekts nach Kontaktaufnahme mitteilt.\n✔️ Bitte lies dir hierzu dieses Dokument zur Einverständniserklärung aufmerksam durch.",
+                "es": "🖋 Um zu beginnen, bitten wir dich dein Einverständnis zu geben, dass du:\n\n✔️ über 18 Jahre alt bist,\n✔️ freiwillig teilnimmst,\n✔️ deine Rolle in diesem Projekt verstanden hast\n✔️ uns die Genehmigung gibst, die von dir angegebenen Daten für die Forschung zu verwerten. Diese Daten umfassen Geschlechtsidentität (optional), Altersgruppe (optional), Postleitzahl (optional) Erfahrungen mit Hitze in der Stadt, Telegramm-ID Ziffernfolge (notwendig zum Senden der Nachrichten an dich).\n✔️ du deine Teilnahme am Chatbot abbrechen kannst, indem du ABMELDEN an den Chatbot schreibst. Du kannstdann deine persönlichen Daten löschen, der Prozedur folgend, die dir der/die leitende Wissenschaftler/in des Projekts nach Kontaktaufnahme mitteilt.\n✔️ Bitte lies dir hierzu dieses Dokument zur Einverständniserklärung aufmerksam durch.",
+                "en": "🖋 Um zu beginnen, bitten wir dich dein Einverständnis zu geben, dass du:\n\n✔️ über 18 Jahre alt bist,\n✔️ freiwillig teilnimmst,\n✔️ deine Rolle in diesem Projekt verstanden hast\n✔️ uns die Genehmigung gibst, die von dir angegebenen Daten für die Forschung zu verwerten. Diese Daten umfassen Geschlechtsidentität (optional), Altersgruppe (optional), Postleitzahl (optional) Erfahrungen mit Hitze in der Stadt, Telegramm-ID Ziffernfolge (notwendig zum Senden der Nachrichten an dich).\n✔️ du deine Teilnahme am Chatbot abbrechen kannst, indem du ABMELDEN an den Chatbot schreibst. Du kannstdann deine persönlichen Daten löschen, der Prozedur folgend, die dir der/die leitende Wissenschaftler/in des Projekts nach Kontaktaufnahme mitteilt.\n✔️ Bitte lies dir hierzu dieses Dokument zur Einverständniserklärung aufmerksam durch.",
+                "de": "🖋 Um zu beginnen, bitten wir dich dein Einverständnis zu geben, dass du:\n\n✔️ über 18 Jahre alt bist,\n✔️ freiwillig teilnimmst,\n✔️ deine Rolle in diesem Projekt verstanden hast\n✔️ uns die Genehmigung gibst, die von dir angegebenen Daten für die Forschung zu verwerten. Diese Daten umfassen Geschlechtsidentität (optional), Altersgruppe (optional), Postleitzahl (optional) Erfahrungen mit Hitze in der Stadt, Telegramm-ID Ziffernfolge (notwendig zum Senden der Nachrichten an dich).\n✔️ du deine Teilnahme am Chatbot abbrechen kannst, indem du ABMELDEN an den Chatbot schreibst. Du kannstdann deine persönlichen Daten löschen, der Prozedur folgend, die dir der/die leitende Wissenschaftler/in des Projekts nach Kontaktaufnahme mitteilt.\n✔️ Bitte lies dir hierzu dieses Dokument zur Einverständniserklärung aufmerksam durch."
             },
             "wait": null,
             "next": "m1"
@@ -723,10 +140,10 @@
         "m1": {
             "type": "SA",
             "text": {
-                "ca": "Pel que fa al processament de les meves <b>dades personals</b>, que fa possible el projecte, dono el meu consentiment (OBLIGATORI per participar al xatbot):",
-                "es": "En cuanto al procesamiento de mis <b>datos personales</b>, que hace posible el proyecto, doy mi consentimiento (OBLIGATORIO para participar en el chatbot):",
+                "ca": "Ich gebe mein Einverständnis zur Verarbeitung meiner personenbezogenen Daten, mit der dieses Projekt ermöglicht wird:",
+                "es": "Ich gebe mein Einverständnis zur Verarbeitung meiner personenbezogenen Daten, mit der dieses Projekt ermöglicht wird:",
                 "en": "I hereby give my consent for my <b>personal data</b> to be processed for the purposes of this project (REQUIRED to access the chatbot):",
-                "de": "Ich gebe mein Einverständnis (das ist VERPFLICHTEND zur Teilnahme am Chatbot) zur Verarbeitung meiner <b>personenbezogenen Daten</b>, mit der dieses Projekt ermöglicht wird:"
+                "de": "Ich gebe mein Einverständnis zur Verarbeitung meiner personenbezogenen Daten, mit der dieses Projekt ermöglicht wird:"
             },
             "vars": [
                 {
@@ -734,14 +151,10 @@
                     "type": "button",
                     "texts": [
                         {
-                            "ca": "Sí",
-                            "es": "Sí",
                             "en": "Yes",
                             "de": "Ja"
                         },
                         {
-                            "ca": "No",
-                            "es": "No",
                             "en": "No",
                             "de": "Nein"
                         }

@@ -51,10 +51,10 @@
         "2si": {
             "type": "NA",
             "text": {
-                "ca": "Si vols eliminar les teves dades personals, contacta si us plau amb l’Investigador Principal per email (josep.perello@ub.edu) i t’indicarà el procediment per finalitzar el procés. ",
-                "es": "Si quieres eliminar tus datos personales, contacta por favor con el Investigador Principal por email (josep.perello@ub.edu) y te indicará el procedimiento para finalizar el proceso.",
-                "en": "If you want to delete your personal data, please contact the Principal Investigator by email (josep.perello@ub.edu) and you will be instructed in the procedure.",
-                "de": "Wenn du deine persönlichen Daten löschen möchtest, setz dich bitte per Email mit dem leitenden Wissenschaftler Josep Perelló (josep.perello@ub.edu). Er führt dann mit dir den Prozess zu Ende. "
+                "ca": "Si vols eliminar les teves dades personals, contacta si us plau amb l’Investigador Principal per email (helena.bernhardt@tuwien.ac.at) i t’indicarà el procediment per finalitzar el procés. ",
+                "es": "Si quieres eliminar tus datos personales, contacta por favor con el Investigador Principal por email (helena.bernhardt@tuwien.ac.at) y te indicará el procedimiento para finalizar el proceso.",
+                "en": "If you want to delete your personal data, please contact the Principal Investigator by email (helena.bernhardt@tuwien.ac.at) and you will be instructed in the procedure.",
+                "de": "Wenn du deine persönlichen Daten löschen möchtest, setz dich bitte per Email mit dem leitenden Wissenschaftler Helena Bernhardt (helena.bernhardt@tuwien.ac.at). Er führt dann mit dir den Prozess zu Ende. "
             },
             "wait": null,
             "next": "3"

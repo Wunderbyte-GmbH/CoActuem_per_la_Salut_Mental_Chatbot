@@ -1,8 +1,7 @@
 welcome
 capacitation_Teatre_Amigues
 sociodem_coact
-Obrir_camí
-ue_25r
-Incomprensió_22                          
-agraiiments                  
-       
+ms
+ms1_erholung
+ms2_nahversorgung
+ms3_transport
